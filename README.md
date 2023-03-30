@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://githu.com"><img src="https://github.com/overphoenix/phoenix-android/media/phoenix-borders.png" width="200px"></a>
+  <a href="https://github.com/overphoenix/phoenix-android"><img src="https://github.com/overphoenix/phoenix-android/raw/main/media/phoenix-borders.png" width="200px"></a>
   <h1>Phoenix</h1>
   <p><i>just an android app for all occasions</i></p>
 </div>
