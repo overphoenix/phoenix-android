@@ -1,0 +1,694 @@
+package tech.nagual.phoenix.tools.organizer.camera.ui
+
+import android.animation.ArgbEvaluator
+import android.animation.ValueAnimator
+import android.app.Dialog
+import android.graphics.Color
+import android.os.Handler
+import android.os.Looper
+import android.provider.Settings
+import android.util.Log
+import android.view.*
+import android.view.ViewTreeObserver.OnPreDrawListener
+import android.view.animation.Animation
+import android.view.animation.AnimationUtils
+import android.widget.*
+import androidx.appcompat.widget.SwitchCompat
+import androidx.camera.core.AspectRatio
+import androidx.camera.core.CameraSelector
+import androidx.camera.core.ImageCapture
+import androidx.camera.video.Quality
+import androidx.camera.video.QualitySelector
+import tech.nagual.phoenix.R
+import tech.nagual.phoenix.tools.organizer.camera.CamConfig
+import tech.nagual.phoenix.tools.organizer.camera.ui.activities.CameraActivity
+import tech.nagual.phoenix.tools.organizer.camera.ui.activities.CameraActivity.Companion.camConfig
+
+class SettingsDialog(mActivity: CameraActivity) :
+    Dialog(mActivity, R.style.CameraTheme_App) {
+
+    private var dialog: View
+    var locToggle: ToggleButton
+    private var flashToggle: ImageView
+    private var aRToggle: ToggleButton
+    var torchToggle: ToggleButton
+    private var gridToggle: ImageView
+    private var mActivity: CameraActivity
+    var videoQualitySpinner: Spinner
+    private lateinit var vQAdapter: ArrayAdapter<String>
+    private var focusTimeoutSpinner: Spinner
+    private var timerSpinner: Spinner
+
+    var mScrollView: ScrollView
+    var mScrollViewContent: View
+
+    var cmRadioGroup: RadioGroup
+    var qRadio: RadioButton
+    var lRadio: RadioButton
+
+    var includeAudioToggle: SwitchCompat
+
+    var selfIlluminationToggle: SwitchCompat
+
+    private val timeOptions = mActivity.resources.getStringArray(R.array.camera_time_options)
+
+    private var includeAudioSetting: View
+    private var selfIlluminationSetting: View
+    private var videoQualitySetting: View
+    private var timerSetting: View
+
+    var settingsFrame: View
+
+    private val bgBlue = mActivity.getColor(R.color.camera_selected_option_bg)
+
+    init {
+        setContentView(R.layout.organizer_camera_settings)
+
+        dialog = findViewById(R.id.settings_dialog)
+        dialog.setOnClickListener {}
+
+        window?.setBackgroundDrawableResource(android.R.color.transparent)
+        window?.setDimAmount(0f)
+
+        setOnDismissListener {
+            mActivity.settingsIcon.visibility = View.VISIBLE
+        }
+
+        this.mActivity = mActivity
+
+        val background: View = findViewById(R.id.background)
+        background.setOnClickListener {
+            slideDialogUp()
+        }
+
+        val rootView = findViewById<SettingsFrameLayout>(R.id.root)
+        rootView.setOnInterceptTouchEventListener(
+            object : SettingsFrameLayout.OnInterceptTouchEventListener {
+
+                override fun onInterceptTouchEvent(
+                    view: SettingsFrameLayout?,
+                    ev: MotionEvent?,
+                    disallowIntercept: Boolean
+                ): Boolean {
+                    return mActivity.gestureDetectorCompat.onTouchEvent(ev!!)
+                }
+
+                override fun onTouchEvent(
+                    view: SettingsFrameLayout?,
+                    event: MotionEvent?
+                ): Boolean {
+                    return false
+                }
+            }
+        )
+
+        settingsFrame = findViewById(R.id.settings_frame)
+
+        rootView.viewTreeObserver.addOnPreDrawListener(
+            object : OnPreDrawListener {
+                override fun onPreDraw(): Boolean {
+                    rootView.viewTreeObserver.removeOnPreDrawListener(this)
+
+                    settingsFrame.layoutParams =
+                        (settingsFrame.layoutParams as ViewGroup.MarginLayoutParams).let {
+                            val marginTop =
+                                (mActivity.rootView.layoutParams as ViewGroup.MarginLayoutParams).topMargin
+                            it.height = (marginTop + (rootView.measuredWidth * 4 / 3))
+                            it
+                        }
+
+                    return true
+                }
+            }
+        )
+
+        locToggle = findViewById(R.id.location_toggle)
+        locToggle.setOnClickListener {
+
+            if (camConfig.isVideoMode) {
+                camConfig.requireLocation = false
+                mActivity.showMessage(
+                    "Geo-tagging currently is not supported for video mode"
+                )
+                return@setOnClickListener
+            }
+
+            if (mActivity.videoCapturer.isRecording) {
+                locToggle.isChecked = !locToggle.isChecked
+                mActivity.showMessage(
+                    "Can't toggle geo-tagging for ongoing recording"
+                )
+            } else {
+                camConfig.requireLocation = locToggle.isChecked
+            }
+        }
+
+        flashToggle = findViewById(R.id.flash_toggle_option)
+        flashToggle.setOnClickListener {
+            if (mActivity.requiresVideoModeOnly) {
+                mActivity.showMessage(
+                    "Cannot switch flash mode in this mode"
+                )
+            } else {
+                camConfig.toggleFlashMode()
+            }
+        }
+
+        aRToggle = findViewById(R.id.aspect_ratio_toggle)
+        aRToggle.setOnClickListener {
+            if (camConfig.isVideoMode) {
+                aRToggle.isChecked = true
+                mActivity.showMessage(
+                    "4:3 is not supported in video mode"
+                )
+            } else {
+                camConfig.toggleAspectRatio()
+            }
+        }
+
+        torchToggle = findViewById(R.id.torch_toggle_option)
+        torchToggle.setOnClickListener {
+            if (camConfig.isFlashAvailable) {
+                camConfig.toggleTorchState()
+            } else {
+                torchToggle.isChecked = false
+                mActivity.showMessage(
+                    "Flash/Torch is unavailable for this mode"
+                )
+            }
+        }
+
+        gridToggle = findViewById(R.id.grid_toggle_option)
+        gridToggle.setOnClickListener {
+            camConfig.gridType = when (camConfig.gridType) {
+                CamConfig.GridType.NONE -> CamConfig.GridType.THREE_BY_THREE
+                CamConfig.GridType.THREE_BY_THREE -> CamConfig.GridType.FOUR_BY_FOUR
+                CamConfig.GridType.FOUR_BY_FOUR -> CamConfig.GridType.GOLDEN_RATIO
+                CamConfig.GridType.GOLDEN_RATIO -> CamConfig.GridType.SIGHT
+                CamConfig.GridType.SIGHT -> CamConfig.GridType.NONE
+            }
+            updateGridToggleUI()
+        }
+
+        videoQualitySpinner = findViewById(R.id.video_quality_spinner)
+
+        videoQualitySpinner.onItemSelectedListener =
+            object : AdapterView.OnItemSelectedListener {
+                override fun onItemSelected(
+                    p0: AdapterView<*>?,
+                    p1: View?,
+                    position: Int,
+                    p3: Long
+                ) {
+
+                    val choice = vQAdapter.getItem(position) as String
+                    updateVideoQuality(choice)
+                }
+
+                override fun onNothingSelected(p0: AdapterView<*>?) {}
+            }
+
+        qRadio = findViewById(R.id.quality_radio)
+        lRadio = findViewById(R.id.latency_radio)
+
+        if (mActivity.requiresVideoModeOnly) {
+            qRadio.isEnabled = false
+            lRadio.isEnabled = false
+        }
+
+        cmRadioGroup = findViewById(R.id.cm_radio_group)
+        cmRadioGroup.setOnCheckedChangeListener { _, _ ->
+            camConfig.emphasisQuality = qRadio.isChecked
+            if (camConfig.cameraProvider != null) {
+                camConfig.startCamera(true)
+            }
+        }
+
+        selfIlluminationToggle = findViewById(R.id.self_illumination_switch)
+        selfIlluminationToggle.setOnClickListener {
+            camConfig.selfIlluminate = selfIlluminationToggle.isChecked
+        }
+
+        focusTimeoutSpinner = findViewById(R.id.focus_timeout_spinner)
+        focusTimeoutSpinner.onItemSelectedListener =
+            object : AdapterView.OnItemSelectedListener {
+                override fun onItemSelected(
+                    p0: AdapterView<*>?,
+                    p1: View?,
+                    position: Int,
+                    p3: Long
+                ) {
+
+                    val selectedOption = focusTimeoutSpinner.selectedItem.toString()
+                    updateFocusTimeout(selectedOption)
+
+                }
+
+                override fun onNothingSelected(p0: AdapterView<*>?) {}
+            }
+
+        focusTimeoutSpinner.setSelection(2)
+
+        timerSpinner = findViewById(R.id.timer_spinner)
+        timerSpinner.onItemSelectedListener =
+            object : AdapterView.OnItemSelectedListener {
+                override fun onItemSelected(
+                    p0: AdapterView<*>?,
+                    p1: View?,
+                    position: Int,
+                    p3: Long
+                ) {
+
+                    val selectedOption = timerSpinner.selectedItem.toString()
+
+                    if (selectedOption == context.getString(R.string.camera_focus_timeout_off)) {
+                        mActivity.timerDuration = 0
+                        mActivity.cbText.visibility = View.INVISIBLE
+                    } else {
+
+                        try {
+                            val durS = selectedOption.substring(0, selectedOption.length - 1)
+                            val dur = durS.toInt()
+
+                            mActivity.timerDuration = dur
+
+                            mActivity.cbText.text = selectedOption
+                            mActivity.cbText.visibility = View.VISIBLE
+
+                        } catch (exception: Exception) {
+
+                            mActivity.showMessage(
+                                "An unexpected error occurred while setting focus timeout"
+                            )
+
+                        }
+
+                    }
+
+                }
+
+                override fun onNothingSelected(p0: AdapterView<*>?) {}
+            }
+
+        mScrollView = findViewById(R.id.settings_scrollview)
+        mScrollViewContent = findViewById(R.id.settings_scrollview_content)
+
+        includeAudioSetting = findViewById(R.id.include_audio_setting)
+        selfIlluminationSetting = findViewById(R.id.self_illumination_setting)
+        videoQualitySetting = findViewById(R.id.video_quality_setting)
+        timerSetting = findViewById(R.id.timer_setting)
+
+        includeAudioToggle = findViewById(R.id.include_audio_switch)
+        includeAudioToggle.setOnClickListener {
+            camConfig.includeAudio = includeAudioToggle.isChecked
+        }
+        includeAudioToggle.setOnCheckedChangeListener { _, _ ->
+            camConfig.startCamera(true)
+        }
+
+        window?.setFlags(
+            WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE,
+            WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE
+        )
+    }
+
+    private fun resize() {
+        mScrollViewContent.viewTreeObserver.addOnGlobalLayoutListener(object :
+            ViewTreeObserver.OnGlobalLayoutListener {
+            override fun onGlobalLayout() {
+
+                mScrollViewContent.viewTreeObserver.removeOnGlobalLayoutListener(this)
+
+                val sdHM =
+                    mActivity.resources.getDimension(R.dimen.camera_settings_dialog_horizontal_margin)
+
+                val sH = (mScrollViewContent.width - (sdHM * 8)).toInt()
+
+                val lp = LinearLayout.LayoutParams(
+                    ViewGroup.LayoutParams.MATCH_PARENT,
+                    sH.coerceAtMost(mScrollViewContent.height)
+                )
+
+                mScrollView.layoutParams = lp
+            }
+        })
+    }
+
+    fun showOnlyRelevantSettings() {
+        if (camConfig.isVideoMode) {
+            includeAudioSetting.visibility = View.VISIBLE
+            videoQualitySetting.visibility = View.VISIBLE
+        } else {
+            includeAudioSetting.visibility = View.GONE
+            videoQualitySetting.visibility = View.GONE
+        }
+
+        selfIlluminationSetting.visibility =
+            if (camConfig.lensFacing == CameraSelector.LENS_FACING_FRONT) {
+                View.VISIBLE
+            } else {
+                View.GONE
+            }
+
+        timerSetting.visibility = if (camConfig.isVideoMode) {
+            View.GONE
+        } else {
+            View.VISIBLE
+        }
+    }
+
+
+    fun updateFocusTimeout(selectedOption: String) {
+
+        if (selectedOption == context.getString(R.string.camera_focus_timeout_off)) {
+            camConfig.focusTimeout = 0
+        } else {
+
+            try {
+                val durS = selectedOption.substring(0, selectedOption.length - 1)
+                val dur = durS.toLong()
+
+                camConfig.focusTimeout = dur
+
+            } catch (exception: Exception) {
+
+                mActivity.showMessage(
+                    "An unexpected error occurred while setting focus timeout"
+                )
+
+            }
+        }
+
+        focusTimeoutSpinner.setSelection(timeOptions.indexOf(selectedOption), false)
+    }
+
+    fun updateVideoQuality(choice: String, resCam: Boolean = true) {
+
+        val quality = titleToQuality(choice)
+
+        if (quality == camConfig.videoQuality) return
+
+        camConfig.videoQuality = quality
+
+        if (resCam) {
+            camConfig.startCamera(true)
+        } else {
+            videoQualitySpinner.setSelection(getAvailableQTitles().indexOf(choice))
+
+        }
+    }
+
+    fun titleToQuality(title: String): Quality {
+        return when (title) {
+            "2160p (UHD)" -> Quality.UHD
+            "1080p (FHD)" -> Quality.FHD
+            "720p (HD)" -> Quality.HD
+            "480p (SD)" -> Quality.SD
+            else -> {
+                Log.e("TAG", "Unknown quality: $title")
+                Quality.SD
+            }
+        }
+    }
+
+    private var wasSelfIlluminationOn = false
+
+    fun selfIllumination() {
+
+//        if (mActivity.config.lensFacing == CameraSelector.LENS_FACING_BACK) {
+//
+//            mActivity.previewView.setBackgroundColor(Color.BLACK)
+//            mActivity.rootView.setBackgroundColor(Color.BLACK)
+//
+//            mActivity.tabLayout.setTabTextColors(Color.WHITE, Color.WHITE)
+//
+//            mActivity.tabLayout.setSelectedTabIndicatorColor(bgBlue)
+//
+//            return
+//        }
+
+        if (camConfig.selfIlluminate) {
+
+            val colorFrom: Int = Color.BLACK
+            val colorTo: Int = mActivity.getColor(R.color.camera_self_illumination_light)
+
+            val colorAnimation1 = ValueAnimator.ofObject(ArgbEvaluator(), colorFrom, colorTo)
+            colorAnimation1.duration = 300
+            colorAnimation1.addUpdateListener { animator ->
+                val color = animator.animatedValue as Int
+                mActivity.previewView.setBackgroundColor(color)
+                mActivity.rootView.setBackgroundColor(color)
+                window?.statusBarColor = color
+            }
+
+            val colorAnimation2 = ValueAnimator.ofObject(ArgbEvaluator(), Color.WHITE, Color.BLACK)
+            colorAnimation2.duration = 300
+            colorAnimation2.addUpdateListener { animator ->
+                mActivity.tabLayout.setTabTextColors(
+                    animator.animatedValue as Int,
+                    Color.WHITE
+                )
+            }
+
+            val colorAnimation3 = ValueAnimator.ofObject(ArgbEvaluator(), bgBlue, Color.BLACK)
+            colorAnimation3.duration = 300
+            colorAnimation3.addUpdateListener { animator ->
+                mActivity.tabLayout.setSelectedTabIndicatorColor(animator.animatedValue as Int)
+            }
+
+            colorAnimation1.start()
+            colorAnimation2.start()
+            colorAnimation3.start()
+
+            setBrightness(1f)
+
+        } else if (wasSelfIlluminationOn) {
+
+//            mActivity.previewView.setBackgroundColor(Color.BLACK)
+//            mActivity.rootView.setBackgroundColor(Color.BLACK)
+//
+//            mActivity.tabLayout.setTabTextColors(Color.WHITE, Color.WHITE)
+//
+//            mActivity.tabLayout.setSelectedTabIndicatorColor(bgBlue)
+
+            val colorFrom: Int = mActivity.getColor(R.color.camera_self_illumination_light)
+            val colorTo: Int = Color.BLACK
+
+            val colorAnimation1 = ValueAnimator.ofObject(ArgbEvaluator(), colorFrom, colorTo)
+            colorAnimation1.duration = 300
+            colorAnimation1.addUpdateListener { animator ->
+                val color = animator.animatedValue as Int
+                mActivity.previewView.setBackgroundColor(color)
+                mActivity.rootView.setBackgroundColor(color)
+                window?.statusBarColor = color
+            }
+
+            val colorAnimation2 = ValueAnimator.ofObject(ArgbEvaluator(), Color.BLACK, Color.WHITE)
+            colorAnimation2.duration = 300
+            colorAnimation2.addUpdateListener { animator ->
+                mActivity.tabLayout.setTabTextColors(
+                    animator.animatedValue as Int,
+                    Color.WHITE
+                )
+            }
+
+            val colorAnimation3 = ValueAnimator.ofObject(ArgbEvaluator(), Color.BLACK, bgBlue)
+            colorAnimation3.duration = 300
+            colorAnimation3.addUpdateListener { animator ->
+                mActivity.tabLayout.setSelectedTabIndicatorColor(animator.animatedValue as Int)
+            }
+
+            colorAnimation1.start()
+            colorAnimation2.start()
+            colorAnimation3.start()
+
+            setBrightness(getSystemBrightness())
+        }
+
+        wasSelfIlluminationOn = camConfig.selfIlluminate
+    }
+
+    private val slideDownAnimation: Animation by lazy {
+        val anim = AnimationUtils.loadAnimation(
+            mActivity,
+            R.anim.camera_slide_down
+        )
+
+        anim.setAnimationListener(object : Animation.AnimationListener {
+            override fun onAnimationStart(p0: Animation?) {}
+
+            override fun onAnimationEnd(p0: Animation?) {
+            }
+
+            override fun onAnimationRepeat(p0: Animation?) {}
+
+        })
+
+        anim
+    }
+
+    val dismissHandler = Handler(Looper.myLooper()!!)
+    val dismissCallback = Runnable {
+        dismiss()
+    }
+
+    private val slideUpAnimation: Animation by lazy {
+        val anim = AnimationUtils.loadAnimation(
+            mActivity,
+            R.anim.camera_slide_up
+        )
+
+        anim.setAnimationListener(
+            object : Animation.AnimationListener {
+
+                override fun onAnimationStart(p0: Animation?) {
+                }
+
+                override fun onAnimationEnd(p0: Animation?) {
+                    dismissHandler.removeCallbacks(dismissCallback)
+                    dismissHandler.post(
+                        dismissCallback
+                    )
+                }
+
+                override fun onAnimationRepeat(p0: Animation?) {}
+
+            }
+        )
+
+        anim
+    }
+
+    private fun getSystemBrightness(): Float {
+        return Settings.System.getInt(
+            context.contentResolver,
+            Settings.System.SCREEN_BRIGHTNESS,
+            -1
+        ) / 255f
+    }
+
+    private fun setBrightness(brightness: Float) {
+
+        val layout = mActivity.window.attributes
+        layout.screenBrightness = brightness
+        mActivity.window.attributes = layout
+
+        window?.let {
+            val dialogLayout = it.attributes
+            dialogLayout.screenBrightness = brightness
+            it.attributes = dialogLayout
+        }
+
+    }
+
+    private fun slideDialogDown() {
+        dialog.startAnimation(slideDownAnimation)
+    }
+
+    fun slideDialogUp() {
+        dialog.startAnimation(slideUpAnimation)
+    }
+
+    private fun getAvailableQualities(): List<Quality> {
+        return QualitySelector.getSupportedQualities(
+            camConfig.camera!!.cameraInfo
+        )
+    }
+
+    private fun getAvailableQTitles(): List<String> {
+
+        val titles = arrayListOf<String>()
+
+        getAvailableQualities().forEach {
+            titles.add(getTitleFor(it))
+        }
+
+        return titles
+
+    }
+
+    private fun getTitleFor(quality: Quality): String {
+        return when (quality) {
+            Quality.UHD -> "2160p (UHD)"
+            Quality.FHD -> "1080p (FHD)"
+            Quality.HD -> "720p (HD)"
+            Quality.SD -> "480p (SD)"
+            else -> {
+                Log.i("TAG", "Unknown constant: $quality")
+                "Unknown"
+            }
+        }
+    }
+
+    fun updateGridToggleUI() {
+        mActivity.previewGrid.postInvalidate()
+        gridToggle.setImageResource(
+            when (camConfig.gridType) {
+                CamConfig.GridType.NONE -> R.drawable.camera_grid_off_circle
+                CamConfig.GridType.THREE_BY_THREE -> R.drawable.camera_grid_3x3_circle
+                CamConfig.GridType.FOUR_BY_FOUR -> R.drawable.camera_grid_4x4_circle
+                CamConfig.GridType.GOLDEN_RATIO -> R.drawable.camera_grid_goldenratio_circle
+                CamConfig.GridType.SIGHT -> R.drawable.camera_grid_sight_circle
+            }
+        )
+    }
+
+    fun updateFlashMode() {
+        flashToggle.setImageResource(
+            if (camConfig.isFlashAvailable) {
+                when (camConfig.flashMode) {
+                    ImageCapture.FLASH_MODE_ON -> R.drawable.camera_flash_on_circle
+                    ImageCapture.FLASH_MODE_AUTO -> R.drawable.camera_flash_auto_circle
+                    else -> R.drawable.camera_flash_off_circle
+                }
+            } else {
+                R.drawable.camera_flash_off_circle
+            }
+        )
+    }
+
+    override fun show() {
+
+        this.resize()
+
+        updateFlashMode()
+
+        if (camConfig.isVideoMode) {
+            aRToggle.isChecked = true
+        } else {
+            aRToggle.isChecked = camConfig.aspectRatio == AspectRatio.RATIO_16_9
+        }
+
+        torchToggle.isChecked = camConfig.isTorchOn
+
+        updateGridToggleUI()
+
+        mActivity.settingsIcon.visibility = View.INVISIBLE
+        super.show()
+
+        slideDialogDown()
+    }
+
+    fun reloadQualities(qualityText: String = "") {
+
+        val titles = getAvailableQTitles()
+
+        vQAdapter = ArrayAdapter<String>(
+            mActivity,
+            android.R.layout.simple_spinner_item,
+            titles
+        )
+
+        vQAdapter.setDropDownViewResource(
+            android.R.layout.simple_spinner_dropdown_item
+        )
+
+        videoQualitySpinner.adapter = vQAdapter
+
+        val qt = qualityText.ifEmpty {
+            camConfig.videoQuality?.let { getTitleFor(it) }
+        }
+
+        videoQualitySpinner.setSelection(titles.indexOf(qt))
+    }
+}

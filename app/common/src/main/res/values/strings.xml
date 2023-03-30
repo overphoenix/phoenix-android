@@ -1,0 +1,2243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="close">Close</string>
+    <string name="copy">Copy</string>
+    <string name="cut">Cut</string>
+    <string name="delete">Delete</string>
+    <string name="discard">Discard</string>
+    <string name="edit">Edit</string>
+    <string name="empty">Empty</string>
+    <string name="empty_placeholder">(Empty)</string>
+    <string name="error">Error</string>
+    <string name="hide">Hide</string>
+    <string name="install">Install</string>
+    <string name="keep_editing">Keep editing</string>
+    <string name="loading">Loading…</string>
+    <string name="maybe_later">Maybe later</string>
+    <string name="merge">Merge</string>
+    <string name="none">None</string>
+    <string name="open_navigation_drawer">Open navigation drawer</string>
+    <string name="paste">Paste</string>
+    <string name="pick" translatable="false">@string/select</string>
+    <string name="refresh">Refresh</string>
+    <string name="reload">Reload</string>
+    <string name="remove">Remove</string>
+    <string name="rename">Rename</string>
+    <string name="replace">Replace</string>
+    <string name="reset">Reset</string>
+    <string name="retry">Retry</string>
+    <string name="save">Save</string>
+    <string name="search">Search</string>
+    <string name="select">Select</string>
+    <string name="select_all">Select all</string>
+    <string name="share">Share</string>
+    <string name="show">Show</string>
+    <string name="skip">Skip</string>
+    <string name="sort">Sort</string>
+    <string name="stop">Stop</string>
+    <string name="unknown">Unknown</string>
+    <string name="view">View</string>
+    <string name="layout_mode">Layout mode</string>
+    <string name="pin">Pin</string>
+    <string name="pin_title">Pin</string>
+    <string name="unpin_title">Unpin</string>
+    <string name="organizer_note_type">Note type</string>
+    <string name="organizer_note_hidden">Hidden note</string>
+
+    <string name="organizer_attachments_title">Attachments</string>
+
+    <string name="not_specified">Not specified</string>
+
+    <!-- android.R.string.app_not_found -->
+    <string name="copied_to_clipboard_format" translatable="false">@string/preference_copied</string>
+    <string name="open_settings">Open settings</string>
+    <string name="shortcut_created">Shortcut created</string>
+
+    <plurals name="size_in_bytes_format">
+        <item quantity="one">%1$,d byte</item>
+        <item quantity="other">%1$,d bytes</item>
+    </plurals>
+
+    <string name="storage_permission_rationale_message">App needs permission to access files. Please click “ALLOW” in the upcoming system dialog.</string>
+    <string name="storage_permission_permanently_denied_message">App needs permission to access all files. Please grant the appropriate permission in the system settings.</string>
+    <string name="all_files_access_rationale_message">App needs access to manage all files. Please allow the access in the upcoming system setting.</string>
+
+    <string name="notification_channel_file_job_name">File operations</string>
+    <string name="notification_channel_file_job_description">Display and control file operations</string>
+    <string name="notification_channel_ftp_server_name">FTP server</string>
+    <string name="notification_channel_ftp_server_description">Display and control the FTP server</string>
+
+    <plurals name="file_job_archive_scan_notification_title_format">
+        <item quantity="one">Preparing to compress %1$,d file (%2$s)</item>
+        <item quantity="other">Preparing to compress %1$,d files (%2$s)</item>
+    </plurals>
+    <string name="file_job_archive_notification_title_one_format">Compressing “%1$s” into “%2$s”</string>
+    <plurals name="file_job_archive_notification_title_multiple_format">
+        <item quantity="one">Compressing %1$,d file into “%2$s”</item>
+        <item quantity="other">Compressing %1$,d files into “%2$s”</item>
+    </plurals>
+    <plurals name="file_job_copy_scan_notification_title_format">
+        <item quantity="one">Preparing to copy %1$,d file (%2$s)</item>
+        <item quantity="other">Preparing to copy %1$,d files (%2$s)</item>
+    </plurals>
+    <string name="file_job_copy_notification_title_one_format">Copying “%1$s” to “%2$s”</string>
+    <plurals name="file_job_copy_notification_title_multiple_format">
+        <item quantity="one">Copying %1$,d file to “%2$s”</item>
+        <item quantity="other">Copying %1$,d files to “%2$s”</item>
+    </plurals>
+    <plurals name="file_job_extract_scan_notification_title_format">
+        <item quantity="one">Preparing to extract %1$,d file (%2$s)</item>
+        <item quantity="other">Preparing to extract %1$,d files (%2$s)</item>
+    </plurals>
+    <string name="file_job_extract_notification_title_one_format">Extracting “%1$s” to “%2$s”</string>
+    <plurals name="file_job_extract_notification_title_multiple_format">
+        <item quantity="one">Extracting %1$,d file to “%2$s”</item>
+        <item quantity="other">Extracting %1$,d files to “%2$s”</item>
+    </plurals>
+    <plurals name="file_job_move_scan_notification_title_format">
+        <item quantity="one">Preparing to move %1$,d file (%2$s)</item>
+        <item quantity="other">Preparing to move %1$,d files (%2$s)</item>
+    </plurals>
+    <string name="file_job_move_notification_title_one_format">Moving “%1$s” to “%2$s”</string>
+    <plurals name="file_job_move_notification_title_multiple_format">
+        <item quantity="one">Moving %1$,d file to “%2$s”</item>
+        <item quantity="other">Moving %1$,d files to “%2$s”</item>
+    </plurals>
+    <string name="file_job_transfer_size_notification_text_one_format">%1$s / %2$s</string>
+    <string name="file_job_transfer_size_notification_text_multiple_format">%1$,d / %2$,d</string>
+    <plurals name="file_job_delete_scan_notification_title_format">
+        <item quantity="one">Preparing to delete %1$,d file</item>
+        <item quantity="other">Preparing to delete %1$,d files</item>
+    </plurals>
+    <string name="file_job_delete_notification_title_one_format">Deleting “%1$s”</string>
+    <plurals name="file_job_delete_notification_title_multiple_format">
+        <item quantity="one">Deleting %1$,d file</item>
+        <item quantity="other">Deleting %1$,d files</item>
+    </plurals>
+    <plurals name="file_job_set_owner_scan_notification_title_format">
+        <item quantity="one">Preparing to change owner for %1$,d file</item>
+        <item quantity="other">Preparing to change owner for %1$,d files</item>
+    </plurals>
+    <string name="file_job_set_owner_notification_title_one_format">Changing owner for “%1$s”</string>
+    <plurals name="file_job_set_owner_notification_title_multiple_format">
+        <item quantity="one">Changing owner for %1$,d file</item>
+        <item quantity="other">Changing owner for %1$,d files</item>
+    </plurals>
+    <plurals name="file_job_set_group_scan_notification_title_format">
+        <item quantity="one">Preparing to change group for %1$,d file</item>
+        <item quantity="other">Preparing to change group for %1$,d files</item>
+    </plurals>
+    <string name="file_job_set_group_notification_title_one_format">Changing group for “%1$s”</string>
+    <plurals name="file_job_set_group_notification_title_multiple_format">
+        <item quantity="one">Changing group for %1$,d file</item>
+        <item quantity="other">Changing group for %1$,d files</item>
+    </plurals>
+    <plurals name="file_job_set_mode_scan_notification_title_format">
+        <item quantity="one">Preparing to change mode for %1$,d file</item>
+        <item quantity="other">Preparing to change mode for %1$,d files</item>
+    </plurals>
+    <string name="file_job_set_mode_notification_title_one_format">Changing mode for “%1$s”</string>
+    <plurals name="file_job_set_mode_notification_title_multiple_format">
+        <item quantity="one">Changing mode for %1$,d file</item>
+        <item quantity="other">Changing mode for %1$,d files</item>
+    </plurals>
+    <plurals name="file_job_set_selinux_context_scan_notification_title_format">
+        <item quantity="one">Preparing to change SELinux context for %1$,d file</item>
+        <item quantity="other">Preparing to change SELinux context for %1$,d files</item>
+    </plurals>
+    <string name="file_job_set_selinux_context_notification_title_one_format">Changing SELinux context for “%1$s”</string>
+    <plurals name="file_job_set_selinux_context_notification_title_multiple_format">
+        <item quantity="one">Changing SELinux context for %1$,d file</item>
+        <item quantity="other">Changing SELinux context for %1$,d files</item>
+    </plurals>
+    <plurals name="file_job_restore_selinux_context_scan_notification_title_format">
+        <item quantity="one">Preparing to restore SELinux context for %1$,d file</item>
+        <item quantity="other">Preparing to restore SELinux context for %1$,d files</item>
+    </plurals>
+    <string name="file_job_restore_selinux_context_notification_title_one_format">Restoring SELinux context for “%1$s”</string>
+    <plurals name="file_job_restore_selinux_context_notification_title_multiple_format">
+        <item quantity="one">Restoring SELinux context for %1$,d file</item>
+        <item quantity="other">Restoring SELinux context for %1$,d files</item>
+    </plurals>
+    <string name="file_job_transfer_count_notification_text_multiple_format">%1$,d / %2$,d</string>
+    <string name="file_job_write_notification_title_format">Writing “%1$s”</string>
+    <string name="file_job_create_error_title">Error while creating</string>
+    <string name="file_job_create_error_message_format">There was an error creating “%1$s”.\n%2$s</string>
+    <string name="file_job_cannot_copy_into_itself_title">Cannot copy a folder into itself</string>
+    <string name="file_job_cannot_extract_into_itself_title">Cannot extract a folder into itself</string>
+    <string name="file_job_cannot_move_into_itself_title">Cannot move a folder into itself</string>
+    <string name="file_job_cannot_copy_move_into_itself_message">The destination folder is inside the source folder.</string>
+    <string name="file_job_cannot_copy_over_itself_title">Cannot copy a file over itself</string>
+    <string name="file_job_cannot_extract_over_itself_title">Cannot extract a file over itself</string>
+    <string name="file_job_cannot_move_over_itself_title">Cannot move a file over itself</string>
+    <string name="file_job_cannot_copy_move_over_itself_message">The source file would be overwritten by the destination.</string>
+    <string name="file_job_replace_title_format">Replace file “%1$s”?</string>
+    <string name="file_job_replace_message_format">Another file with the same name already exists in “%1$s”.\nReplacing it will overwrite its content.</string>
+    <string name="file_job_replace_target_name">Original file</string>
+    <string name="file_job_replace_source_name">Replace with</string>
+    <string name="file_job_merge_title_format">Merge folder “%1$s”?</string>
+    <string name="file_job_merge_copy_message_format">Merging will ask for confirmation before replacing any files in the folder that conflict with the files being copied.</string>
+    <string name="file_job_merge_extract_message_format">Merging will ask for confirmation before replacing any files in the folder that conflict with the files being extracted.</string>
+    <string name="file_job_merge_move_message_format">Merging will ask for confirmation before replacing any files in the folder that conflict with the files being moved.</string>
+    <string name="file_job_merge_target_name">Original folder</string>
+    <string name="file_job_merge_source_name">Merge with</string>
+    <string name="file_job_conflict_show_name">Select a new name for the destination</string>
+    <string name="file_job_conflict_name_hint">New name</string>
+    <string name="file_job_archive_error_title_format">Error while compressing “%1$s”</string>
+    <string name="file_job_archive_error_message_format">There was an error compressing the file into “%1$s”.\n%2$s</string>
+    <string name="file_job_copy_error_title_format">Error while copying “%1$s”</string>
+    <string name="file_job_copy_error_message_format">There was an error copying the file into “%1$s”.\n%2$s</string>
+    <string name="file_job_extract_error_title_format">Error while extracting “%1$s”</string>
+    <string name="file_job_extract_error_message_format">There was an error extracting the file into “%1$s”.\n%2$s</string>
+    <string name="file_job_move_error_title_format">Error while moving “%1$s”</string>
+    <string name="file_job_move_error_message_format">There was an error moving the file into “%1$s”.\n%2$s</string>
+    <string name="file_job_delete_error_title">Error while deleting</string>
+    <string name="file_job_delete_error_message_format">There was an error deleting “%1$s”.\n%2$s</string>
+    <string name="file_job_rename_error_title_format">Error while renaming “%1$s”</string>
+    <string name="file_job_rename_error_message_format">There was an error renaming the file to “%1$s”.\n%2$s</string>
+    <string name="file_job_set_owner_error_title_format">Error while changing owner for “%1$s”</string>
+    <string name="file_job_set_owner_error_message_format">There was an error changing the owner to “%1$s”.\n%2$s</string>
+    <string name="file_job_set_group_error_title_format">Error while changing group for “%1$s”</string>
+    <string name="file_job_set_group_error_message_format">There was an error changing the group to “%1$s”.\n%2$s</string>
+    <string name="file_job_set_mode_error_title_format">Error while changing mode for “%1$s”</string>
+    <string name="file_job_set_mode_error_message_format">There was an error changing the mode to “%1$s”.\n%2$s</string>
+    <string name="file_job_set_selinux_context_error_title_format">Error while changing SELinux context for “%1$s”</string>
+    <string name="file_job_set_selinux_context_error_message_format">There was an error changing the SELinux context to “%1$s”.\n%2$s</string>
+    <string name="file_job_restore_selinux_context_error_title">Error while restoring SELinux context</string>
+    <string name="file_job_restore_selinux_context_error_message_format">There was an error restoring the SELinux context for “%1$s”.\n%2$s</string>
+    <string name="file_job_write_error_title">Error while writing</string>
+    <string name="file_job_write_error_message_format">There was an error writing “%1$s”.\n%2$s</string>
+    <string name="file_job_get_information_error_message_format">There was an error getting information about “%1$s”.</string>
+    <string name="file_job_remount_format">Remount “%1$s” as read-write</string>
+    <string name="file_job_remount_loading_format">Remounting “%1$s” as read-write…</string>
+    <string name="file_job_remount_success_format">“%1$s” has been remounted as read-write</string>
+    <string name="file_job_action_all">Apply this action to all files</string>
+
+    <string name="file_open_apk_message">This file is an Android package. Do you want to install it, or view its contents?</string>
+    <string name="file_edit_title" translatable="false">@string/edit</string>
+    <string name="file_open_as_title">Open as…</string>
+    <string name="file_open_as_title_format">Open “%1$s” as</string>
+    <string name="file_open_as_type_text">Text</string>
+    <string name="file_open_as_type_image">Image</string>
+    <string name="file_open_as_type_audio">Audio</string>
+    <string name="file_open_as_type_video">Video</string>
+    <string name="file_open_as_type_directory">Folder</string>
+    <string name="file_open_as_type_any">Other</string>
+    <string name="file_install_apk_from_background_title_format">“%1$s” is ready to be installed</string>
+    <string name="file_install_apk_from_background_text">Tap to install</string>
+    <string name="file_open_from_background_title_format">“%1$s” is ready to be opened</string>
+    <string name="file_open_from_background_text">Tap to open</string>
+    <string name="file_name_error_empty">File name cannot be empty</string>
+    <string name="file_name_error_invalid">Invalid file name</string>
+    <string name="file_name_error_already_exists">A file with this name already exists</string>
+    <string name="file_delete_message_file_format">Delete “%1$s”?</string>
+    <string name="file_delete_message_directory_format">Delete folder “%1$s” and its contents?</string>
+    <plurals name="file_delete_message_multiple_files_format">
+        <item quantity="one">Delete %1$,d file?</item>
+        <item quantity="other">Delete %1$,d files?</item>
+    </plurals>
+    <plurals name="file_delete_message_multiple_directories_format">
+        <item quantity="one">Delete %1$,d folder and its content?</item>
+        <item quantity="other">Delete %1$,d folders and their contents?</item>
+    </plurals>
+    <plurals name="file_delete_message_multiple_mixed_format">
+        <item quantity="one">Delete %1$,d item?</item>
+        <item quantity="other">Delete %1$,d items?</item>
+    </plurals>
+    <string name="file_create_archive_title">Create archive</string>
+    <string name="file_create_archive_type_zip">.zip</string>
+    <string name="file_create_archive_type_tar_xz">.tar.xz</string>
+    <string name="file_create_archive_type_7z">.7z</string>
+    <string name="file_add_bookmark_success">Bookmark added</string>
+    <string name="file_create_file_title">New file</string>
+    <string name="file_create_directory_title">New folder</string>
+
+    <string name="file_list_title">Files</string>
+    <plurals name="file_list_title_pick_file">
+        <item quantity="one">Select a file</item>
+        <item quantity="other">Select files</item>
+    </plurals>
+    <plurals name="file_list_title_pick_directory">
+        <item quantity="one">Select a folder</item>
+        <item quantity="other">Select folders</item>
+    </plurals>
+    <plurals name="file_list_subtitle_directory_count_format">
+        <item quantity="one">%1$,d folder</item>
+        <item quantity="other">%1$,d folders</item>
+    </plurals>
+    <plurals name="file_list_subtitle_file_count_format">
+        <item quantity="one">%1$,d file</item>
+        <item quantity="other">%1$,d files</item>
+    </plurals>
+    <string name="file_list_subtitle_separator">,\u0020</string>
+    <string name="file_list_path_error_empty">Path cannot be empty</string>
+    <string name="file_list_path_error_invalid">Invalid path</string>
+    <string name="file_list_action_sort_by_name">Name</string>
+    <string name="file_list_action_sort_by_type">Type</string>
+    <string name="file_list_action_sort_by_size">Size</string>
+    <string name="file_list_action_sort_by_last_modified">Last modified</string>
+    <string name="file_list_action_sort_order_ascending">Ascending</string>
+    <string name="file_list_action_sort_directories_first">Folders first</string>
+    <string name="file_list_action_sort_path_specific">Only for this folder</string>
+    <string name="file_list_action_new_task">New window</string>
+    <string name="file_list_action_navigate_up">Go up</string>
+    <string name="file_list_action_navigate_to">Go to</string>
+    <string name="file_list_navigate_to_title" translatable="false">@string/file_list_action_navigate_to</string>
+    <string name="file_list_action_show_hidden_files">Show hidden files</string>
+    <string name="file_list_action_copy_path">Copy path</string>
+    <string name="file_list_action_open_in_terminal">Open in terminal</string>
+    <string name="file_list_action_add_bookmark">Add bookmark</string>
+    <string name="file_list_action_create_shortcut">Create shortcut</string>
+    <string name="file_list_breadcrumb_action_copy_path" translatable="false">@string/file_list_action_copy_path</string>
+    <string name="file_list_breadcrumb_action_open_in_new_task">Open in new window</string>
+    <string name="list_select_title_format">%1$,d selected</string>
+    <string name="file_list_select_action_extract" translatable="false">@string/file_item_action_extract</string>
+    <string name="file_list_select_action_archive" translatable="false">@string/file_item_action_archive</string>
+    <string name="file_list_select_current_directory_format">Select “%1$s”</string>
+    <string name="file_list_paste_move_title_format">Moving %1$,d</string>
+    <string name="file_list_paste_copy_title_format">Copying %1$,d</string>
+    <string name="file_list_paste_extract_title_format">Extracting %1$,d</string>
+    <string name="file_list_paste_action_extract_here">Extract here</string>
+    <string name="file_list_empty">No files</string>
+    <string name="file_list_action_create_file">File</string>
+    <string name="file_list_action_create_directory">Folder</string>
+
+    <string name="file_item_description_separator">\u0020\u0020\u0020\u0020</string>
+    <string name="file_item_action_open_with">Open with</string>
+    <string name="file_item_action_extract">Extract</string>
+    <string name="file_item_action_archive">Compress</string>
+    <string name="file_item_action_copy_path" translatable="false">@string/file_list_action_copy_path</string>
+    <string name="file_item_action_add_bookmark" translatable="false">@string/file_list_action_add_bookmark</string>
+    <string name="file_item_action_create_shortcut" translatable="false">@string/file_list_action_create_shortcut</string>
+    <string name="file_item_action_properties">Properties</string>
+
+    <string name="file_properties_title_format">“%1$s” properties</string>
+    <string name="file_properties_basic">Basic</string>
+    <string name="file_properties_basic_name">Name</string>
+    <string name="file_properties_basic_type">Type</string>
+    <string name="file_properties_basic_type_format">%1$s (%2$s)</string>
+    <string name="file_properties_basic_type_symbolic_link_format">Link to %1$s (%2$s)</string>
+    <string name="file_properties_basic_symbolic_link_target">Link Target</string>
+    <string name="file_properties_basic_size">Size</string>
+    <string name="file_properties_basic_size_with_human_readable_format">%1$s (%2$s)</string>
+    <string name="file_properties_basic_contents">Contents</string>
+    <plurals name="file_properties_basic_contents_format">
+        <item quantity="one">%1$,d item, with size %2$s</item>
+        <item quantity="other">%1$,d items, totaling %2$s</item>
+    </plurals>
+    <string name="file_properties_basic_last_modification_time">Last Modified</string>
+    <string name="file_properties_basic_parent_directory">Parent Folder</string>
+    <string name="file_properties_basic_archive_file">Archive File</string>
+    <string name="file_properties_basic_archive_entry">Archive Entry</string>
+    <string name="file_properties_basic_free_space">Free Space</string>
+    <string name="file_properties_permissions">Permissions</string>
+    <string name="file_properties_permissions_owner">Owner</string>
+    <string name="file_properties_permissions_group">Group</string>
+    <string name="file_properties_permissions_principal_format">%1$s (%2$d)</string>
+    <string name="file_properties_permissions_set_owner_title">Change owner</string>
+    <string name="file_properties_permissions_set_group_title">Change group</string>
+    <string name="file_properties_permissions_set_principal_filter_hint">Enter a name or ID</string>
+    <string name="file_properties_permissions_set_principal_system">System</string>
+    <string name="file_properties_permissions_mode">Mode</string>
+    <string name="file_properties_permissions_mode_format">%1$s (%2$04o)</string>
+    <string name="file_properties_permissions_set_mode_title">Change mode</string>
+    <string name="file_properties_permissions_set_mode_others">Others</string>
+    <string-array name="file_properties_permissions_set_mode_normal_mode_bits_file">
+        <item>Read</item>
+        <item>Write</item>
+        <item>Execute</item>
+    </string-array>
+    <string-array name="file_properties_permissions_set_mode_normal_mode_bits_directory">
+        <item>Read</item>
+        <item>Write</item>
+        <item>Search</item>
+    </string-array>
+    <string name="file_properties_permissions_set_mode_special">Special</string>
+    <string-array name="file_properties_permissions_set_mode_special_mode_bits">
+        <item>Set UID</item>
+        <item>Set GID</item>
+        <item>Sticky bit</item>
+    </string-array>
+    <string name="file_properties_permissions_set_mode_uppercase_x">Don’t add “Execute” for enclosed files</string>
+    <string name="file_properties_permissions_selinux_context">SELinux Context</string>
+    <string name="file_properties_permissions_set_selinux_context_title">Change SELinux context</string>
+    <string name="file_properties_permissions_set_selinux_context_restore">Restore</string>
+    <string name="file_properties_permissions_recursive">Apply to enclosed files</string>
+    <string name="file_properties_image">Image</string>
+    <string name="file_properties_media_dimensions">Dimensions</string>
+    <string name="file_properties_media_dimensions_format">%1$d \u00d7 %2$d</string>
+    <string name="file_properties_media_date_time">Taken on</string>
+    <string name="file_properties_media_coordinates">Coordinates</string>
+    <string name="file_properties_media_coordinates_format">%1$.3f, %2$.3f</string>
+    <string name="file_properties_media_address">Location</string>
+    <string name="file_properties_image_gps_altitude">Altitude</string>
+    <string name="file_properties_image_gps_altitude_format">%1$,.3f m</string>
+    <string name="file_properties_image_equipment">Camera</string>
+    <string name="file_properties_image_equipment_format">%1$s %2$s</string>
+    <string name="file_properties_image_f_number">Aperture</string>
+    <string name="file_properties_image_f_number_format" translatable="false">f/%1$.1f</string>
+    <string name="file_properties_image_shutter_speed">Shutter speed</string>
+    <string name="file_properties_image_shutter_speed_with_denominator_format" translatable="false">1/%1$d</string>
+    <string name="file_properties_image_focal_length">Focal length</string>
+    <string name="file_properties_image_focal_length_format">%1$.2f mm</string>
+    <string name="file_properties_image_photographic_sensitivity">ISO equivalent</string>
+    <string name="file_properties_image_photographic_sensitivity_format">ISO %1$d</string>
+    <string name="file_properties_image_software">Software</string>
+    <string name="file_properties_image_description">Description</string>
+    <string name="file_properties_image_artist">Creator</string>
+    <string name="file_properties_image_copyright">Copyright</string>
+    <string name="file_properties_audio">Audio</string>
+    <string name="file_properties_media_title">Title</string>
+    <string name="file_properties_audio_artist">Artist</string>
+    <string name="file_properties_audio_album">Album</string>
+    <string name="file_properties_audio_album_artist">Album artist</string>
+    <string name="file_properties_audio_composer">Composer</string>
+    <string name="file_properties_audio_disc_number">Disc</string>
+    <string name="file_properties_audio_track_number">Track</string>
+    <string name="file_properties_audio_year">Year</string>
+    <string name="file_properties_audio_genre">Genre</string>
+    <string name="file_properties_media_duration">Duration</string>
+    <string name="file_properties_media_bit_rate">Bit rate</string>
+    <string name="file_properties_media_bit_rate_format">%1$d kbps</string>
+    <string name="file_properties_audio_sample_rate">Sample rate</string>
+    <string name="file_properties_audio_sample_rate_format">%1$d Hz</string>
+    <string name="file_properties_video">Video</string>
+    <string name="file_properties_apk">APK</string>
+    <string name="file_properties_apk_label">Name</string>
+    <string name="file_properties_apk_package_name">Package name</string>
+    <string name="file_properties_apk_version">Version</string>
+    <string name="file_properties_apk_version_format">%1$s (%2$d)</string>
+    <string name="file_properties_apk_min_sdk_version">Minimum system version</string>
+    <string name="file_properties_apk_target_sdk_version">Target system version</string>
+    <string name="file_properites_apk_sdk_version_format">%1$s (%2$s, %3$d)</string>
+    <string-array name="file_properites_apk_sdk_version_names" translatable="false">
+        <item>Android ?</item>
+        <item>Android 1.0</item>
+        <item>Android 1.1</item>
+        <item>Android 1.5</item>
+        <item>Android 1.6</item>
+        <item>Android 2.0</item>
+        <item>Android 2.0.1</item>
+        <item>Android 2.1</item>
+        <item>Android 2.2</item>
+        <item>Android 2.3</item>
+        <item>Android 2.3.3</item>
+        <item>Android 3.0</item>
+        <item>Android 3.1</item>
+        <item>Android 3.2</item>
+        <item>Android 4.0</item>
+        <item>Android 4.0.3</item>
+        <item>Android 4.1</item>
+        <item>Android 4.2</item>
+        <item>Android 4.3</item>
+        <item>Android 4.4</item>
+        <item>Android 4.4W</item>
+        <item>Android 5.0</item>
+        <item>Android 5.1</item>
+        <item>Android 6.0</item>
+        <item>Android 7.0</item>
+        <item>Android 7.1</item>
+        <item>Android 8.0</item>
+        <item>Android 8.1</item>
+        <item>Android 9</item>
+        <item>Android 10</item>
+        <item>Android 11</item>
+        <item>Android 12</item>
+        <item>Android 12L</item>
+        <item>Android 13</item>
+        <item>Android ?</item>
+    </string-array>
+    <string-array name="file_properites_apk_sdk_version_codenames" translatable="false">
+        <item>\?</item>
+        <item>B</item>
+        <item>B_1_1</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>E_0_1</item>
+        <item>E_MR1</item>
+        <item>F</item>
+        <item>G</item>
+        <item>G_MR1</item>
+        <item>H</item>
+        <item>H_MR1</item>
+        <item>H_MR2</item>
+        <item>ICS</item>
+        <item>ICS_MR1</item>
+        <item>JB</item>
+        <item>JB_MR1</item>
+        <item>JB_MR2</item>
+        <item>KK</item>
+        <item>KK_W</item>
+        <item>L</item>
+        <item>L_MR1</item>
+        <item>M</item>
+        <item>N</item>
+        <item>N_MR1</item>
+        <item>O</item>
+        <item>O_MR1</item>
+        <item>P</item>
+        <item>Q</item>
+        <item>R</item>
+        <item>S</item>
+        <item>S_V2</item>
+        <item>T</item>
+        <item>\?</item>
+    </string-array>
+    <string name="file_properties_apk_requested_permissions">Permissions</string>
+    <string name="file_properties_apk_requested_permissions_zero">No permissions requested</string>
+    <plurals name="file_properties_apk_requested_permissions_positive_format">
+        <item quantity="one">%1$,d permission requested</item>
+        <item quantity="other">%1$,d permissions requested</item>
+    </plurals>
+    <string name="file_properties_apk_signature_digests">Signatures</string>
+    <string name="file_properties_apk_signature_digests_empty">No valid signatures</string>
+    <string name="file_properties_apk_past_signature_digests">Old signatures</string>
+
+    <string name="storage_file_system_root_title">Root</string>
+    <string name="storage_list_title">Storages</string>
+    <string name="storage_list_empty">No storage</string>
+    <string name="storage_add_storage_title">Add storage</string>
+    <string name="storage_add_storage_android_data" translatable="false">Android/data</string>
+    <string name="storage_add_storage_android_obb" translatable="false">Android/obb</string>
+    <string name="storage_add_storage_document_tree">External storage</string>
+    <string name="storage_add_storage_ftp_server">FTP server</string>
+    <string name="storage_add_storage_sftp_server">SFTP server</string>
+    <string name="storage_add_storage_smb_server">SMB server</string>
+    <string name="storage_edit_device_storage_title">Edit device storage</string>
+    <string name="storage_edit_device_storage_name">Name</string>
+    <string name="storage_edit_device_storage_path">Path</string>
+    <string name="storage_add_document_tree_title">Add external storage</string>
+    <string name="storage_edit_document_tree_title">Edit external storage</string>
+    <string name="storage_edit_document_tree_name">Name</string>
+    <string name="storage_edit_document_tree_uri">URI</string>
+    <string name="storage_edit_document_tree_path">Path</string>
+    <string name="storage_edit_ftp_server_title_edit">Edit FTP server</string>
+    <string name="storage_edit_ftp_server_title_add">Add FTP server</string>
+    <string name="storage_edit_ftp_server_host">Hostname</string>
+    <string name="storage_edit_ftp_server_host_error_empty">Enter a hostname</string>
+    <string name="storage_edit_ftp_server_host_error_invalid">Invalid hostname</string>
+    <string name="storage_edit_ftp_server_port">Port</string>
+    <string name="storage_edit_ftp_server_port_placeholder" translatable="false">21</string>
+    <string name="storage_edit_ftp_server_port_error_invalid">Invalid port</string>
+    <string name="storage_edit_ftp_server_path">Path</string>
+    <string name="storage_edit_ftp_server_path_placeholder">Can be left empty</string>
+    <string name="storage_edit_ftp_server_name">Name</string>
+    <string name="storage_edit_ftp_server_name_placeholder">Use hostname</string>
+    <string name="storage_edit_ftp_server_protocol">Protocol</string>
+    <string-array name="storage_edit_ftp_server_protocol_entries" translatable="false">
+        <item>FTP</item>
+        <item>FTPS</item>
+        <item>FTPES</item>
+    </string-array>
+    <string name="storage_edit_ftp_server_authentication_type">Authentication</string>
+    <string-array name="storage_edit_ftp_server_authentication_type_entries">
+        <item>Password</item>
+        <item>Anonymous</item>
+    </string-array>
+    <string name="storage_edit_ftp_server_username">Username</string>
+    <string name="storage_edit_ftp_server_username_error_empty">Enter a username</string>
+    <string name="storage_edit_ftp_server_password">Password</string>
+    <string name="storage_edit_ftp_server_mode">Mode</string>
+    <string-array name="storage_edit_ftp_server_mode_entries">
+        <item>Active</item>
+        <item>Passive</item>
+    </string-array>
+    <string name="storage_edit_ftp_server_encoding">Encoding</string>
+    <string name="storage_edit_ftp_server_connect_and_add">Connect and add</string>
+    <string name="storage_edit_ftp_server_add">Add</string>
+    <string name="storage_edit_sftp_server_title_edit">Edit SFTP server</string>
+    <string name="storage_edit_sftp_server_title_add">Add SFTP server</string>
+    <string name="storage_edit_sftp_server_host">Hostname</string>
+    <string name="storage_edit_sftp_server_host_error_empty">Enter a hostname</string>
+    <string name="storage_edit_sftp_server_host_error_invalid">Invalid hostname</string>
+    <string name="storage_edit_sftp_server_port">Port</string>
+    <string name="storage_edit_sftp_server_port_placeholder" translatable="false">22</string>
+    <string name="storage_edit_sftp_server_port_error_invalid">Invalid port</string>
+    <string name="storage_edit_sftp_server_path">Path</string>
+    <string name="storage_edit_sftp_server_path_placeholder">Can be left empty</string>
+    <string name="storage_edit_sftp_server_name">Name</string>
+    <string name="storage_edit_sftp_server_name_placeholder">Use hostname</string>
+    <string name="storage_edit_sftp_server_authentication_type">Authentication</string>
+    <string-array name="storage_edit_sftp_server_authentication_type_entries">
+        <item>Password</item>
+        <item>Public key</item>
+    </string-array>
+    <string name="storage_edit_sftp_server_username">Username</string>
+    <string name="storage_edit_sftp_server_username_error_empty">Enter a username</string>
+    <string name="storage_edit_sftp_server_password">Password</string>
+    <string name="storage_edit_sftp_server_private_key">Private key</string>
+    <string name="storage_edit_sftp_server_private_key_open_file">Open file</string>
+    <string name="storage_edit_sftp_server_private_key_error_empty">Enter a private key</string>
+    <string name="storage_edit_sftp_server_private_key_error_invalid">Invalid private key</string>
+    <string name="storage_edit_sftp_server_private_key_password">Private key password</string>
+    <string name="storage_edit_sftp_server_private_key_password_placeholder">Can be left empty</string>
+    <string name="storage_edit_sftp_server_private_key_password_error_invalid">Invalid private key password</string>
+    <string name="storage_edit_sftp_server_connect_and_add">Connect and add</string>
+    <string name="storage_edit_sftp_server_add">Add</string>
+    <string name="storage_add_lan_smb_server_title" translatable="false">@string/storage_edit_smb_server_title_add</string>
+    <string name="storage_add_lan_smb_server_loading">Searching for SMB servers…</string>
+    <string name="storage_add_lan_smb_server_add">Add manually</string>
+    <string name="storage_edit_smb_server_title_edit">Edit SMB server</string>
+    <string name="storage_edit_smb_server_title_add">Add SMB server</string>
+    <string name="storage_edit_smb_server_host">Hostname</string>
+    <string name="storage_edit_smb_server_host_error_empty">Enter a hostname</string>
+    <string name="storage_edit_smb_server_host_error_invalid">Invalid hostname</string>
+    <string name="storage_edit_smb_server_port">Port</string>
+    <string name="storage_edit_smb_server_port_placeholder" translatable="false">445</string>
+    <string name="storage_edit_smb_server_port_error_invalid">Invalid port</string>
+    <string name="storage_edit_smb_server_path">Path</string>
+    <string name="storage_edit_smb_server_path_placeholder">Can be left empty</string>
+    <string name="storage_edit_smb_server_name">Name</string>
+    <string name="storage_edit_smb_server_name_placeholder">Use hostname</string>
+    <string name="storage_edit_smb_server_authentication_type">Authentication</string>
+    <string-array name="storage_edit_smb_server_authentication_type_entries">
+        <item>Password</item>
+        <item>Guest</item>
+        <item>Anonymous</item>
+    </string-array>
+    <string name="storage_edit_smb_server_username">Username</string>
+    <string name="storage_edit_smb_server_username_error_empty">Enter a username</string>
+    <string name="storage_edit_smb_server_password">Password</string>
+    <string name="storage_edit_smb_server_domain">Domain</string>
+    <string name="storage_edit_smb_server_connect_and_add">Connect and add</string>
+    <string name="storage_edit_smb_server_add">Add</string>
+
+    <string name="generic_editor_name_title">Name</string>
+    <string name="generic_editor_description_title">Description</string>
+
+    <string name="organizers_title">Organizers</string>
+    <string name="organizer_settings_title">Organizer settings</string>
+    <string name="organizer_list_empty">No organizers</string>
+    <string name="organizer_create_new">Create organiser</string>
+    <string name="organizer_edit_existing">Edit organiser</string>
+    <string name="organizer_new_placeholder">New organizer</string>
+    <string name="organizer_delete_notebook_ask_message">Are you sure you want to delete “%1$s” folder?</string>
+    <string name="organizer_delete_workflow_ask_message">Are you sure you want to delete “%1$s” workflow?</string>
+    <string name="organizer_delete_attachment_ask_message">Are you sure you want to delete “%1$s” attachment?</string>
+
+    <string name="organizer_category_choose_one">Choose one</string>
+
+    <string name="organizer_pref_header_common">Common</string>
+    <string name="organizer_pref_default_note_type">Type of new notes</string>
+
+    <!--    <string name="organizer_pref_default_note_type_summary">Type of newly created notes.</string>-->
+    <string name="organizer_pref_group_unassigned_notes">Group unassigned notes</string>
+    <string name="organizer_pref_group_unassigned_notes_summary">Notes which are not in any folder will be grouped in a virtual folder called \'Other\'.</string>
+    <string name="organizer_pref_note_deletion_time">Delete notes in bin</string>
+    <string name="organizer_pref_note_deletion_time_instantly">Instantly</string>
+    <string name="organizer_pref_note_deletion_time_week">After 7 days</string>
+    <string name="organizer_pref_note_deletion_time_two_weeks">After 14 days</string>
+    <string name="organizer_pref_note_deletion_time_month">After 30 days</string>
+
+    <string name="organizer_pref_header_extra">Extra</string>
+    <string name="organizer_pref_organizer_export">Export…</string>
+    <string name="organizer_pref_create_backup_summary">Export organizer data to a backup file.</string>
+    <string name="organizer_pref_organizer_import">Import…</string>
+    <string name="organizer_pref_restore_summary">Import organizer data from a backup file.</string>
+
+    <!-- Preferences -->
+    <string name="preferences_header_general">General</string>
+    <string name="preferences_theme_mode">Theme mode</string>
+    <string name="preferences_theme_mode_dark">Dark</string>
+    <string name="preferences_theme_mode_light">Light</string>
+    <string name="preferences_theme_mode_system">Follow system</string>
+
+    <string name="preferences_layout_mode_grid">Grid</string>
+    <string name="preferences_layout_mode_list">List</string>
+
+    <string name="preferences_note_text">Text</string>
+    <string name="preferences_note_task_list">Task list</string>
+    <string name="preferences_note_categories">Categories</string>
+
+    <string name="preferences_color_scheme">Color scheme</string>
+
+    <string name="preferences_show_date">Show date created/modified</string>
+    <string name="preferences_date_format">Date format</string>
+    <string name="preferences_time_format">Time format</string>
+
+
+    <string name="preferences_open_media_in">Open media in</string>
+    <string name="preferences_open_media_in_internal">Internal player</string>
+    <string name="preferences_open_media_in_external">External player</string>
+
+
+
+    <string name="edit_tool_title">Edit tool</string>
+
+    <string name="navigation_storage_subtitle_format">%1$s free of %2$s</string>
+    <string name="navigation_add_storage">Add storage…</string>
+    <string name="navigation_create_organizer">Create organizer</string>
+    <string name="navigation_standard_directory_alarms">Alarms</string>
+    <string name="navigation_standard_directory_dcim">DCIM</string>
+    <string name="navigation_standard_directory_documents">Documents</string>
+    <string name="navigation_standard_directory_downloads">Downloads</string>
+    <string name="navigation_standard_directory_movies">Movies</string>
+    <string name="navigation_standard_directory_music">Music</string>
+    <string name="navigation_standard_directory_notifications">Notifications</string>
+    <string name="navigation_standard_directory_pictures">Pictures</string>
+    <string name="navigation_standard_directory_podcasts">Podcasts</string>
+    <string name="navigation_standard_directory_ringtones">Ringtones</string>
+    <string name="navigation_phoenix_internal_appdata">Internal application data</string>
+    <string name="navigation_phoenix_external_appdata">External application data</string>
+    <string name="navigation_edit_bookmark_directory_title">Bookmark folder</string>
+    <string name="navigation_edit_bookmark_directory_name">Name</string>
+    <string name="navigation_edit_bookmark_directory_path">Path</string>
+    <string name="navigation_camera">Camera</string>
+    <string name="navigation_browser">Browser</string>
+    <string name="navigation_gallery">Gallery</string>
+    <string name="navigation_voicerec">Voice recorder</string>
+    <string name="navigation_calc">Calculator</string>
+    <string name="navigation_ftp_server" translatable="false">@string/ftp_server_title</string>
+    <string name="navigation_settings" translatable="false">@string/settings_title</string>
+
+    <string name="archive_viewer_title">Archive viewer</string>
+    <string name="image_viewer_title">Image viewer</string>
+    <string name="image_viewer_subtitle_format">%1$,d/%2$,d</string>
+    <string name="image_viewer_delete_message_format" translatable="false">@string/file_delete_message_file_format</string>
+    <string name="text_editor_title">Text editor</string>
+    <string name="text_editor_title_format">%1$s</string>
+    <string name="text_editor_title_changed_format">*%1$s</string>
+    <string name="text_editor_save_success">Saved</string>
+    <string name="text_editor_reload_message">Are you sure you want to reload? Unsaved changes to this document will be lost.</string>
+    <string name="text_editor_encoding">Encoding</string>
+    <string name="text_editor_close_message">Are you sure you want to discard unsaved changes to this document?</string>
+
+    <string name="ftp_server_title">FTP server</string>
+    <string name="ftp_server_state_title">Status</string>
+    <string name="ftp_server_state_summary_starting">Starting…</string>
+    <string name="ftp_server_state_summary_running">Running</string>
+    <string name="ftp_server_state_summary_stopping">Stopping…</string>
+    <string name="ftp_server_state_summary_stopped">Not started</string>
+    <string name="ftp_server_url_title">URL</string>
+    <string name="ftp_server_url_summary_no_local_inet_address">Cannot retrieve local IP address</string>
+    <string name="ftp_server_url_menu_copy_url">Copy URL</string>
+    <string name="ftp_server_url_menu_copy_password">Copy password</string>
+    <string name="ftp_server_configuration_title">Configuration</string>
+    <string name="ftp_server_anonymous_login_title">Anonymous login</string>
+    <string name="ftp_server_username_title">Username</string>
+    <string name="ftp_server_password_title">Password</string>
+    <string name="ftp_server_port_title">Port</string>
+    <string name="ftp_server_home_directory_title">Root folder</string>
+    <string name="ftp_server_writable_title">Allow writing</string>
+    <string name="ftp_server_notification_title" translatable="false">@string/ftp_server_title</string>
+    <string name="ftp_server_notification_text">FTP server is running</string>
+
+    <string name="settings_title">Settings</string>
+    <string name="settings_interface_title">Interface</string>
+    <string name="settings_theme_color_title">Theme color</string>
+    <string name="settings_theme_color_summary">Color that appears most frequently in the app</string>
+    <string name="settings_material_design_3_title">Material Design 3</string>
+    <string name="settings_night_mode_title">Night mode</string>
+    <string-array name="settings_night_mode_entries">
+        <item>Follow system</item>
+        <item>Off</item>
+        <item>On</item>
+        <item>Based on time</item>
+        <item>Based on battery saver</item>
+    </string-array>
+    <string name="settings_black_night_mode">Black night mode</string>
+    <string name="settings_lists_animation_title">Lists animation</string>
+    <string name="settings_name_ellipsize_title">Display long name</string>
+    <string-array name="settings_file_name_ellipsize_entries">
+        <item>Ellipsize the beginning</item>
+        <item>Ellipsize the middle</item>
+        <item>Ellipsize the end</item>
+        <item>Marquee</item>
+    </string-array>
+    <string name="settings_files_title">Files</string>
+    <string name="settings_default_directory_title">Default folder</string>
+    <string name="settings_storages_title" translatable="false">@string/storage_list_title</string>
+    <string name="settings_storages_summary_empty" translatable="false">@string/storage_list_empty</string>
+    <string name="settings_standard_directories_title">Standard folders</string>
+    <string name="settings_standard_directories_summary_empty">No standard folders enabled</string>
+    <string name="settings_standard_directory_list_title" translatable="false">@string/settings_standard_directories_title</string>
+    <string name="settings_bookmark_directory_screenshots">Screenshots</string>
+    <string name="settings_bookmark_directories_title">Bookmark folders</string>
+    <string name="settings_bookmark_directories_summary_empty">No bookmark folders</string>
+    <string name="settings_bookmark_directory_list_title" translatable="false">@string/settings_bookmark_directories_title</string>
+    <string name="settings_bookmark_directory_list_empty" translatable="false">@string/settings_bookmark_directories_summary_empty</string>
+    <string name="settings_root_strategy_title">Root access mode</string>
+    <plurals name="settings_root_strategy_message_format">
+        <item quantity="one">You have %1$,d file operation running and changing root access mode now may result in unexpected error. Are you sure you want to change it now?</item>
+        <item quantity="other">You have %1$,d file operations running and changing root access mode now may result in unexpected error. Are you sure you want to change it now?</item>
+    </plurals>
+    <string-array name="settings_root_strategy_entries">
+        <item>Normal access only</item>
+        <item>Automatic</item>
+        <item>Root access only</item>
+    </string-array>
+    <string name="settings_archive_file_name_encoding_title">Archive file name encoding</string>
+    <string name="settings_open_apk_default_action_title">Open Android package</string>
+    <string-array name="settings_open_apk_default_action_entries">
+        <item>Install</item>
+        <item>View contents</item>
+        <item>Ask what to do</item>
+    </string-array>
+    <string name="settings_show_pdf_thumbnail_pre_28_title">Show thumbnail for PDF files</string>
+    <string name="settings_show_pdf_thumbnail_pre_28_summary">Might make the app unstable on older versions of Android</string>
+    <string name="settings_read_remote_files_for_thumbnail_title">Read remote files for thumbnail</string>
+    <string name="settings_adding_storages_from_menu">Adding storages from menu</string>
+    <string name="settings_creating_organizers_from_menu">Creating organizers from menu</string>
+    <string name="settings_starting_organizers_from_menu">Starting organizers from menu</string>
+
+    <string name="shortcut_downloads_title" translatable="false">@string/navigation_standard_directory_downloads</string>
+    <string name="shortcut_ftp_server_title" translatable="false">@string/ftp_server_title</string>
+
+    <!-- General -->
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="indicator_untitled">Untitled</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="action_save">Save</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_delete_permanently">Delete permanently</string>
+    <string name="action_unarchive">Unarchive</string>
+    <string name="action_show">Show</string>
+    <string name="archive_action">Archive</string>
+    <string name="delete_action">Delete</string>
+    <string name="hide_action">Hide</string>
+    <string name="change_color_action">Change color</string>
+    <string name="enable_markdown_action">Enable markdown</string>
+    <string name="disable_markdown_action">Disable markdown</string>
+    <string name="export_action">Export</string>
+    <string name="share_action">Share</string>
+    <string name="move_to_action">Move to…</string>
+    <string name="action_restore">Restore</string>
+    <string name="action_pin_unpin">Pin / Unpin</string>
+    <string name="action_duplicate">Duplicate</string>
+    <string name="action_select_more">Select more…</string>
+
+
+    <!-- Attachments -->
+    <string name="attachments_edit_description">Edit description</string>
+    <string name="attachments_hint_description">Attachment description</string>
+    <string name="indicator_recording">Recording (%1$s)</string>
+    <string name="action_attach_files">Attach files</string>
+    <string name="action_take_photo">Take a photo</string>
+    <string name="action_take_video">Take a video</string>
+    <string name="action_record_audio">Record audio</string>
+    <string name="action_drawing">Drawing</string>
+    <string name="action_note_text">Text</string>
+    <string name="action_note_task_list">Task list</string>
+    <string name="action_note_categories">Categories</string>
+    <string name="indicator_recorded_clip">Recorded Clip</string>
+
+
+
+    <string name="notes_title">Notes</string>
+    <string name="notes_empty_title">No notes</string>
+    <string name="notes_archive_title">Archive</string>
+    <string name="notes_deleted_title">Deleted</string>
+    <string name="notes_all_notes_title">All notes</string>
+    <string name="organizer_show_hidden_title">Show hidden</string>
+    <string name="organizer_manage_folders">Manage folders</string>
+    <string name="notes_sort_by_title_asc">Title ▲</string>
+    <string name="notes_sort_by_title_desc">Title ▼</string>
+    <string name="notes_sort_by_created_asc">Date created ▲</string>
+    <string name="notes_sort_by_created_desc">Date created ▼</string>
+    <string name="notes_sort_by_modified_asc">Date modified ▲</string>
+    <string name="notes_sort_by_modified_desc">Date modified ▼</string>
+    <string name="notes_location">Location</string>
+    <string name="note_dates">Created at %1$s\nLast modified at %2$s</string>
+
+    <string name="notes_color_default">Default</string>
+    <string name="notes_color_blue">Blue</string>
+    <string name="notes_color_pink">Pink</string>
+    <string name="notes_color_green">Green</string>
+    <string name="notes_color_orange">Orange</string>
+    <string name="notes_color_brown">Brown</string>
+    <string name="notes_color_purple">Purple</string>
+    <string name="notes_color_red">Red</string>
+
+    <string name="organizer_workflows_title">Workflows</string>
+    <string name="organizer_folders_title">Folders</string>
+    <string name="default_notebook">Other</string>
+    <string name="organizer_without_folder">&lt;No folder&gt;</string>
+    <string name="organizer_category_no_default_variant">&lt;Nothing&gt;</string>
+    <string name="organizer_without_attachment">&lt;Without attachments&gt;</string>
+    <string name="organizer_attachment_generic">File(s)</string>
+    <string name="organizer_attachment_photo">Photo</string>
+    <string name="organizer_attachment_video">Video</string>
+    <string name="organizer_attachment_audio">Audio</string>
+    <string name="organizer_folder_create_title">Create folder</string>
+    <string name="organizer_folder_rename_title">Rename folder</string>
+    <string name="organizer_default_folder_name">New folder</string>
+    <string name="organizer_workflow_create_title">Create workflow</string>
+    <string name="organizer_workflow_rename_title">Rename workflow</string>
+    <string name="organizer_default_tag_name">New tag</string>
+
+    <string name="organizer_folder_already_exists">Folder with name %1$s already exists</string>
+    <string name="organizer_workflow_already_exists">Workflow with name %1$s already exists</string>
+    <string name="organizer_folder_empty_list">No folders</string>
+    <string name="organizer_workflow_empty_list">No workflows</string>
+
+    <string name="categories_title">Categories</string>
+    <string name="no_categories">No categories</string>
+    <string name="category_title">Category \"%1$s\"</string>
+    <string name="category_display_name_placeholder">New category</string>
+    <!--    <string name="category_rename_title">Rename category</string>-->
+    <string name="category_already_exists">Category “%1$s“ already exists</string>
+    <string name="category_not_exists">Category “%1$s“ not exists</string>
+    <string name="category_empty_list">No categories</string>
+    <string name="category_name_title">Name</string>
+    <string name="category_display_name_title">Display name</string>
+    <string name="category_current_value_title">Current</string>
+    <string name="category_minimum_value_title">Minimum</string>
+    <string name="category_maximum_value_title">Maximum</string>
+    <string name="category_increment_value_title">Increment</string>
+    <string name="category_autoincrement_min_greater_max">The minimum value cannot be equal to or greater than the maximum value</string>
+    <string name="category_default_value_title">Default variant</string>
+
+    <string name="category_type_variants">Variants</string>
+    <string name="category_type_complex_variants">Variants+</string>
+    <string name="category_type_autoincrement">Auto Increment</string>
+    <string name="category_type_geo">GEO Location</string>
+    <string name="category_type_datetime">Date Time</string>
+    <string name="category_type_password">Password</string>
+
+    <string name="category_variants_title">Variants “%1$s“</string>
+    <string name="category_variant_empty_list">No variants</string>
+    <string name="category_variants_create_title">Create variant</string>
+    <string name="category_variants_edit_title">Edit variant</string>
+    <string name="category_variant_already_exists">Variant with name “%1$s“ already exists</string>
+    <string name="category_variants_value_placeholder">New variant</string>
+
+    <string name="tags_title">Tags</string>
+    <string name="tag_empty_list">No tags</string>
+    <string name="tag_create_title">Create tag</string>
+    <string name="tag_rename_title">Rename tag</string>
+    <string name="tag_already_exists">Tag with name “%1$s“ already exists</string>
+
+    <string name="extra_title">Extra</string>
+
+    <string name="tools_title">Tools</string>
+    <string name="settings_tools_summary_empty">No visible tools</string>
+
+    <string name="security_title">Security</string>
+
+    <string name="appinfo_title">Information</string>
+    <string name="appinfo_version">Version</string>
+
+    <!-- Archive -->
+    <string name="indicator_archive_empty">Archived notes will appear here</string>
+
+
+    <!-- Deleted -->
+    <string name="action_empty_bin">Empty bin</string>
+    <string name="empty_bin_warning_title">Are you sure?</string>
+    <string name="empty_bin_warning_text">All deleted notes will be lost</string>
+    <string name="indicator_deleted_note_cannot_be_edited">Notes inside the bin cannot be edited</string>
+    <string name="indicator_deleted_empty">Your deleted notes will appear here for %1$d days</string>
+    <string name="indicator_bin_disabled">Notes are set to be deleted instantly</string>
+    <string name="indicator_deleted_notes_permanently">Notes permanently deleted</string>
+    <string name="indicator_deleted_note_permanently">Note permanently deleted</string>
+
+
+    <!-- Reminders -->
+    <string name="reminders">Reminders</string>
+    <string name="reminder">Reminder</string>
+    <string name="reminders_hint_name">Reminder name</string>
+    <string name="action_set_date">Set date</string>
+    <string name="action_set_time">Set time</string>
+    <string name="new_reminder">New reminder</string>
+    <string name="notification_reminder_fired">You have a reminder.</string>
+    <string name="indicator_cannot_set_past_reminder">Cannot set a reminder for a past date</string>
+
+
+    <!-- Tags -->
+    <string name="action_new_tag">New tag</string>
+    <string name="tags_hint_name">Tag name</string>
+    <string name="indicator_tags_empty">You have no tags.</string>
+    <string name="action_rename_tag">Rename tag</string>
+    <string name="indicator_tag_already_exists">Tag with name %1$s already exists.</string>
+
+
+    <!-- Search -->
+    <string name="search_hint">Search…</string>
+    <string name="indicator_search_empty">Search results will be displayed here</string>
+    <string name="indicator_no_results_found">Nothing found</string>
+
+
+    <!-- Editor -->
+    <string name="editor_hint_title">Title</string>
+    <string name="editor_hint_content">Take a note!</string>
+    <string name="action_add_task">Task</string>
+    <string name="action_add_category">Field</string>
+    <string name="action_insert_bold_text">Insert bold markdown</string>
+    <string name="action_insert_italics">Insert italics markdown</string>
+    <string name="action_insert_strikethrough">Insert strikethrough markdown</string>
+    <string name="action_insert_heading">Insert heading markdown</string>
+    <string name="action_insert_quote">Insert quotation markdown</string>
+    <string name="action_insert_code">Insert code markdown</string>
+    <string name="indicator_restored_notes">Restored notes</string>
+    <string name="indicator_restored_note">Restored note</string>
+    <string name="indicator_archived_notes">Archived notes</string>
+    <string name="indicator_archive_note">Archived note</string>
+    <string name="indicator_moved_notes_to_bin">Moved notes to bin</string>
+    <string name="indicator_moved_note_to_bin">Moved note to bin</string>
+    <string name="action_insert_link">Insert link</string>
+    <string name="action_insert">Insert</string>
+    <string name="action_insert_table">Insert table</string>
+    <string name="message_invalid_number_rows_columns">Invalid number of rows and columns</string>
+    <string name="action_insert_image">Insert image</string>
+    <string name="hint_image_description">Description</string>
+    <string name="hint_image_path">Image path</string>
+    <string name="hint_hyperlink_text">Text</string>
+    <string name="hint_hyperlink_url">URL</string>
+    <string name="hint_number_columns">Number of columns</string>
+    <string name="hint_number_rows">Number of rows</string>
+    <string name="message_cannot_preview_table">Cannot preview table.</string>
+
+    <!-- Backup / Restore -->
+
+    <string name="organizer_export_dialog_title">Organizer export</string>
+    <string name="organizer_export_title">Export</string>
+
+    <string name="organizer_export_type">Export type</string>
+    <string-array name="organizer_export_types">
+        <item>Copy all</item>
+        <item>Only notes</item>
+        <item>Only categories</item>
+    </string-array>
+    <string name="organizer_export_without_attachments">Do not backup attachments</string>
+    <!--    <string name="organizer_export_type_full">Copy all</string>-->
+    <!--    <string name="organizer_export_type_notes">Only notes</string>-->
+    <!--    <string name="organizer_export_type_categories">Only categories</string>-->
+
+    <string name="organizer_notification_exporting">Backing up your organizer…</string>
+    <string name="organizer_notification_export_complete">Backup complete!</string>
+    <string name="organizer_notification_export_failed">Backup failed</string>
+    <string name="organizer_notification_importing_notes">Restoring your notes…</string>
+    <string name="organizer_notification_import_complete">Restore completed</string>
+    <string name="organizer_notification_import_failed">Restore failed</string>
+
+    <string-array name="organizer_note_view_types">
+        <item>Text</item>
+        <item>Task list</item>
+        <item>Categories</item>
+    </string-array>
+
+    <string-array name="organizer_attachment_types">
+        <item>@string/organizer_without_attachment</item>
+        <item>@string/organizer_attachment_generic</item>
+        <item>@string/organizer_attachment_photo</item>
+        <item>@string/organizer_attachment_video</item>
+        <item>@string/organizer_attachment_audio</item>
+    </string-array>
+
+    <!-- Notification channels -->
+    <string name="notifications_channel_reminders">Reminders</string>
+    <string name="notifications_channel_backups">Backups</string>
+    <string name="notifications_channel_playback">Media playback</string>
+
+    <string name="notification_media_play_pause">Play / Pause</string>
+    <string name="notification_media_stop">Stop</string>
+
+    <plurals name="more_items">
+        <item quantity="one">+%d item</item>
+        <item quantity="other">+%d items</item>
+    </plurals>
+
+    <plurals name="selected_notes">
+        <item quantity="one">Selected %d note</item>
+        <item quantity="other">Selected %d notes</item>
+    </plurals>
+
+    <!--    Fab-->
+    <string name="speeddial_snackbar_behavior" tools:ignore="UnusedResources">
+        tech.nagual.phoenix.fab.SpeedDialView$SnackbarBehavior
+    </string>
+    <string name="speeddial_scrolling_view_snackbar_behavior" tools:ignore="UnusedResources">
+        tech.nagual.phoenix.fab.SpeedDialView$ScrollingViewSnackbarBehavior
+    </string>
+
+    <string name="camera_location_is_disabled">Location is disabled</string>
+<!--    <string name="settings">settings</string>-->
+    <string name="camera_enable">enable</string>
+
+    <string name="camera_permission_dialog_title">Camera permission required</string>
+    <string name="camera_permission_dialog_message">
+        The app needs permission to access the camera to function. Please provide the required permission via Settings in order to use this app.
+    </string>
+
+    <string name="camera_audio_permission_dialog_title">Audio permission required</string>
+    <string name="camera_audio_permission_dialog_message">The app needs permission to access the microphone to record a video that contains audio. Please provide the required permission via Settings in order to proceed with this configuration. If you do not require your video to contain audio, you could just disable it (and enable it back later in the settings).</string>
+
+    <string name="camera_location_permission_dialog_title">Location permission required</string>
+    <string name="camera_location_permission_dialog_message">
+        The app needs location permission for geo-tagging. Please provide the required permission via Settings in order to use this app.
+    </string>
+
+
+    <string name="camera_camera">CAMERA</string>
+    <string name="camera_video">VIDEO</string>
+    <string name="camera_qr_scan_mode">QR SCAN</string>
+    <string name="camera_portrait_mode">PORTRAIT</string>
+    <string name="camera_hdr_mode">HDR</string>
+    <string name="camera_night_sight_mode">NIGHT SIGHT</string>
+    <string name="camera_face_retouch_mode">FACE RETOUCH</string>
+    <string name="camera_auto_mode">AUTO</string>
+    <string name="camera_aspect_ratio_16_9">16:9</string>
+    <string name="camera_aspect_ratio_4_3">4:3</string>
+    <string name="camera_share_media">Share Media</string>
+    <string name="camera_rec_without_audio">Start recording without audio</string>
+    <string name="camera_qr_scan_toggle">QR Scan toggle</string>
+    <string name="camera_qr_scan">QR Code</string>
+    <string name="camera_data_matrix">Data Matrix</string>
+    <string name="camera_aztec_code">Aztec Code</string>
+    <string name="camera_pdf_417">PDF 417</string>
+    <string name="camera_more_settings">More Settings</string>
+
+    <string name="camera_more_options">More options</string>
+    <string name="camera_general">General</string>
+    <string name="camera_save_image_as_previewed">Save image as previewed</string>
+    <string name="camera_save_as_image_preview_desc">Save output image as visible on preview (fixes inversion)</string>
+    <string name="camera_gyroscope_suggestions">Gyroscope Suggestions</string>
+    <string name="camera_gyroscope_setting_desc">Occasionally get visual suggestions for straight/well-angled images</string>
+
+    <string name="camera_storage">Storage</string>
+    <string name="camera_storage_location">Storage Location</string>
+    <string name="camera_image_file_name_format">Image File Name Format</string>
+    <string name="camera_video_file_name_format">Video File Name Format</string>
+    <string name="camera_revert_back_to_dcim">Revert back to DCIM</string>
+
+    <string name="camera_image_quality">Image Quality</string>
+    <string name="camera_image_quality_desc" formatted="false">Adjust the quality of an image captured by the app from 1% to 100%. This field can be left empty to avoid explicitly setting the image quality.</string>
+    <string name="camera_photo">Photo</string>
+    <string name="camera_increase_quality">Increase Quality</string>
+    <string name="camera_decrease_quality">Decrease Quality</string>
+    <string name="camera_remove_exif_title">Remove EXIF data after capture</string>
+    <string name="camera_remove_exif_subtitle">Note: Geo-tagging/Location option is independent of this setting</string>
+    <string name="camera_degree_format">%d°</string>
+    <string name="camera_percent_symbol">%</string>
+
+    <string name="camera_focus_ring">Focus Ring</string>
+    <string name="camera_flip_camera">Flip Camera</string>
+    <string name="camera_loading_camera">Loading camera</string>
+    <string name="camera_flash_mode">Flash Mode</string>
+    <string name="camera_capture_mode">Capture Mode</string>
+    <string name="camera_start_value_timer">00:00</string>
+    <string name="camera_zoom_in">Zoom In</string>
+    <string name="camera_zoom_out">Zoom Out</string>
+    <string name="camera_scan_result">Scan Result</string>
+    <string name="camera_share_qr_text">Share QR Text</string>
+    <string name="camera_copy_to_clipboard">Copy to Clipboard</string>
+    <string name="camera_retake">Retake</string>
+    <string name="camera_add_photo">Add photo</string>
+    <string name="camera_play_preview">Play Preview</string>
+    <string name="camera_toggle_button">Toggle Button</string>
+    <string name="camera_aspect_ratio">Aspect Ratio</string>
+    <string name="camera_toggle_flash">Toggle Flash</string>
+    <string name="camera_grid_toggle">Grid Toggle</string>
+    <string name="camera_include_audio">Include audio</string>
+    <string name="camera_video_quality">Video quality</string>
+    <string name="camera_sounds">Camera sounds</string>
+    <string name="camera_optimize_for">Optimize for</string>
+    <string name="camera_quality">Quality</string>
+    <string name="camera_latency">Latency</string>
+    <string name="camera_timer">Timer</string>
+    <string name="camera_focus_timeout">Focus timeout</string>
+    <string name="camera_preview">Preview</string>
+    <string name="camera_file_info">File Info</string>
+    <string name="camera_delete_file">Delete file</string>
+    <string name="camera_edit">Edit</string>
+    <string name="camera_self_illumination">Self Illumination</string>
+
+
+    <string name="camera_cancel_timer">Cancel Timer</string>
+
+    <string name="camera_video_capture_label">Record Video</string>
+
+    <string name="camera_focus_timeout_off">Off</string>
+    <string name="camera_focus_timeout_3s">3s</string>
+    <string name="camera_focus_timeout_5s">5s</string>
+    <string name="camera_focus_timeout_8s">8s</string>
+    <string name="camera_focus_timeout_10s">10s</string>
+
+
+
+    <string name="navigation_gps">GPS</string>
+    <string name="gps_title">GPS navigation</string>
+    <string name="gps_dashboard">Dashboard</string>
+    <string name="gps_tracks">Tracks</string>
+    <string name="gps_settings">Settings</string>
+    <string name="gps_tracks_empty">Your tracks will appear here</string>
+    <string name="gps_total_distance">Total distance: %1$s</string>
+    <string name="gps_track_info">Track information</string>
+    <string name="gps_track_rename">Rename track</string>
+    <string name="gps_track_delete">Delete track</string>
+    <string name="gps_snackbar_message_location_offline">Location is turned off. GPS navigation will not work.</string>
+    <string name="gps_snackbar_message_location_permission_denied">GPS navigation does not work because there are no location permissions.</string>
+
+    <string name="gps_pref_header_common">Common</string>
+
+    <string name="gps_profiles_title">GPS Profiles</string>
+    <string name="gps_empty_profile_list">No GPS profiles</string>
+    <string name="gps_profile_create_title">Create profile</string>
+    <string name="gps_profile_edit_title">Edit profile</string>
+    <string name="gps_profile_name_placeholder">New profile</string>
+    <string name="gps_profile_already_exists">GPS profile %1$s already exists</string>
+    <string name="gps_profile_active">active</string>
+    <string name="gps_profile_activate">Activate</string>
+    <string name="gps_main_profile_name">Main</string>
+
+
+    <string name="gps_no_indicators">No indicators</string>
+    <string name="gps_indicator_coordinates">Coordinates</string>
+    <string name="gps_indicator_accuracy">Accuracy</string>
+    <string name="gps_indicator_direction">Direction</string>
+    <string name="gps_indicator_altitude">Altitude</string>
+    <string name="gps_indicator_speed">Speed</string>
+    <string name="gps_indicator_satellites">Satellites</string>
+    <string name="gps_indicator_distance">Distance</string>
+    <string name="gps_indicator_duration">Duration</string>
+    <string name="gps_indicator_waypoints">Number of points</string>
+
+    <string name="gps_settings_screen_name">GPSLogger Settings</string>
+    <string name="gps_letters_numbers">Use only letters and numbers</string>
+
+
+    <!-- main form labels -->
+    <string name="gps_txt_altitude">Altitude:</string>
+    <string name="gps_txt_speed">Speed:</string>
+    <string name="gps_txt_direction">Direction:</string>
+    <string name="gps_txt_satellites">Satellites:</string>
+    <string name="gps_txt_accuracy">Accuracy:</string>
+    <string name="gps_txt_travel_distance">Travelled:</string>
+    <string name="gps_btn_start_logging">Start Logging</string>
+    <string name="gps_btn_stop_logging">Stop Logging</string>
+
+
+    <string name="gps_gpslogger_still_running">GPSLogger is still running.</string>
+
+
+    <string name="gps_sharing_location_only">Location only</string>
+    <string name="gps_sharing_mylocation">My location</string>
+    <string name="gps_sharing_via">Share via</string>
+
+    <!-- general -->
+    <string name="gps_feet">&#160;feet</string>
+    <string name="gps_meters">&#160;meters</string>
+    <string name="gps_error">Error</string>
+
+
+    <string name="gps_seconds">&#160;s</string>
+    <string name="gps_minutes">&#160;min</string>
+    <string name="gps_hours">&#160;hrs</string>
+
+
+    <string name="gps_gpsprovider_unavailable">No GPS provider available. Please check your location settings and enable a  location provider.
+    </string>
+    <string name="gps_meters_per_second">&#160;m/s</string>
+    <string name="gps_miles_per_hour">&#160;mi/h</string>
+    <string name="gps_miles">&#160;mi</string>
+    <string name="gps_kilometers_per_hour">&#160;km/h</string>
+    <string name="gps_kilometers">&#160;km</string>
+
+
+    <string name="gps_time_onesecond">1 second</string>
+    <string name="gps_time_halfminute">&#189; minute</string>
+    <string name="gps_time_oneminute">1 minute</string>
+    <string name="gps_time_onehour">1 hour</string>
+    <string name="gps_time_quarterhour">15 minutes</string>
+    <string name="gps_time_halfhour">&#189; hour</string>
+    <string name="gps_time_oneandhalfhours">1&#189; hours</string>
+    <string name="gps_time_twoandhalfhours">2&#189; hours</string>
+    <string name="gps_time_hms_format" formatted="false">%sh %sm %ss</string>
+    <string name="gps_degree_symbol" translatable="false">&#176;</string>
+
+
+    <!-- Settings activity -->
+    <string name="gps_settings_distance_in_meters">Distance in meters</string>
+    <string name="gps_settings_accuracy_in_meters">Accuracy in meters</string>
+
+
+    <!-- Settings -->
+    <string name="gps_log_gpx_title">Log to GPX</string>
+    <string name="gps_log_gpx_summary">Logs locations to a GPX v1.1 file</string>
+    <string name="gps_log_json_title">Log to GeoJSON</string>
+    <string name="gps_log_json_summary">Logs locations to a GeoJSON file</string>
+    <string name="gps_new_file_creation_onceamonth">Once a month</string>
+    <string name="gps_new_file_creation_onceaday">Once a day</string>
+    <string name="gps_new_file_creation_everystart">Every time I start</string>
+    <string name="gps_new_file_creation_custom">Custom file</string>
+
+
+    <string name="gps_time_before_logging_dialog_title">Time in seconds</string>
+
+    <string name="gps_enabledisablegps_title">Enable/Disable GPS</string>
+    <string name="gps_enabledisablegps_summary">Go to the phone settings to enable or disable the providers.</string>
+
+
+    <string name="gps_txt_travel_duration">Duration:</string>
+
+    <string name="gps_points">points</string>
+    <string name="gps_txt_number_of_points">Number of points</string>
+
+    <string name="gps_pref_filedetails_title">File and Folder Details</string>
+
+    <string name="gps_listeners_gps_title">GPS/GNSS locations</string>
+    <string name="gps_listeners_gps_summary">Use locations provided by the satellite based location receiver on your device.</string>
+    <string name="gps_listeners_cell_title">Network locations</string>
+    <string name="gps_listeners_cell_summary">Use locations provided by the network based location receiver on your device.</string>
+    <string name="gps_listeners_passive_title">Passive locations</string>
+    <string name="gps_listeners_passive_summary">Use locations obtained from other sources (useful for external GPS receivers).</string>
+    <string name="gps_pref_logging_file_no_permissions">That folder is not writable by GPSLogger. Please select another folder to write to.</string>
+    <string name="gps_minimum_interval_title">Location recording interval</string>
+    <plurals name="gps_seconds_plural">
+        <item quantity="one">%d second</item>
+        <item quantity="other">%d seconds</item>
+    </plurals>
+    <string name="gps_minimum_interval_summary">Use 0 for maximum frequency, but slower is better for battery life.</string>
+    <string name="gps_minimum_interval_hint">[0..9999] seconds</string>
+    <string name="gps_minimum_distance_title">Distance filter</string>
+    <string name="gps_minimum_distance_summary">The minimum distance required between current and previous for a point to be saved, otherwise the point will be discarded.</string>
+    <string name="gps_minimum_accuracy_title">Accuracy Filter</string>
+    <string name="gps_minimum_accuracy_summary">The minimum precision required for a point to be saved. Points that aren\'t this accurate will be discarded.</string>
+    <plurals name="gps_meters_plural">
+        <item quantity="one">%d meter</item>
+        <item quantity="other">%d meters</item>
+    </plurals>
+    <string name="gps_settings_enter_meters">[0..9999] meters)</string>
+    <string name="gps_detection_retry_time_title">Duration to match accuracy</string>
+    <string name="gps_detection_retry_time_summary">After acquiring an initial fix, keep trying for this long to get an accurate point to match the accuracy filter setting.</string>
+    <string name="gps_absolute_timeout_title">Absolute time to GPS fix</string>
+    <string name="gps_absolute_timeout_summary">Number of seconds after which the app gives up on trying to acquire a fix, regardless of other settings. This is especially useful for when you are inside buildings to prevent the GPS from draining battery.  Set to 0 for no timeout.</string>
+    <string name="gps_time_hint">[0..9999] seconds</string>
+
+    <string name="gps_altitude_subtractgeoidheight_summary">Uses Mean Sea Level (MSL) instead of WGS84 height by subtracting geoidheight from GPS altitude. Only applies to GPS satellite points, not network or NMEA.</string>
+    <string name="gps_altitude_subtractgeoidheight_title">Use MSL instead of WGS84</string>
+    <string name="gps_altitude_subtractoffset_title">Subtract altitude offset</string>
+    <string name="gps_altitude_subtractoffset_summary">A value in meters to subtract from GPS altitudes. Use a negative number to add a value to the altitude. Only applies to GPS satellite points, not network or NMEA.</string>
+    <string name="gps_profile_default">Default Profile</string>
+    <string name="gpslogger_permissions_rationale_title">Permissions required</string>
+    <string name="gpslogger_permissions_rationale_message_basic"><![CDATA[This app requires various permissions in order to function properly. You will now be prompted multiple times for various permissions (sorry).  Here is an explanation of each permission. ]]></string>
+    <string name="gpslogger_permissions_rationale_message_location"><![CDATA[<b>Device location</b> - This permission allows reading location data from cell towers and the device GPS hardware.]]></string>
+    <string name="gpslogger_permissions_rationale_message_storage"><![CDATA[<b>Photos, media, files</b> - This permission allows writing log files and test files to storage, and reading from a list of files for uploading or sharing. This app will not access your photos or media.]]></string>
+    <string name="gpslogger_permissions_rationale_message_location_background"><![CDATA[<b>Allow all the time</b> - Allow this app to receive location updates when running in the background. ]]></string>
+    <string name="gpslogger_permissions_rationale_message_battery_optimization"><![CDATA[<b>Ignore battery optimization</b> - Allow this app to run in the background by reducing battery optimization. ]]></string>
+    <string name="gpslogger_permissions_permanently_denied"><![CDATA[You have denied one or more permissions that GPS navigation requires. You will need to relaunch, or go to the system settings screen to grant these permissions.<br/><br/>If you have permanently denied permissions you can reset them in the system settings.]]></string>
+    <string name="gpslogger_permissions_background_location">For GPS navigation to work in the background, you must provide additional permission. On the next screen please select: \"%1$s\"</string>
+
+    <string name="trackbook_tab_map">Map</string>
+    <string name="trackbook_tab_tracks">Tracks</string>
+    <string name="trackbook_tab_settings">Settings</string>
+    <!-- Notification -->
+    <string name="gps_notification_title_running">GPS is running</string>
+    <string name="gps_notification_title_not_running">GPS is not running</string>
+    <string name="trackbook_notification_stop">Stop</string>
+    <string name="trackbook_notification_resume">Resume</string>
+    <string name="trackbook_notification_show">Show</string>
+    <string name="trackbook_notification_channel_recording_name">Movement Recording State</string>
+    <string name="trackbook_notification_channel_recording_description">Display duration and distance. Option to stop movement recording.</string>
+
+    <!-- FAB Sub Menu -->
+    <string name="gps_speed_dial_clear">Clear</string>
+    <string name="gps_speed_dial_save">Save</string>
+    <string name="gps_speed_dial_resume">Resume</string>
+    <!-- Dialogs -->
+    <string name="trackbook_dialog_generic_button_cancel">Cancel</string>
+    <string name="trackbook_dialog_generic_button_okay">OK</string>
+    <string name="trackbook_dialog_generic_details_button">Show details</string>
+    <string name="gps_dialog_error_empty_recording_title">Unable to save</string>
+    <string name="gps_dialog_error_empty_recording_message">There are no recorded waypoints.</string>
+    <string name="gps_dialog_error_empty_recording_action_resume">Resume Recording</string>
+    <string name="trackbook_dialog_rename_track_button">Rename</string>
+    <string name="trackbook_dialog_rename_track_input_hint">Enter a new name</string>
+    <string name="trackbook_dialog_share_gpx">Share GPX file with</string>
+    <string name="trackbook_dialog_yes_no_positive_button_default">Yes</string>
+    <string name="trackbook_dialog_yes_no_positive_button_delete_recording">Delete</string>
+    <string name="trackbook_dialog_yes_no_positive_button_delete_non_starred">Delete</string>
+    <string name="trackbook_dialog_yes_no_message_delete_non_starred">Delete all non-starred recordings? This action cannot be undone.</string>
+    <string name="trackbook_dialog_yes_no_message_delete_recording">Delete this recording?</string>
+    <!-- Toast Messages -->
+    <string name="trackbook_toast_message_copied_to_clipboard">Copied to clipboard.</string>
+    <string name="trackbook_toast_message_elevation_info">Hint: The accuracy of elevation data depends on your device. The uphill and downhill elevation of the whole route is measured.</string>
+    <string name="trackbook_toast_message_install_file_helper">Unable to save. Please install a file manager first.</string>
+    <string name="trackbook_toast_message_poi_added">Point of interest marker added.</string>
+    <string name="trackbook_toast_message_poi_removed">Point of interest marker removed.</string>
+    <string name="trackbook_toast_message_save_gpx">Saving recording as GPX.</string>
+    <!-- Map Markers -->
+    <string name="trackbook_marker_description_time">Time</string>
+    <string name="trackbook_marker_description_accuracy">Accuracy</string>
+    <!-- Statistics Sheet -->
+    <string name="trackbook_statistics_sheet_p_distance">Total distance:</string>
+    <string name="trackbook_statistics_sheet_p_steps">Steps taken:</string>
+    <string name="trackbook_statistics_sheet_p_steps_no_pedometer">pedometer not available</string>
+    <string name="trackbook_statistics_sheet_p_waypoints">Recorded waypoints:</string>
+    <string name="trackbook_statistics_sheet_p_duration">Total duration:</string>
+    <string name="trackbook_statistics_sheet_p_recording_paused">Recording paused:</string>
+    <string name="trackbook_statistics_sheet_p_recording_start">Recording started:</string>
+    <string name="trackbook_statistics_sheet_p_recording_stop">Recording stopped:</string>
+    <string name="trackbook_statistics_sheet_p_max_altitude">Highest waypoint:</string>
+    <string name="trackbook_statistics_sheet_p_min_altitude">Lowest waypoint:</string>
+    <string name="trackbook_statistics_sheet_p_positive_elevation">Elevation (uphill):</string>
+    <string name="trackbook_statistics_sheet_p_negative_elevation">Elevation (downhill):</string>
+    <string name="trackbook_statistics_sheet_p_velocity">Average velocity:</string>
+    <!-- Recording Quick Settings Tile -->
+    <string name="trackbook_quick_settings_tile_title_default">Recording</string>
+    <string name="trackbook_quick_settings_tile_title_start">Start Recording</string>
+    <string name="trackbook_quick_settings_tile_title_stop">Stop Recording</string>
+    <!-- Onboarding Layout -->
+    <string name="trackbook_layout_onboarding_description_app_icon">Trackbook App Icon</string>
+    <!-- Track Tab Onboarding -->
+    <string name="trackbook_track_list_onboarding_h1_part_1">Your recorded tracks</string>
+    <string name="trackbook_track_list_onboarding_h1_part_2">… will show up here.</string>
+    <!-- Settings -->
+    <string name="trackbook_pref_accuracy_threshold_summary">Discard location fixes with an accuracy larger than (meters):</string>
+    <string name="trackbook_pref_accuracy_threshold_title">Accuracy Threshold</string>
+    <string name="trackbook_pref_altitude_smoothing_value_summary" translatable="false">Number of waypoints used to smooth the elevation curve.</string>
+    <string name="trackbook_pref_altitude_smoothing_value_title" translatable="false">Altitude Smoothing</string>
+    <string name="trackbook_pref_advanced_title">Advanced</string>
+    <string name="trackbook_pref_delete_non_starred_summary">Delete all recordings in \"Tracks\" that are not starred.</string>
+    <string name="trackbook_pref_delete_non_starred_title">Delete Non-Starred Recordings</string>
+    <string name="trackbook_pref_general_title">General</string>
+    <string name="trackbook_pref_maintenance_title">Maintenance</string>
+    <string name="trackbook_pref_gps_only_title">Restrict to GPS</string>
+    <string name="trackbook_pref_gps_only_summary_gps_and_network">Currently using GPS and Network for localization.</string>
+    <string name="trackbook_pref_gps_only_summary_gps_only">Currently using only GPS for localization.</string>
+    <string name="trackbook_pref_recording_accuracy_summary_high">Waypoints have higher accuracy but are less frequent.</string>
+    <string name="trackbook_pref_recording_accuracy_summary_default">Waypoints have lower accuracy but are more frequent.</string>
+    <string name="trackbook_pref_recording_accuracy_title">Recording Accuracy</string>
+    <string name="trackbook_pref_report_issue_summary">Report bugs and suggest improvements on GitHub.</string>
+    <string name="trackbook_pref_reset_advanced_summary">Reset advanced settings to defaults.</string>
+    <string name="trackbook_pref_reset_advanced_title">Reset</string>
+    <string name="trackbook_pref_theme_selection_mode_dark">Dark mode</string>
+    <string name="trackbook_pref_theme_selection_mode_device_default">Same as device</string>
+    <string name="trackbook_pref_theme_selection_mode_light">Light mode</string>
+    <string name="trackbook_pref_theme_selection_summary">Current theme:</string>
+    <string name="trackbook_pref_theme_selection_title">App Theme</string>
+    <!-- Abbreviations -->
+    <string name="trackbook_abbreviation_hours">hrs</string>
+    <string name="trackbook_abbreviation_minutes">min</string>
+    <string name="trackbook_abbreviation_seconds">sec</string>
+    <!-- Descriptions -->
+    <string name="gps_descr_map_current_track">Mapping of current track</string>
+    <string name="trackbook_descr_map_last_track">Mapping of last track</string>
+    <string name="trackbook_descr_fab_main_start">Start recording button</string>
+    <string name="trackbook_descr_fab_sub_menu_button_save">Save button</string>
+    <string name="trackbook_descr_fab_sub_menu_button_clear">Clear button</string>
+    <string name="trackbook_descr_fab_sub_menu_button_resume">Resume button</string>
+    <string name="trackbook_descr_mark_starred_button">Mark as starred button</string>
+    <string name="trackbook_descr_quick_settings_tile_title_start">Start Recording</string>
+    <string name="trackbook_descr_quick_settings_tile_title_stop">Stop Recording</string>
+    <string name="trackbook_descr_statistics_sheet_delete_button">Track delete button</string>
+    <string name="trackbook_descr_statistics_sheet_edit_button">Track edit button</string>
+    <string name="trackbook_descr_statistics_sheet_save_button">Save as GPX button</string>
+    <!-- Sample Text -->
+    <string name="trackbook_sample_text_track_data" translatable="false">23.0 km • 5 hrs 23 min 42 sec</string>
+    <string name="trackbook_sample_text_track_name" translatable="false">July 20, 1969</string>
+    <string name="trackbook_sample_text_default_data" translatable="false">track data missing</string>
+    <string name="trackbook_sample_text_default_total_distance" translatable="false">6357.23 km</string>
+
+
+    <string name="pdfviewer_action_previous">Previous page</string>
+    <string name="pdfviewer_action_next">Next page</string>
+    <string name="pdfviewer_action_open">Open document</string>
+    <string name="pdfviewer_action_first">First page</string>
+    <string name="pdfviewer_action_last">Last page</string>
+    <string name="pdfviewer_action_zoom_out">Zoom out</string>
+    <string name="pdfviewer_action_zoom_in">Zoom in</string>
+    <string name="pdfviewer_action_rotate_clockwise">Rotate clockwise</string>
+    <string name="pdfviewer_action_rotate_counterclockwise">Rotate counterclockwise</string>
+    <string name="pdfviewer_action_jump_to_page">Jump to page</string>
+    <string name="pdfviewer_action_view_document_properties">Properties</string>
+
+    <string name="pdfviewer_document_properties_invalid_date">Invalid date</string>
+    <string name="pdfviewer_document_properties_retrieval_failed">Failed to obtain document metadata</string>
+
+    <string name="pdfviewer_invalid_mime_type">Cannot open file with invalid MIME type</string>
+    <string name="pdfviewer_legacy_file_uri">Cannot open legacy file paths from insecure apps</string>
+    <string name="pdfviewer_io_error">Received I/O error trying to open content</string>
+
+
+
+    <string name="browser_title">Browser</string>
+    <string name="browser_storage_channel_name">Downloads</string>
+    <string name="browser_storage_channel_description">Notifications for active and finished downloads</string>
+    <string name="browser_share">Share</string>
+    <string name="browser_no_activity_found_to_handle_uri">No application found which support this kind of file.</string>
+    <string name="browser_download_failed">Download failed for \"%1$s\"</string>
+    <string name="browser_download_complete">Download complete for \"%1$s\"</string>
+    <string name="browser_search">Search</string>
+    <string name="browser_file_has_no_write_permission">No \"Write Permission\" on the location</string>
+    <string name="browser_download_title">Download Data</string>
+    <string name="browser_bookmarks">Bookmarks</string>
+    <string name="browser_bookmark">Alter Bookmark</string>
+    <string name="browser_bookmark_added">Bookmark \"%1$s\" added</string>
+    <string name="browser_bookmark_removed">Bookmark \"%1$s\" removed</string>
+    <string name="browser_share_link">Share Link</string>
+    <string name="browser_find_page">Find in page</string>
+    <string name="browser_history">History</string>
+
+    <string name="browser_clear_browser_data">Clear cache, cookies, history, passwords, etc…</string>
+    <string name="browser_password">Password</string>
+    <string name="browser_user_name">Username</string>
+    <string name="browser_authentication">Authentication</string>
+    <string name="browser_downloads">Downloads</string>
+    <string name="browser_enter_url">Scan-URL or search input</string>
+    <string name="browser_action_cleanup">Delete browser data</string>
+    <string name="browser_next_page">Next page</string>
+    <string name="browser_reload_page">Reload Page</string>
+    <string name="browser_download">Download</string>
+    <string name="browser_more_options">More options</string>
+
+    <string name="browser_enable_javascript">Enable Javascript</string>
+    <string name="browser_redirect_url_support">Redirect URL Support</string>
+    <string name="browser_settings">Settings</string>
+    <string name="browser_redirect_index_support">Redirect Index HTML</string>
+    <string name="browser_javascript_text">When javascript is disabled, many websites might not work properly.</string>
+    <string name="browser_redirect_url_support_text">When this option is enabled, URLs which references IPFS or IPNS content, will be automatically redirected to the local IPFS node. Currently only URLs of the form https://xxx/ipfs/… or https://xxx/ipns/… will be redirected.</string>
+    <string name="browser_redirect_index_support_text">If this option is enabled, the local node tries to find an HTML index file for a given ipfs or ipns URL if it is not specified.</string>
+    <string name="browser_information">Information</string>
+    <string name="browser_url_access">The QR-Code contains the URL of the current website</string>
+    <string name="browser_scan_url">Scan URL QR-Code</string>
+    <string name="browser_permission_camera_denied">Permission camera</string>
+    <string name="browser_feature_camera_required">Feature camera required</string>
+    <string name="browser_codec_not_supported">Not supported QR-Code</string>
+    <string name="browser_home">Home</string>
+    <string name="browser_previous_search">Previous</string>
+    <string name="browser_next_search">Next</string>
+    <string name="browser_handle_file">Browser can not handle \"%1$s\"</string>
+
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="default_">Default</string>
+
+    <string name="activity_not_found">No application found to handle this action</string>
+    <string name="bottom_sheet_untitled">Untitled</string>
+
+    <string name="pref_advanced_block">Advanced</string>
+    <string name="path_ic_expand">M7.41,8.59 12,13.17 16.59,8.59 18,10 12,16 6,10z</string>
+    <string name="path_ic_collapse">M6,14 12,8 18,14 16.59,15.41 12,10.83 7.41,15.41z</string>
+
+    <string name="dialogs_invalid_email_address">Invalid email address</string>
+    <string name="dialogs_email_address">Email address</string>
+    <string name="dialogs_hex" translatable="false">HEX:</string>
+    <string name="dialogs_transparency">Transparency</string>
+    <string name="dialogs_required">Required</string>
+    <string name="dialogs_password">Password</string>
+    <string name="dialogs_input_not_a_given_option">Input not a given option</string>
+    <string name="dialogs_name">Name</string>
+    <string name="dialogs_phone_number">Phone number</string>
+    <string name="dialogs_login">Login</string>
+    <string name="dialogs_user">User</string>
+    <string name="dialogs_strong_pw_requirements">Must contain a number, a lower- and uppercase letter and a special character</string>
+    <string name="dialogs_letters_only_error">May only contain letters (A-Z)</string>
+    <string name="dialogs_alphanumeric_only_error">May only contain alphanumerical chars</string>
+    <string name="dialogs_rrggbb" translatable="false">RRGGBB</string>
+    <string name="dialogs_pin">Pin code</string>
+    <string name="dialogs_wrong_pin">Wrong pin</string>
+    <string name="dialogs_date">Date</string>
+    <string name="dialogs_time">Time</string>
+    <string name="dialogs_clear">Clear</string>
+
+    <plurals name="dialogs_at_least_x_chars">
+        <item quantity="one">Min 1 char</item>
+        <item quantity="other">Min %1$d chars</item>
+    </plurals>
+
+
+    <string name="notification_channel_background_activity_start_name">Actions while background</string>
+    <string name="notification_channel_background_activity_start_description">Take actions while app is in the background</string>
+
+
+    <string name="an_error_occurred">An error occurred: %s</string>
+
+    <string name="enter_pin">Enter PIN</string>
+    <string name="please_enter_pin">Please enter a PIN</string>
+    <string name="wrong_pin">Wrong PIN</string>
+    <string name="repeat_pin">Repeat PIN</string>
+    <string name="biometrics">Biometrics</string>
+    <string name="fingerprint">Fingerprint</string>
+    <string name="pincode">PIN</string>
+    <string name="pattern">Pattern</string>
+    <string name="open_biometric_dialog">Open biometric ID verification dialog</string>
+    <string name="add_fingerprint">Add fingerprint</string>
+    <string name="place_finger">Please place your finger on the fingerprint sensor</string>
+    <string name="go_to_settings">Go to Settings</string>
+    <string name="no_fingerprints_registered">You have no fingerprints registered, please add some in the Settings of your device</string>
+    <string name="authentication_failed">Authentication failed</string>
+    <string name="authentication_blocked">Authentication blocked, please try again in a moment</string>
+    <string name="authenticate">Authenticate</string>
+    <string name="insert_pattern">Insert pattern</string>
+    <string name="wrong_pattern">Wrong pattern</string>
+    <string name="repeat_pattern">Repeat pattern</string>
+
+    <string name="no_reminder">No reminder</string>
+    <string name="at_start">At start</string>
+    <string name="during_day_at_hh_mm">During the day at hh:mm</string>
+    <string name="during_day_at">During the day at %02d:%02d</string>
+
+    <string name="pref_date_format">Date format</string>
+    <string name="pref_password_protect_whole_app">Password protect the whole application</string>
+    <string name="pref_password_protect_settings">Password protection for settings</string>
+
+
+<!--    Thirdparty-->
+
+    <string name="nothing">Nothing</string>
+    <string name="later">Later</string>
+    <string name="save_as">Save as</string>
+    <string name="file_saved">File saved successfully</string>
+    <string name="invalid_file_format">Invalid file format</string>
+    <string name="out_of_memory_error">Out of memory error</string>
+    <string name="open_with">Open with</string>
+    <string name="edit_with">Edit with</string>
+    <string name="no_app_found">No valid app found</string>
+    <string name="set_as">Set as</string>
+    <string name="copy_to_clipboard">Copy to clipboard</string>
+    <string name="copy_number_to_clipboard">Copy number to clipboard</string>
+    <string name="value_copied_to_clipboard">Value copied to clipboard</string>
+    <string name="value_copied_to_clipboard_show">Value copied to clipboard:\n%s</string>
+    <string name="dial_number">Dial number</string>
+    <string name="always">Always</string>
+    <string name="never">Never</string>
+    <string name="notes">Notes</string>
+    <string name="deleting_folder">Deleting folder \'%s\'</string>
+    <string name="label">Label</string>
+    <string name="transparent">Transparent</string>
+    <string name="transparent_color">Transparent color</string>
+    <string name="select_a_different_color">Select a different color</string>
+    <string name="download">Download</string>
+    <string name="notification">Notification</string>
+    <string name="notifications">Notifications</string>
+    <string name="email">Email</string>
+    <string name="previous">Previous</string>
+    <string name="playpause">Play / Pause</string>
+    <string name="next">Next</string>
+    <string name="number">Number</string>
+    <string name="no_contacts_found">No contacts found</string>
+    <string name="request_the_required_permissions">Request the required permissions</string>
+    <string name="no_access_to_contacts">The app could not access your contacts</string>
+    <string name="insert_text_here">Insert text here</string>
+    <string name="call_person">Call %s</string>
+    <string name="zero">Zero</string>
+    <string name="one">One</string>
+    <string name="two">Two</string>
+    <string name="three">Three</string>
+    <string name="four">Four</string>
+    <string name="five">Five</string>
+    <string name="six">Six</string>
+    <string name="seven">Seven</string>
+    <string name="eight">Eight</string>
+    <string name="nine">Nine</string>
+    <string name="value_cannot_be_empty">Value cannot be empty</string>
+
+    <!-- View types -->
+    <string name="change_view_type">Change view type</string>
+    <string name="grid">Grid</string>
+    <string name="list">List</string>
+    <string name="increase_column_count">Increase column count</string>
+    <string name="reduce_column_count">Reduce column count</string>
+    <string name="change_cover_image">Change cover image</string>
+    <string name="select_photo">Select photo</string>
+
+    <string name="more_info">More info</string>
+
+    <!-- Favorites -->
+    <string name="favorites">Favorites</string>
+    <string name="add_favorites">Add favorites</string>
+    <string name="add_to_favorites">Add to favorites</string>
+    <string name="remove_from_favorites">Remove from favorites</string>
+
+    <!-- Search -->
+    <string name="type_2_characters">Type in at least 2 characters to start the search.</string>
+
+    <!-- Filters -->
+    <string name="filter">Filter</string>
+    <string name="no_items_found">No items found.</string>
+    <string name="change_filter">Change filter</string>
+
+    <!-- Permissions -->
+    <string name="no_storage_permissions">Storage permission is required</string>
+    <string name="no_contacts_permission">Contacts permission is required</string>
+    <string name="no_camera_permissions">Camera permission is required</string>
+    <string name="no_audio_permissions">Audio permission is required</string>
+
+    <!-- Renaming -->
+    <string name="rename_file">Rename file</string>
+    <string name="rename_folder">Rename folder</string>
+    <string name="rename_file_error">Could not rename the file</string>
+    <string name="rename_folder_error">Could not rename the folder</string>
+    <string name="rename_folder_empty">Folder name must not be empty</string>
+    <string name="rename_folder_exists">A folder with that name already exists</string>
+    <string name="rename_folder_root">Cannot rename the root folder of a storage</string>
+    <string name="rename_folder_ok">Folder renamed successfully</string>
+    <string name="renaming_folder">Renaming folder</string>
+    <string name="filename_cannot_be_empty">Filename cannot be empty</string>
+    <string name="filename_invalid_characters">Filename contains invalid characters</string>
+    <string name="filename_invalid_characters_placeholder">Filename \'%s\' contains invalid characters</string>
+    <string name="extension_cannot_be_empty">Extension cannot be empty</string>
+    <string name="source_file_doesnt_exist">Source file %s doesn\'t exist</string>
+    <string name="prepend_filenames">Prepend filenames</string>
+    <string name="append_filenames">Append filenames</string>
+    <string name="simple_renaming">Simple renaming</string>
+    <string name="pattern_renaming">Pattern</string>
+    <string name="string_to_add">String to add</string>
+    <string name="rename_date_time_pattern">%Y - year\n%M - month\n%D - day\n%h - hour\n%m - minute\n%s - second\n%i - number increasing from 1</string>
+    <string name="filename_without_txt">Filename (without .txt)</string>
+    <string name="filename_without_json">Filename (without .json)</string>
+
+    <!-- Copy / Move -->
+    <string name="move">Move</string>
+    <string name="copy_move">Copy / Move</string>
+    <string name="copy_to">Copy to</string>
+    <string name="move_to">Move to</string>
+    <string name="source">Source</string>
+    <string name="destination">Destination</string>
+    <string name="select_destination">Select destination</string>
+    <string name="click_select_destination">Click here to select destination</string>
+    <string name="invalid_destination">Could not write to the selected destination</string>
+    <string name="please_select_destination">Please select a destination</string>
+    <string name="source_and_destination_same">Source and destination cannot be the same</string>
+    <string name="copy_failed">Could not copy the files</string>
+    <string name="copying">Copying…</string>
+    <string name="copying_success">Files copied successfully</string>
+    <string name="copying_success_one">File copied successfully</string>
+    <string name="copy_move_failed">An error occurred</string>
+    <string name="moving">Moving…</string>
+    <string name="moving_success">Files moved successfully</string>
+    <string name="moving_success_one">File moved successfully</string>
+    <string name="moving_success_partial">Some files could not be moved</string>
+    <string name="copying_success_partial">Some files could not be copied</string>
+    <string name="no_files_selected">No files selected</string>
+    <string name="saving">Saving…</string>
+    <string name="could_not_create_folder">Could not create folder %s</string>
+    <string name="could_not_create_file">Could not create file %s</string>
+    <string name="no_new_items">No new items have been found</string>
+    <string name="no_space">The destination does not have enough space available.\nRequired %1$s, available %2$s</string>
+
+    <!-- Create new -->
+    <string name="create_new">Create new</string>
+    <string name="folder">Folder</string>
+    <string name="file">File</string>
+    <string name="name_taken">A file or folder with that name already exists</string>
+    <string name="invalid_name">The name contains invalid characters</string>
+    <string name="empty_name">Please enter a name</string>
+    <string name="unknown_error_occurred">An unknown error occurred</string>
+
+    <!-- File operation conflicts -->
+    <string name="file_already_exists">File \"%s\" already exists</string>
+    <string name="file_already_exists_overwrite">File \"%s\" already exists. Overwrite?</string>
+    <string name="folder_already_exists">Folder \"%s\" already exists</string>
+    <string name="keep_both">Keep both</string>
+    <string name="overwrite">Overwrite</string>
+    <string name="append">Append with \'_1\'</string>
+    <string name="apply_to_all">Apply to all</string>
+
+    <!-- File picker -->
+    <string name="select_folder">Select a folder</string>
+    <string name="select_file">Select a file</string>
+    <string name="confirm_storage_access_title">Confirm external storage access</string>
+    <string name="confirm_folder_access_title">Confirm folder access</string>
+    <string name="confirm_storage_access_text">Please choose the top folder of the SD card on the next screen, to grant write access</string>
+    <string name="confirm_storage_access_text_sd">If you don\'t see the SD card, try this</string>
+    <string name="confirm_storage_access_android_text">Please allow the app accessing the selected storage on the next screen by pressing \'Use this folder\' at the bottom.</string>
+    <string name="confirm_storage_access_android_text_specific">Please allow accessing \'&lt;b&gt;%s&lt;/b&gt;\' on the next screen by pressing \'&lt;b&gt;Use this folder&lt;/b&gt;\' at the bottom.</string>
+    <string name="confirm_create_doc_for_new_folder_text">Please press \'&lt;b&gt;Save&lt;/b&gt;\' at the bottom of the next screen to create the new folder.</string>
+    <string name="confirm_selection">Confirm selection</string>
+
+    <plurals name="items">
+        <item quantity="one">%d item</item>
+        <item quantity="other">%d items</item>
+    </plurals>
+
+    <!-- Are you sure you want to delete 5 items? -->
+    <plurals name="delete_items">
+        <item quantity="one">%d item</item>
+        <item quantity="other">%d items</item>
+    </plurals>
+
+    <plurals name="deleting_items">
+        <item quantity="one">Deleting %d item</item>
+        <item quantity="other">Deleting %d items</item>
+    </plurals>
+
+    <!-- Storages -->
+    <string name="select_storage">Select storage</string>
+    <string name="internal">Internal</string>
+    <string name="sd_card">SD Card</string>
+    <string name="root">Root</string>
+    <string name="wrong_root_selected">Wrong folder selected, please select the main folder of your SD card</string>
+    <string name="sd_card_usb_same">SD card and USB device paths cannot be the same</string>
+    <string name="app_on_sd_card">You seem to have the app installed on an SD card, that makes the app widgets unavailable. You won\'t even see them on the list of available widgets.
+        It is a system limitation, so if you want to use the widgets, you have to move the app back on the internal storage.</string>
+    <string name="wrong_folder_selected">Wrong folder selected, please select path \'%s\'</string>
+
+    <!-- File properties -->
+    <string name="properties">Properties</string>
+    <string name="path">Path</string>
+    <string name="items_selected">Items selected</string>
+    <string name="direct_children_count">Direct children count</string>
+    <string name="files_count">Total files count</string>
+    <string name="resolution">Resolution</string>
+    <string name="duration">Duration</string>
+    <string name="artist">Artist</string>
+    <string name="album">Album</string>
+    <string name="focal_length">Focal length</string>
+    <string name="exposure_time">Exposure time</string>
+    <string name="iso_speed">ISO speed</string>
+    <string name="f_number">F-number</string>
+    <string name="camera">Camera</string>
+    <string name="exif">EXIF</string>
+    <string name="song_title">Song title</string>
+    <string name="gps_coordinates">GPS coordinates</string>
+    <string name="altitude">Altitude</string>
+
+    <!-- Color customization -->
+    <string name="accent_color_white">Accent color of white theme</string>
+    <string name="accent_color_black_and_white">Accent color of Black &amp; White theme</string>
+    <string name="foreground_color">Foreground color</string>
+    <string name="bottom_navigation_bar_color">Bottom navigation bar color</string>
+    <string name="restore_defaults">Restore defaults</string>
+    <string name="use_default">Use default</string>
+    <string name="default_color">Default</string>
+    <string name="change_color">Change color</string>
+    <string name="theme">Theme</string>
+    <string name="changing_color_description">Changing a color will make it switch to Custom theme</string>
+    <string name="undo_changes">Undo changes</string>
+    <string name="undo_changes_confirmation">Are you sure you want to undo your changes?</string>
+    <string name="save_before_closing">You have unsaved changes. Save before exit?</string>
+    <string name="share_colors_success">Colors updated successfully. A new Theme called \'Shared\' has been added, please use that for updating all app colors in the future.</string>
+    <string name="shared_theme_note">Note that even though you are using the Pro app version, you still need Simple Thank You for technical reasons. It takes care of the color synchronization.</string>
+
+    <!-- Themes -->
+    <string name="light_theme">Light</string>
+    <string name="dark_theme">Dark</string>
+    <string name="auto_theme">Auto</string>
+    <string name="custom">Custom</string>
+
+    <!-- Actionbar items -->
+    <string name="share_via">Share via</string>
+    <string name="select_text">Select text</string>
+    <string name="unhide">Unhide</string>
+    <string name="hide_folder">Hide folder</string>
+    <string name="unhide_folder">Unhide folder</string>
+    <string name="maximum_share_reached">You cannot share this much content at once</string>
+    <string name="empty_and_disable_recycle_bin">Empty and disable the Recycle Bin</string>
+    <string name="undo">Undo</string>
+    <string name="redo">Redo</string>
+    <string name="print">Print</string>
+    <string name="add_number_to_contact">Add number to contact</string>
+    <string name="view_contact_details">View contact details</string>
+    <string name="call_from_sim_1">Call from SIM 1</string>
+    <string name="call_from_sim_2">Call from SIM 2</string>
+    <string name="toggle_filename">Toggle filename visibility</string>
+    <string name="move_to_top">Move to the top</string>
+    <string name="move_to_bottom">Move to the bottom</string>
+    <string name="pin_item">Pin item</string>
+    <string name="unpin_item">Unpin item</string>
+
+    <!-- Sorting -->
+    <string name="sort_by">Sort by</string>
+    <string name="name">Name</string>
+    <string name="size">Size</string>
+    <string name="last_modified">Last modified</string>
+    <string name="date_created">Date created</string>
+    <string name="date_taken">Date taken</string>
+    <string name="title">Title</string>
+    <string name="filename">Filename</string>
+    <string name="extension">Extension</string>
+    <string name="random">Random</string>
+    <string name="sort_randomly">Sort randomly</string>
+    <string name="ascending">Ascending</string>
+    <string name="descending">Descending</string>
+    <string name="use_for_this_folder">Use for this folder only</string>
+    <string name="sort_numeric_parts">Sort numeric parts by actual value</string>
+    <string name="first_name">First name</string>
+    <string name="middle_name">Middle name</string>
+    <string name="surname">Surname</string>
+    <string name="full_name">Full name</string>
+    <string name="use_custom_sorting">Use custom sorting</string>
+    <string name="change_order">Change order</string>
+
+    <!-- Confirmation dialog -->
+    <string name="proceed_with_deletion">Are you sure you want to proceed with the deletion?</string>
+    <string name="deletion_confirmation">Are you sure you want to delete %s?</string>    <!-- Are you sure you want to delete 5 items? -->
+    <string name="move_to_recycle_bin_confirmation">Are you sure you want to move %s into the Recycle Bin?</string>    <!-- Are you sure you want to move 3 items into the Recycle Bin? -->
+    <string name="are_you_sure_delete">Are you sure you want to delete this item?</string>
+    <string name="are_you_sure_recycle_bin">Are you sure you want to move this item into the Recycle Bin?</string>
+    <string name="do_not_ask_again">Do not ask again in this session</string>
+    <string name="do_not_show_again">Do not show again</string>
+    <string name="maybe">Maybe</string>
+
+    <plurals name="delete_warning">
+        <item quantity="one">WARNING: You are deleting %d folder</item>
+        <item quantity="other">WARNING: You are deleting %d folders</item>
+    </plurals>
+
+    <!-- Password protection -->
+
+    <string name="protection_setup_successfully">Password setup successfully. Please reinstall the app in case you forget it.</string>
+    <string name="fingerprint_setup_successfully">Protection setup successfully. Please reinstall the app in case of problems with reseting it.</string>
+    <string name="lock_folder">Lock folder</string>
+    <string name="unlock_folder">Unlock folder</string>
+    <string name="lock_folder_notice">This protection works in this app only, it is not supposed to replace a real systemwide folder encryption.</string>
+
+    <!-- Times -->
+    <string name="yesterday">Yesterday</string>
+    <string name="today">Today</string>
+    <string name="tomorrow">Tomorrow</string>
+    <string name="hide_year">Hide year</string>
+    <string name="seconds_raw">seconds</string>
+    <string name="minutes_raw">minutes</string>
+    <string name="hours_raw">hours</string>
+    <string name="days_raw">days</string>
+    <string name="seconds_letter">s</string>
+    <string name="minutes_letter">m</string>
+    <string name="hours_letter">h</string>
+
+    <plurals name="seconds">
+        <item quantity="one">%d second</item>
+        <item quantity="other">%d seconds</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="one">%d minute</item>
+        <item quantity="other">%d minutes</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="one">%d hour</item>
+        <item quantity="other">%d hours</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="one">%d day</item>
+        <item quantity="other">%d days</item>
+    </plurals>
+    <plurals name="weeks">
+        <item quantity="one">%d week</item>
+        <item quantity="other">%d weeks</item>
+    </plurals>
+    <plurals name="months">
+        <item quantity="one">%d month</item>
+        <item quantity="other">%d months</item>
+    </plurals>
+    <plurals name="years">
+        <item quantity="one">%d year</item>
+        <item quantity="other">%d years</item>
+    </plurals>
+
+    <!-- For example: I will be there in 5 minutes -->
+    <plurals name="in_seconds">
+        <item quantity="one">%d second</item>
+        <item quantity="other">%d seconds</item>
+    </plurals>
+    <plurals name="in_minutes">
+        <item quantity="one">%d minute</item>
+        <item quantity="other">%d minutes</item>
+    </plurals>
+    <plurals name="in_hours">
+        <item quantity="one">%d hour</item>
+        <item quantity="other">%d hours</item>
+    </plurals>
+    <plurals name="in_days">
+        <item quantity="one">%d day</item>
+        <item quantity="other">%d days</item>
+    </plurals>
+    <plurals name="in_weeks">
+        <item quantity="one">%d week</item>
+        <item quantity="other">%d weeks</item>
+    </plurals>
+    <plurals name="in_months">
+        <item quantity="one">%d month</item>
+        <item quantity="other">%d months</item>
+    </plurals>
+    <plurals name="in_years">
+        <item quantity="one">%d year</item>
+        <item quantity="other">%d years</item>
+    </plurals>
+
+    <!-- For example: Event reminder: 3 minutes before -->
+    <plurals name="seconds_before">
+        <item quantity="one">%d second before</item>
+        <item quantity="other">%d seconds before</item>
+    </plurals>
+    <plurals name="minutes_before">
+        <item quantity="one">%d minute before</item>
+        <item quantity="other">%d minutes before</item>
+    </plurals>
+    <plurals name="hours_before">
+        <item quantity="one">%d hour before</item>
+        <item quantity="other">%d hours before</item>
+    </plurals>
+    <plurals name="days_before">
+        <item quantity="one">%d day before</item>
+        <item quantity="other">%d days before</item>
+    </plurals>
+    <plurals name="weeks_before">
+        <item quantity="one">%d week before</item>
+        <item quantity="other">%d weeks before</item>
+    </plurals>
+    <plurals name="months_before">
+        <item quantity="one">%d month before</item>
+        <item quantity="other">%d months before</item>
+    </plurals>
+    <plurals name="years_before">
+        <item quantity="one">%d year before</item>
+        <item quantity="other">%d years before</item>
+    </plurals>
+
+    <!-- For example: Postpone reminder by 3 minutes -->
+    <plurals name="by_seconds">
+        <item quantity="one">%d second</item>
+        <item quantity="other">%d seconds</item>
+    </plurals>
+    <plurals name="by_minutes">
+        <item quantity="one">%d minute</item>
+        <item quantity="other">%d minutes</item>
+    </plurals>
+    <plurals name="by_hours">
+        <item quantity="one">%d hour</item>
+        <item quantity="other">%d hours</item>
+    </plurals>
+    <plurals name="by_days">
+        <item quantity="one">%d day</item>
+        <item quantity="other">%d days</item>
+    </plurals>
+    <plurals name="by_weeks">
+        <item quantity="one">%d week</item>
+        <item quantity="other">%d weeks</item>
+    </plurals>
+    <plurals name="by_months">
+        <item quantity="one">%d month</item>
+        <item quantity="other">%d months</item>
+    </plurals>
+    <plurals name="by_years">
+        <item quantity="one">%d year</item>
+        <item quantity="other">%d years</item>
+    </plurals>
+
+    <!-- Settings -->
+    <string name="settings">Settings</string>
+    <string name="purchase_simple_thank_you">Purchase Simple Thank You</string>
+    <string name="general_settings">General</string>
+    <string name="customize_widget_colors">Customize widget colors</string>
+    <string name="customize_notifications">Customize notifications</string>
+    <string name="font_size">Font size</string>
+    <string name="small">Small</string>
+    <string name="medium">Medium</string>
+    <string name="large">Large</string>
+    <string name="extra_large">Extra large</string>
+    <string name="show_info_bubble">Show an info bubble at scrolling items by scrollbar dragging</string>
+    <string name="sunday_first">Start week on Sunday</string>
+    <string name="widgets">Widgets</string>
+    <string name="use_same_snooze">Always use same snooze time</string>
+    <string name="snooze_time">Snooze time</string>
+    <string name="recycle_bin_cleaning_interval">Recycle Bin cleaning interval</string>
+    <string name="empty_recycle_bin">Empty the Recycle Bin</string>
+    <string name="settings_exported_successfully">Settings exported successfully</string>
+    <string name="settings_imported_successfully">Settings imported successfully</string>
+    <string name="start_name_with_surname">Start name with surname</string>
+    <string name="show_call_confirmation_dialog">Show a call confirmation dialog before initiating a call</string>
+
+    <!-- Setting sections -->
+    <string name="security">Security</string>
+    <string name="recycle_bin">Recycle Bin</string>
+    <string name="saving_label">Saving</string>
+    <string name="startup">Startup</string>
+    <string name="text">Text</string>
+    <string name="quality">Quality</string>
+    <string name="main_screen">Main screen</string>
+    <string name="list_view">List view</string>
+
+    <!-- Recycle Bin -->
+    <string name="restore_this_file">Restore this file</string>
+    <string name="restore_selected_files">Restore selected files</string>
+    <string name="restore_all_files">Restore all files</string>
+    <string name="recycle_bin_emptied">The Recycle Bin has been emptied successfully</string>
+    <string name="files_restored_successfully">Files have been restored successfully</string>
+    <string name="empty_recycle_bin_confirmation">Are you sure you want to empty the Recycle Bin? The files will be permanently lost.</string>
+    <string name="recycle_bin_empty">The Recycle Bin is empty</string>
+    <string name="moving_recycle_bin_items_disabled">Moving Recycle bin items is disabled, please use Restore</string>
+
+    <plurals name="moving_items_into_bin">
+        <item quantity="one">Moving %d item into the Recycle Bin</item>
+        <item quantity="other">Moving %d items into the Recycle Bin</item>
+    </plurals>
+
+    <!-- OTG devices -->
+    <string name="usb">USB</string>
+    <string name="usb_detected">You seem to have an USB device attached to your device. To make sure its files appear properly, you need to grant additional permissions.</string>
+    <string name="confirm_usb_storage_access_text">Please choose the top folder of the USB device on the next screen, to grant access</string>
+    <string name="wrong_root_selected_usb">Wrong folder selected, please select the main folder of your USB device</string>
+
+    <string name="calculator_title">Calculator</string>
+    <string name="flashlight_title">Flashlight</string>
+    <string name="paint_title">Painter</string>
+    <string name="voicerecorder_title">Audio Recorder</string>
+    <string name="gallery_title">Gallery</string>
+    <string name="hidden">(hidden)</string>
+    <string name="excluded">(excluded)</string>
+    <string name="pin_folder">Pin folder</string>
+    <string name="unpin_folder">Unpin folder</string>
+    <string name="pin_to_the_top">Pin to the top</string>
+    <string name="show_all">Show all folders content</string>
+    <string name="all_folders">All folders</string>
+    <string name="folder_view">Switch to folder view</string>
+    <string name="other_folder">Other folder</string>
+    <string name="show_on_map">Show on map</string>
+    <string name="unknown_location">Unknown location</string>
+    <string name="volume">Volume</string>
+    <string name="brightness">Brightness</string>
+    <string name="lock_orientation">Lock orientation</string>
+    <string name="unlock_orientation">Unlock orientation</string>
+    <string name="change_orientation">Change orientation</string>
+    <string name="force_portrait">Force portrait</string>
+    <string name="force_landscape">Force landscape</string>
+    <string name="use_default_orientation">Use default orientation</string>
+    <string name="fix_date_taken">Fix Date Taken value</string>
+    <string name="fixing">Fixing…</string>
+    <string name="dates_fixed_successfully">Dates fixed successfully</string>
+    <string name="no_date_takens_found">No Date Taken values have been found</string>
+    <string name="share_resized">Share a resized version</string>
+    <string name="switch_to_file_search">Switch to file search across all visible folders</string>
+    <string name="reorder_by_dragging">Reorder folders by dragging</string>
+    <string name="copy_to_restricted_folder_message">Unable to use this folder.\nThe system does not allow us to copy/move to this folder</string>
+
+    <!-- Filter -->
+    <string name="filter_media">Filter media</string>
+    <string name="images">Images</string>
+    <string name="videos">Videos</string>
+    <string name="gifs">GIFs</string>
+    <string name="raw_images">RAW images</string>
+    <string name="svgs">SVGs</string>
+    <string name="portraits">Portraits</string>
+    <string name="no_media_with_filters">No media files have been found with the selected filters.</string>
+    <string name="change_filters_underlined"><u>Change filters</u></string>
+
+    <!-- Hide / Exclude -->
+    <string name="hide_folder_description">This function hides the folder by adding a \'.nomedia\' file into it, it will hide all subfolders too. You can see them by toggling the \'Show hidden items\' option in Settings. Continue?</string>
+    <string name="remove_all">Remove all</string>
+    <string name="remove_all_description">Remove all folders from the list of excluded? This will not delete the folders.</string>
+    <string name="hidden_folders">Hidden folders</string>
+    <string name="hidden_folders_placeholder">Seems like you don\'t have any folders hidden with a \".nomedia\" file.</string>
+
+    <!-- Resizing -->
+    <string name="resize">Resize</string>
+    <string name="resize_and_save">Resize selection and save</string>
+    <string name="width">Width</string>
+    <string name="height">Height</string>
+    <string name="keep_aspect_ratio">Keep aspect ratio</string>
+    <string name="invalid_values">Please enter a valid resolution</string>
+
+    <!-- Editor -->
+    <string name="editor">Editor</string>
+    <string name="rotate">Rotate</string>
+    <string name="invalid_image_path">Invalid image path</string>
+    <string name="invalid_video_path">Invalid video path</string>
+    <string name="image_editing_failed">Image editing failed</string>
+    <string name="video_editing_failed">Video editing failed</string>
+    <string name="image_editing_cancelled">Image editing cancelled</string>
+    <string name="video_editing_cancelled">Video editing cancelled</string>
+    <string name="file_edited_successfully">File edited successfully</string>
+    <string name="image_edited_successfully">Image edited successfully</string>
+    <string name="video_edited_successfully">Video edited successfully</string>
+    <string name="edit_image_with">Edit image with:</string>
+    <string name="edit_video_with">Edit video with:</string>
+    <string name="no_image_editor_found">No image editor found</string>
+    <string name="no_video_editor_found">No video editor found</string>
+    <string name="unknown_file_location">Unknown file location</string>
+    <string name="error_saving_file">Could not overwrite the source file</string>
+    <string name="rotate_left">Rotate left</string>
+    <string name="rotate_right">Rotate right</string>
+    <string name="rotate_one_eighty">Rotate by 180º</string>
+    <string name="flip">Flip</string>
+    <string name="flip_horizontally">Flip horizontally</string>
+    <string name="flip_vertically">Flip vertically</string>
+    <string name="free_aspect_ratio">Free</string>                  <!-- available as an option: 1:1, 4:3, 16:9, free -->
+    <string name="other_aspect_ratio">Other</string>                <!-- available as an option: 1:1, 4:3, 16:9, free, other -->
+
+    <!-- Set wallpaper -->
+    <string name="simple_wallpaper">Simple Wallpaper</string>
+    <string name="set_as_wallpaper">Set as Wallpaper</string>
+    <string name="set_as_wallpaper_failed">Setting as Wallpaper failed</string>
+    <string name="set_as_wallpaper_with">Set as wallpaper with:</string>
+    <string name="setting_wallpaper">Setting wallpaper&#8230;</string>
+    <string name="wallpaper_set_successfully">Wallpaper set successfully</string>
+    <string name="portrait_aspect_ratio">Portrait aspect ratio</string>
+    <string name="landscape_aspect_ratio">Landscape aspect ratio</string>
+    <string name="home_screen">Home screen</string>
+    <string name="lock_screen">Lock screen</string>
+    <string name="home_and_lock_screen">Home and lock screen</string>
+
+
+    <!-- View types -->
+    <string name="group_direct_subfolders">Group direct subfolders</string>
+
+    <!-- Grouping at media thumbnails -->
+    <string name="group_by">Group by</string>
+    <string name="do_not_group_files">Do not group files</string>
+    <string name="by_folder">Folder</string>
+    <string name="by_last_modified">Last modified</string>
+    <string name="by_last_modified_daily">Last modified (daily)</string>
+    <string name="by_last_modified_monthly">Last modified (monthly)</string>
+    <string name="by_date_taken">Date taken</string>
+    <string name="by_date_taken_daily">Date taken (daily)</string>
+    <string name="by_date_taken_monthly">Date taken (monthly)</string>
+    <string name="by_file_type">File type</string>
+    <string name="by_extension">Extension</string>
+    <string name="show_file_count_section_header">Show file count at section headers</string>
+    <string name="grouping_and_sorting">Please note that grouping and sorting are 2 independent fields</string>
+
+    <!-- Settings -->
+    <string name="show_media_count">Show folder media count on the main view</string>
+    <string name="one_finger_zoom">Allow one finger zoom at fullscreen media</string>
+    <string name="file_loading_priority">File loading priority</string>
+    <string name="speed">Speed</string>
+    <string name="compromise">Compromise</string>
+    <string name="avoid_showing_invalid_files">Avoid showing invalid files</string>
+    <string name="allow_zooming_videos">Allow zooming videos with double tapping them</string>
+    <string name="export_favorite_paths">Export favorite file paths</string>
+
+    <!-- Bottom actions -->
+    <string name="toggle_favorite">Toggle favorite</string>
+    <string name="toggle_file_visibility">Toggle file visibility</string>
+
+    <string name="audio_recording_saved_successfully">Recording saved successfully</string>
+    <string name="audio_recording">Recording</string>
+    <string name="audio_no_recordings_found">No recordings created by this app\nhave been found</string>
+    <string name="audio_no_recordings_in_folder_found">No recordings have been found\nin the selected folder</string>
+    <string name="audio_paused">Paused</string>
+    <!-- Confirmation dialog -->
+    <!-- Are you sure you want to delete 5 recordings? -->
+    <string name="audio_delete_recordings_confirmation">Delete %s\?</string>
+    <plurals name="audio_delete_recordings">
+        <item quantity="one">%d recording</item>
+        <item quantity="other">%d recordings</item>
+    </plurals>
+    <!-- Settings -->
+    <string name="audio_try_hiding_notification">Try hiding the recording notification</string>
+    <string name="audio_save_recordings_in">Save recordings in</string>
+    <string name="audio_bitrate">Bitrate</string>
+    <string name="audio_record_after_launch">Start recording automatically after launching the app</string>
+
+    <!-- Calculator field -->
+    <string name="calc_formula_divide_by_zero_error">Error: division by zero</string>
+
+    <!-- History -->
+    <string name="history">History</string>
+    <string name="history_empty">History is empty</string>
+    <string name="clear_history">Clear</string>
+    <string name="history_cleared">History has been cleared</string>
+
+    <string name="flashlight_camera_error">Obtaining the camera failed</string>
+    <string name="flashlight_camera_permission">Camera permission is necessary for proper stroboscope effect</string>
+    <string name="flashlight_bright_display">Bright display</string>
+    <!-- Settings -->
+    <string name="flashlight_show_bright_display">Show a bright display button</string>
+    <string name="flashlight_show_stroboscope">Show a stroboscope button</string>
+    <string name="flashlight_show_sos">Show an SOS button</string>
+    <string name="flashlight_turn_flashlight_on">Turn flashlight on at startup</string>
+
+    <string name="paint_open_file">Open file</string>
+    <string name="paint_eraser">Eraser</string>
+    <string name="paint_eyedropper">Eyedropper</string>
+    <string name="paint_failed_to_load_image">Failed to load image %s</string>
+    <!-- Settings -->
+    <string name="paint_clear">Clear</string>
+    <string name="paint_change_background_color">Change background color</string>
+
+</resources>

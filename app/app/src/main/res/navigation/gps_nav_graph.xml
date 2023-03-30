@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gps_nav_graph"
+    app:startDestination="@id/gps_map_fragment"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/gps_map_fragment"
+        android:name="tech.nagual.phoenix.tools.gps.MapFragment"
+        tools:layout="@layout/gps_map_fragment">
+        <action
+            android:id="@+id/action_map_fragment_to_dashboard_fragment"
+            app:destination="@id/gps_dashboard_fragment" />
+        <action
+            android:id="@+id/action_map_fragment_to_settings_fragment"
+            app:destination="@id/gps_settings_fragment" />
+        <action
+            android:id="@+id/action_map_fragment_to_tracks_fragment"
+            app:destination="@id/gps_tracklist_fragment" />
+        <action
+            android:id="@+id/action_map_fragment_to_fragment_track"
+            app:destination="@id/gps_track_fragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/gps_tracklist_fragment"
+        android:name="tech.nagual.phoenix.tools.gps.tracklist.TrackListFragment"
+        tools:layout="@layout/gps_track_list_fragment">
+        <action
+            android:id="@+id/action_tracks_fragment_to_fragment_track"
+            app:destination="@id/gps_track_fragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/gps_dashboard_fragment"
+        android:name="tech.nagual.phoenix.tools.gps.dashboard.DashboardFragment"
+        tools:layout="@layout/gps_dashboard_fragment" />
+
+    <fragment
+        android:id="@+id/gps_track_fragment"
+        android:name="tech.nagual.phoenix.tools.gps.TrackFragment"
+        tools:layout="@layout/gps_track_fragment">
+        <argument
+            android:name="delete_track_id"
+            android:defaultValue="-1L"
+            app:argType="long" />
+    </fragment>
+
+<!--    <fragment-->
+<!--        android:id="@+id/gps_profiles_fragment"-->
+<!--        android:name="tech.nagual.phoenix.tools.gps.profiles.GpsProfilesFragment"-->
+<!--        tools:layout="@layout/gps_profiles_fragment" />-->
+
+    <fragment
+        android:id="@+id/gps_settings_fragment"
+        android:name="tech.nagual.phoenix.tools.gps.SettingsFragment"
+        tools:layout="@layout/gps_settings_fragment" />
+
+</navigation>

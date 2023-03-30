@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Blue">
+        <item name="colorPrimary">#90CAF9</item>
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="colorSecondary">#90CAF9</item>>
+
+        <item name="colorDrawerHeaderBackground">#3390CAF9</item>
+        <item name="colorPrimaryTranscluent">#2690CAF9</item>
+
+    </style>
+
+    <style name="Green">
+        <item name="colorPrimary">#C5E1A5</item>
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="colorSecondary">#C5E1A5</item>
+
+        <item name="colorDrawerHeaderBackground">#33C5E1A5</item>
+        <item name="colorPrimaryTranscluent">#26C5E1A5</item>
+
+    </style>
+
+    <style name="Pink">
+        <item name="colorPrimary">#F48FB1</item>
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="colorSecondary">#F48FB1</item>
+
+        <item name="colorDrawerHeaderBackground">#33F48FB1</item>
+        <item name="colorPrimaryTranscluent">#26F48FB1</item>
+
+    </style>
+
+    <style name="Orange">
+        <item name="colorPrimary">#FFCC80</item>
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="colorSecondary">#FFCC80</item>
+
+        <item name="colorDrawerHeaderBackground">#33FFCC80</item>
+        <item name="colorPrimaryTranscluent">#26FFCC80</item>
+
+    </style>
+
+    <style name="Purple">
+        <item name="colorPrimary">#B39DDB</item>
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="colorSecondary">#B39DDB</item>
+
+        <item name="colorDrawerHeaderBackground">#33B39DDB</item>
+        <item name="colorPrimaryTranscluent">#26B39DDB</item>
+
+    </style>
+
+
+    <style name="BrowserTheme" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="android:statusBarColor">?attr/colorSurface</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="windowActionModeOverlay">true</item>
+    </style>
+
+</resources>

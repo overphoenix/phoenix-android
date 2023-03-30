@@ -1,0 +1,792 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.screen.portrait"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.faketouch"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.full"
+        android:required="false" />
+    <!-- USE GPS AND NETWORK - EXCLUDE NON-GPS DEVICES -->
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="true" />
+    <uses-feature android:name="android.hardware.location.network" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.QUERY_ALL_PACKAGES"
+        tools:ignore="QueryAllPackagesPermission" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="30" />
+    <uses-permission
+        android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_MOCK_LOCATION"
+        tools:ignore="MockLocation,ProtectedPermissions" />
+
+    <!-- To let the user disable battery optimization from within the app -->
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
+
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+
+    <!-- used by Reprint -->
+    <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY" />
+
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+
+    <!-- Shizuku requires API 23. -->
+    <uses-sdk tools:overrideLibrary="rikka.shizuku.aidl,rikka.shizuku.api,rikka.shizuku.shared" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:extractNativeLibs="true"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/launcher_icon"
+        android:requestLegacyExternalStorage="true"
+        android:requestRawExternalStorageAccess="true"
+        android:roundIcon="@mipmap/launcher_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Phoenix"
+        tools:ignore="GoogleAppIndexingWarning,UnusedAttribute">
+
+        <activity
+            android:name=".app.MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Phoenix">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="me.zhanghai.android.files.filelist.FileListActivity"
+            android:exported="true"
+            android:visibleToInstantApps="true"
+            tools:ignore="UnusedAttribute">
+            <intent-filter tools:ignore="AppLinkUrlError">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="inode/directory" />
+                <data android:mimeType="resource/folder" />
+                <data android:mimeType="vnd.android.document/directory" />
+            </intent-filter>
+            <!-- @see tech.nagual.phoenix.file.isSupportedArchive -->
+            <intent-filter
+                android:label="@string/archive_viewer_title"
+                tools:ignore="AppLinkUrlError">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="application/gzip" />
+                <data android:mimeType="application/java-archive" />
+                <data android:mimeType="application/rar" />
+                <data android:mimeType="application/zip" />
+                <data android:mimeType="application/vnd.android.package-archive" />
+                <data android:mimeType="application/vnd.debian.binary-package" />
+                <data android:mimeType="application/x-bzip2" />
+                <data android:mimeType="application/x-compress" />
+                <data android:mimeType="application/x-cpio" />
+                <data android:mimeType="application/x-deb" />
+                <data android:mimeType="application/x-debian-package" />
+                <data android:mimeType="application/x-gtar" />
+                <data android:mimeType="application/x-gtar-compressed" />
+                <data android:mimeType="application/x-java-archive" />
+                <data android:mimeType="application/x-lzma" />
+                <data android:mimeType="application/x-tar" />
+                <data android:mimeType="application/x-xz" />
+                <data android:mimeType="@string/intent_filter_data_seven_z_mime_type" />
+            </intent-filter>
+            <!-- @see https://android.googlesource.com/platform/packages/apps/DocumentsUI/+/master/AndroidManifest.xml -->
+            <intent-filter>
+                <action android:name="android.intent.action.OPEN_DOCUMENT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.OPENABLE" />
+
+                <data android:mimeType="*/*" />
+            </intent-filter>
+            <!--
+              ~ Unusable until we implement DocumentsProvider.
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_DOCUMENT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.OPENABLE" />
+                <data android:mimeType="*/*" />
+            </intent-filter>
+            -->
+            <intent-filter>
+                <action android:name="android.intent.action.GET_CONTENT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.OPENABLE" />
+
+                <data android:mimeType="*/*" />
+            </intent-filter>
+            <!--
+              ~ Unusable until we implement DocumentsProvider.
+            <intent-filter>
+                <action android:name="android.intent.action.OPEN_DOCUMENT_TREE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            -->
+            <intent-filter>
+                <action android:name="tech.nagual.phoenix.intent.action.VIEW_DOWNLOADS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts" />
+        </activity>
+
+        <activity
+            android:name="me.zhanghai.android.files.viewer.image.ImageViewerActivity"
+            android:exported="true"
+            android:label="@string/image_viewer_title"
+            android:theme="@style/Theme.Phoenix.Immersive">
+            <intent-filter tools:ignore="AppLinkUrlError">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="tech.nagual.phoenix.tools.organizer.OrganizerActivity"
+            android:label="@string/notes_title"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.Phoenix" />
+
+        <activity
+            android:name="tech.nagual.phoenix.tools.organizer.media.MediaActivity">
+        </activity>
+
+        <activity
+            android:name="tech.nagual.phoenix.tools.organizer.gallery.GalleryActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:taskAffinity=".ui.activities.InAppGallery"
+            android:theme="@style/Theme.Phoenix.OverlayActionBar" />
+
+        <activity
+            android:name="tech.nagual.phoenix.tools.organizer.camera.ui.activities.CameraActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:taskAffinity="tech.nagual.phoenix.tools.organizer.camera.ui.activities.CameraActivity"
+            android:theme="@style/CameraTheme.App"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+
+        <activity
+            android:name="tech.nagual.phoenix.tools.organizer.camera.ui.activities.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/CameraTheme.App"
+            android:visibleToInstantApps="true"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan">
+
+            <intent-filter>
+                <action android:name="android.media.action.IMAGE_CAPTURE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="tech.nagual.phoenix.tools.organizer.camera.ui.activities.MultiCaptureActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/CameraTheme.App"
+            android:visibleToInstantApps="true"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan">
+
+            <intent-filter>
+                <action android:name="android.media.action.IMAGE_CAPTURE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name="tech.nagual.phoenix.tools.organizer.camera.ui.activities.VideoCaptureActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:label="@string/camera_video_capture_label"
+            android:screenOrientation="nosensor"
+            android:taskAffinity="tech.nagual.phoenix.tools.organizer.camera.ui.activities.VideoCaptureActivity"
+            android:theme="@style/CameraTheme.App"
+            android:visibleToInstantApps="true"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan">
+
+            <intent-filter>
+                <action android:name="android.media.action.VIDEO_CAPTURE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <!--
+          ~ Using android:documentLaunchMode="always" gives a better result than
+          ~ Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_MULTIPLE_TASK. Not sure why though.
+          -->
+        <activity
+            android:name="me.zhanghai.android.files.filelist.OpenFileActivity"
+            android:documentLaunchMode="always"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:theme="@style/Theme.Phoenix.Translucent">
+            <intent-filter>
+                <action android:name="tech.nagual.phoenix.intent.action.OPEN_FILE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="*/*" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="me.zhanghai.android.files.filelist.EditFileActivity"
+            android:autoRemoveFromRecents="true"
+            android:icon="@drawable/edit_icon"
+            android:label="@string/file_edit_title"
+            android:theme="@style/Theme.Phoenix.Translucent" />
+
+        <activity
+            android:name="me.zhanghai.android.files.filelist.OpenFileAsDialogActivity"
+            android:autoRemoveFromRecents="true"
+            android:icon="@drawable/open_as_icon"
+            android:label="@string/file_open_as_title"
+            android:theme="@style/Theme.Phoenix.Translucent" />
+
+        <activity
+            android:name="me.zhanghai.android.files.storage.AddStorageDialogActivity"
+            android:label="@string/storage_add_storage_title"
+            android:theme="@style/Theme.Phoenix.Translucent" />
+
+        <activity
+            android:name="me.zhanghai.android.files.storage.EditDeviceStorageDialogActivity"
+            android:label="@string/storage_edit_device_storage_title"
+            android:theme="@style/Theme.Phoenix.Translucent" />
+
+        <activity
+            android:name="me.zhanghai.android.files.storage.AddDocumentTreeActivity"
+            android:label="@string/storage_add_document_tree_title"
+            android:theme="@style/Theme.Phoenix.Translucent" />
+
+        <activity
+            android:name="me.zhanghai.android.files.storage.EditDocumentTreeDialogActivity"
+            android:label="@string/storage_edit_document_tree_title"
+            android:theme="@style/Theme.Phoenix.Translucent" />
+
+        <activity
+            android:name="me.zhanghai.android.files.storage.EditFtpServerActivity"
+            android:exported="false"
+            android:label="@string/storage_edit_ftp_server_title_edit"
+            android:theme="@style/Theme.Phoenix" />
+
+        <activity
+            android:name="me.zhanghai.android.files.storage.EditSftpServerActivity"
+            android:exported="false"
+            android:label="@string/storage_edit_sftp_server_title_edit"
+            android:theme="@style/Theme.Phoenix" />
+
+        <activity
+            android:name="me.zhanghai.android.files.storage.AddLanSmbServerActivity"
+            android:label="@string/storage_add_lan_smb_server_title"
+            android:theme="@style/Theme.Phoenix" />
+
+        <activity
+            android:name="me.zhanghai.android.files.storage.EditSmbServerActivity"
+            android:label="@string/storage_edit_smb_server_title_edit"
+            android:theme="@style/Theme.Phoenix" />
+
+        <activity
+            android:name="me.zhanghai.android.files.bookmarks.EditBookmarkDirectoryDialogActivity"
+            android:label="@string/navigation_edit_bookmark_directory_title"
+            android:theme="@style/Theme.Phoenix.Translucent" />
+
+        <activity
+            android:name="me.zhanghai.android.files.features.ftpserver.FtpServerActivity"
+            android:exported="true"
+            android:label="@string/ftp_server_title"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.Phoenix">
+            <intent-filter>
+                <action android:name="tech.nagual.phoenix.intent.action.MANAGE_FTP_SERVER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE_PREFERENCES" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="tech.nagual.phoenix.settings.SettingsActivity"
+            android:exported="true"
+            android:label="@string/settings_title"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.Phoenix">
+            <intent-filter>
+                <action android:name="android.intent.action.APPLICATION_PREFERENCES" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="me.zhanghai.android.files.storage.StoragesActivity"
+            android:label="@string/storage_list_title"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.Phoenix" />
+
+        <activity
+            android:name="tech.nagual.phoenix.organizers.OrganizersActivity"
+            android:label="@string/organizers_title"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.Phoenix" />
+
+        <activity
+            android:name="tech.nagual.phoenix.organizers.EditOrganizerDialogActivity"
+            android:label="@string/organizer_edit_existing"
+            android:theme="@style/Theme.Phoenix.Translucent" />
+
+        <activity
+            android:name="me.zhanghai.android.files.tools.ToolsActivity"
+            android:label="@string/tools_title"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.Phoenix" />
+
+        <activity
+            android:name="me.zhanghai.android.files.tools.EditToolDialogActivity"
+            android:label="@string/edit_tool_title"
+            android:theme="@style/Theme.Phoenix.Translucent" />
+
+        <activity
+            android:name="me.zhanghai.android.files.standarddirectories.StandardDirectoryListActivity"
+            android:label="@string/settings_standard_directory_list_title"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.Phoenix" />
+
+        <activity
+            android:name="me.zhanghai.android.files.bookmarks.BookmarkDirectoryListActivity"
+            android:label="@string/settings_bookmark_directory_list_title"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.Phoenix" />
+
+        <activity
+            android:name="me.zhanghai.android.files.filejob.FileJobActionDialogActivity"
+            android:autoRemoveFromRecents="true"
+            android:theme="@style/Theme.Phoenix.Translucent" />
+
+        <activity
+            android:name="me.zhanghai.android.files.filejob.FileJobConflictDialogActivity"
+            android:autoRemoveFromRecents="true"
+            android:theme="@style/Theme.Phoenix.Translucent" />
+
+        <activity
+            android:name="me.zhanghai.android.files.features.texteditor.TextEditorActivity"
+            android:exported="true"
+            android:label="@string/text_editor_title"
+            android:theme="@style/Theme.Phoenix">
+            <intent-filter tools:ignore="AppLinkUrlError">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="application/ecmascript" />
+                <data android:mimeType="application/javascript" />
+                <data android:mimeType="application/json" />
+                <data android:mimeType="application/typescript" />
+                <data android:mimeType="application/x-sh" />
+                <data android:mimeType="application/x-shellscript" />
+                <data android:mimeType="application/xml" />
+                <data android:mimeType="text/*" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="me.zhanghai.android.files.filejob.FileJobService" />
+
+        <service android:name="me.zhanghai.android.files.features.ftpserver.FtpServerService" />
+
+        <service
+            android:name="me.zhanghai.android.files.features.ftpserver.FtpServerTileService"
+            android:exported="true"
+            android:icon="@drawable/shared_directory_icon_white_24dp"
+            android:label="@string/ftp_server_title"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.service.quicksettings.TOGGLEABLE_TILE"
+                android:value="true" />
+        </service>
+
+        <provider
+            android:name="me.zhanghai.android.files.file.FileProvider"
+            android:authorities="${applicationId}.file_provider"
+            android:exported="false"
+            android:grantUriPermissions="true" />
+
+        <receiver android:name="me.zhanghai.android.files.filejob.FileJobReceiver" />
+
+        <receiver android:name="me.zhanghai.android.files.features.ftpserver.FtpServerReceiver" />
+
+        <meta-data
+            android:name="firebase_crashlytics_collection_enabled"
+            android:value="false" />
+
+        <!-- Notes -->
+
+        <service
+            android:name="tech.nagual.phoenix.tools.organizer.media.MusicService"
+            android:exported="false" />
+        <service
+            android:name="tech.nagual.phoenix.tools.organizer.recorder.RecorderService"
+            android:exported="false" />
+        <service
+            android:name="tech.nagual.phoenix.tools.organizer.backup.BackupService"
+            android:exported="false" />
+
+        <receiver
+            android:name="tech.nagual.phoenix.tools.organizer.reminders.ReminderReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider_paths" />
+        </provider>
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="${applicationId}.androidx-startup"
+            android:exported="false"
+            tools:node="merge">
+
+            <meta-data
+                android:name="androidx.work.WorkManagerInitializer"
+                android:value="androidx.startup"
+                tools:node="remove" />
+        </provider>
+
+
+        <!-- The main activity of the app (supports all modes) -->
+        <activity
+            android:name=".tools.camera.ui.activities.CameraActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:taskAffinity="tech.nagual.phoenix.tools.camera.ui.activities.CameraActivity"
+            android:theme="@style/CameraTheme.App"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+
+        <activity
+            android:name=".tools.camera.ui.activities.VideoPlayer"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:taskAffinity=".ui.activities.VideoPlayer"
+            android:theme="@style/CameraOverlayActionBar" />
+
+        <activity
+            android:name=".tools.camera.ui.activities.MoreSettings"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:theme="@style/CameraOverlayActionBar" />
+
+        <!-- Helps in supporting double-tap power button (in non-secure/unlocked phone state) -->
+        <activity-alias
+            android:name=".features.camera.ui.activities.CameraLauncher"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:targetActivity=".tools.camera.ui.activities.CameraActivity"
+            android:theme="@style/CameraTheme.App">
+
+            <intent-filter>
+                <action android:name="android.media.action.STILL_IMAGE_CAMERA" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity-alias>
+
+        <!-- The main activity of the app (supports all modes) -->
+        <activity
+            android:name=".tools.camera.ui.activities.SecureCameraActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:showOnLockScreen="true"
+            android:showWhenLocked="true"
+            android:taskAffinity=".features.camera.ui.activities.SecureCameraActivity"
+            android:theme="@style/CameraTheme.App"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan">
+
+            <intent-filter>
+                <action android:name="android.media.action.STILL_IMAGE_CAMERA_SECURE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+
+        <!-- An extension of the MainActivity that completely enforces video mode
+        https://developer.android.com/reference/android/provider/MediaStore#INTENT_ACTION_VIDEO_CAMERA
+        -->
+        <activity
+            android:name=".tools.camera.ui.activities.VideoOnlyActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:taskAffinity=".features.camera.ui.activities.VideoOnlyActivity"
+            android:theme="@style/CameraTheme.App"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan">
+
+            <intent-filter>
+                <action android:name="android.media.action.VIDEO_CAMERA" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+
+
+        <!-- Capture image that shall be sent to another app
+        https://developer.android.com/reference/android/provider/MediaStore#ACTION_IMAGE_CAPTURE
+        -->
+        <activity
+            android:name=".tools.camera.ui.activities.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/CameraTheme.App"
+            android:visibleToInstantApps="true"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan">
+
+            <intent-filter>
+                <action android:name="android.media.action.IMAGE_CAPTURE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+
+        <!-- Capture image to be sent to another app (when the phone is in secure/locked state)
+         https://developer.android.com/reference/android/provider/MediaStore#ACTION_IMAGE_CAPTURE_SECURE
+         -->
+        <activity
+            android:name=".tools.camera.ui.activities.SecureCaptureActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:showOnLockScreen="true"
+            android:showWhenLocked="true"
+            android:taskAffinity=".features.camera.ui.activities.SecureCaptureActivity"
+            android:theme="@style/CameraTheme.App"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan">
+
+            <intent-filter>
+                <action android:name="android.media.action.IMAGE_CAPTURE_SECURE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+
+        <!-- Deals with VideoCapture intent; To record a video to be sent to another app
+        https://developer.android.com/reference/android/provider/MediaStore#ACTION_VIDEO_CAPTURE
+             (No secure video capture intent is present/defined in Android)-->
+        <activity
+            android:name=".tools.camera.ui.activities.VideoCaptureActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:label="@string/camera_video_capture_label"
+            android:screenOrientation="nosensor"
+            android:taskAffinity=".features.camera.ui.activities.VideoCaptureActivity"
+            android:theme="@style/CameraTheme.App"
+            android:visibleToInstantApps="true"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan">
+
+            <intent-filter>
+                <action android:name="android.media.action.VIDEO_CAPTURE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+
+        <receiver
+            android:name=".tools.gps.RestarterReceiver"
+            android:enabled="true"
+            android:exported="false" />
+
+        <meta-data
+            android:name="android.webkit.WebView.MetricsOptOut"
+            android:value="true" />
+        <meta-data
+            android:name="android.webkit.WebView.EnableSafeBrowsing"
+            android:value="false" />
+
+
+        <activity
+            android:name=".tools.gps.GpsActivity"
+            android:label="@string/gps_title"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.Phoenix" />
+
+        <service
+            android:name=".tools.gps.GpsService"
+            android:exported="false"
+            android:foregroundServiceType="location"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.mendhak.gpslogger.GpsService" />
+                <action android:name="tech.nagual.tools.gps.action.START" />
+                <action android:name="tech.nagual.tools.gps.action.STOP" />
+                <action android:name="tech.nagual.tools.gps.action.DISMISS" />
+            </intent-filter>
+        </service>
+
+
+        <activity
+            android:name=".tools.browser.BrowserActivity"
+            android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize|keyboard"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:theme="@style/BrowserTheme"
+            android:windowSoftInputMode="stateAlwaysVisible">
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="ipfs" />
+                <data android:scheme="ipns" />
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+            android:screenOrientation="fullSensor"
+            tools:replace="screenOrientation" />
+
+
+        <activity
+            android:name="tech.nagual.phoenix.tools.painter.PainterActivity"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:label="@string/paint_title"
+            android:theme="@style/Theme.Phoenix.ActionBar">
+            <!--            <intent-filter>-->
+            <!--                <action android:name="android.intent.action.VIEW" />-->
+
+            <!--                <category android:name="android.intent.category.BROWSABLE" />-->
+            <!--                <category android:name="android.intent.category.DEFAULT" />-->
+
+            <!--                <data android:mimeType="image/*" />-->
+            <!--            </intent-filter>-->
+            <!--            <intent-filter>-->
+            <!--                <action android:name="android.intent.action.SEND" />-->
+            <!--                <category android:name="android.intent.category.DEFAULT" />-->
+            <!--                <data android:mimeType="image/*" />-->
+            <!--            </intent-filter>-->
+
+            <!--            <intent-filter>-->
+            <!--                <action android:name="android.intent.action.SEND_MULTIPLE" />-->
+            <!--                <category android:name="android.intent.category.DEFAULT" />-->
+            <!--                <data android:mimeType="image/*" />-->
+            <!--            </intent-filter>-->
+
+            <intent-filter>
+                <action android:name="android.media.action.IMAGE_CAPTURE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <!--            <intent-filter>-->
+            <!--                <action android:name="android.intent.action.EDIT" />-->
+            <!--                <category android:name="android.intent.category.DEFAULT" />-->
+            <!--                <data android:mimeType="image/*" />-->
+            <!--            </intent-filter>-->
+        </activity>
+
+        <activity
+            android:name="tech.nagual.phoenix.tools.organizer.photoeditor.PhotoEditorActivity"
+            android:configChanges="orientation"
+            android:exported="false"
+            android:theme="@style/Theme.Phoenix.NoActionBar">
+            <intent-filter>
+                <action android:name="android.media.action.IMAGE_CAPTURE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="tech.nagual.phoenix.tools.calculator.activities.CalculatorActivity"
+            android:label="@string/calculator_title"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Phoenix.ActionBar" />
+    </application>
+</manifest>

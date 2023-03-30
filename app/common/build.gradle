@@ -1,0 +1,267 @@
+plugins {
+    id "com.android.library"
+    id "kotlin-android"
+    id "kotlin-kapt"
+    id "androidx.navigation.safeargs"
+    id "kotlinx-serialization"
+    id "kotlin-parcelize"
+}
+
+android {
+    namespace "tech.nagual.common"
+    compileSdkVersion 32
+    buildToolsVersion "33.0.0"
+    ndkVersion '25.0.8775105'
+
+    defaultConfig {
+        minSdkVersion 29
+        targetSdkVersion 32
+
+
+        buildConfigField 'String', 'FILE_PROVIDIER_AUTHORITY', 'APPLICATION_ID + ".file_provider"'
+
+        externalNativeBuild {
+            cmake {
+                arguments '-Wno-dev'
+            }
+        }
+    }
+
+    sourceSets {
+        main {
+            java.srcDirs += "src/main/kotlin"
+            jniLibs.srcDirs = ["./src/main/jni/"]
+        }
+    }
+
+    buildTypes {
+        debug {
+            // we cannot change the original package name, else PhotoEditorSDK won't work
+            //applicationIdSuffix ".debug"
+
+            buildConfigField 'String', 'APPLICATION_ID', '"tech.nagual.phoenix.dev"'
+        }
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            buildConfigField 'String', 'APPLICATION_ID', '"tech.nagual.phoenix"'
+        }
+    }
+    buildFeatures {
+        viewBinding true
+    }
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+
+    externalNativeBuild {
+        cmake {
+            version "3.22.1"
+            path 'CMakeLists.txt'
+        }
+    }
+    testOptions {
+        packagingOptions {
+            jniLibs {
+                useLegacyPackaging true
+            }
+        }
+    }
+    lint {
+        abortOnError false
+        checkReleaseBuilds false
+    }
+}
+
+repositories {
+    google()
+    maven { url "https://jitpack.io" }
+    jcenter()
+}
+
+dependencies {
+    api("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4")
+    api("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
+    api("org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.2")
+
+    // AndroidX Lifecycle
+    api("androidx.lifecycle:lifecycle-common-java8:2.5.1")
+    api("androidx.lifecycle:lifecycle-livedata-ktx:2.5.1")
+    api("androidx.lifecycle:lifecycle-process:2.5.1")
+    api("androidx.lifecycle:lifecycle-runtime-ktx:2.5.1")
+    api("androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1")
+    api("androidx.lifecycle:lifecycle-service:2.5.1")
+    api("androidx.lifecycle:lifecycle-extensions:2.2.0")
+
+    api("androidx.core:core-ktx:1.8.0")
+    api("androidx.fragment:fragment-ktx:1.5.1")
+
+    // Preferences
+    api("androidx.preference:preference-ktx:1.2.0")
+    api("androidx.datastore:datastore-preferences:1.0.0")
+
+    api("androidx.swiperefreshlayout:swiperefreshlayout:1.1.0")
+    api("com.google.android.material:material:1.6.1")
+    api("androidx.recyclerview:recyclerview:1.2.1")
+    api("androidx.recyclerview:recyclerview-selection:1.1.0")
+    api("androidx.biometric:biometric-ktx:1.2.0-alpha04")
+
+    // AndroidX Navigation Component
+    api("androidx.navigation:navigation-fragment-ktx:2.5.1")
+    api("androidx.navigation:navigation-ui-ktx:2.5.1")
+
+    api("androidx.paging:paging-runtime-ktx:3.1.1")
+
+    api "androidx.databinding:viewbinding:7.4.0-alpha08"
+
+    // AndroidX Room
+    kapt("androidx.room:room-compiler:2.4.3")
+    annotationProcessor 'androidx.room:room-compiler:2.4.3'
+    implementation("androidx.room:room-runtime:2.4.3")
+    implementation("androidx.room:room-ktx:2.4.3")
+
+    api 'com.github.tibbi:reprint:2cb206415d'
+
+    api 'com.github.bumptech.glide:glide:4.13.2'
+
+    api 'joda-time:joda-time:2.10.13'
+
+    api 'com.github.tibbi:RecyclerView-FastScroller:e7d3e150c4'
+
+    api 'com.duolingo.open:rtl-viewpager:1.0.3'
+
+    api('me.zhanghai.android.foregroundcompat:library:1.0.2')
+
+    // FTP server
+    implementation("org.apache.ftpserver:ftpserver-core:1.2.0")
+
+    // Coil
+    api("io.coil-kt:coil:2.1.0")
+    api("io.coil-kt:coil-gif:2.1.0")
+    api("io.coil-kt:coil-svg:2.1.0")
+    api("io.coil-kt:coil-video:2.1.0")
+
+    implementation 'org.bouncycastle:bcpkix-jdk15to18:1.70'
+
+    implementation("com.caverock:androidsvg-aar:1.4")
+    implementation("com.github.junrar:junrar:7.4.1")
+    api("com.h6ah4i.android.materialshadowninepatch:materialshadowninepatch:1.0.0")
+    api("com.h6ah4i.android.widget.advrecyclerview:advrecyclerview:1.0.0")
+    implementation("com.hierynomus:smbj:0.11.5") {
+        // org.bouncycastle:bcprov-jdk15on uses bytecode version unsupported by Jetifier, so use
+        // org.bouncycastle:bcprov-jdk15to18 instead.
+        exclude group: "org.bouncycastle", module: "bcprov-jdk15on"
+        exclude group: "org.bouncycastle", module: "bcpkix-jdk15on"
+    }
+    implementation("com.hierynomus:sshj:0.32.0") {
+        // org.bouncycastle:bcprov-jdk15on uses bytecode version unsupported by Jetifier, so use
+        // org.bouncycastle:bcprov-jdk15to18 instead.
+        exclude group: "org.bouncycastle", module: "bcprov-jdk15on"
+        exclude group: "org.bouncycastle", module: "bcpkix-jdk15on"
+    }
+    implementation("com.jakewharton.threetenabp:threetenabp:1.4.0")
+    implementation("com.rapid7.client:dcerpc:0.12.0") {
+        // org.bouncycastle:bcprov-jdk15on uses bytecode version unsupported by Jetifier, so use
+        // org.bouncycastle:bcprov-jdk15to18 instead.
+        exclude group: "org.bouncycastle", module: "bcprov-jdk15on"
+        exclude group: "org.bouncycastle", module: "bcpkix-jdk15on"
+    }
+
+    // SMBJ-RPC depends on com.google.guava:guava:18.0, which conflicts with
+    // com.google.guava:listenablefuture:1.0 pulled in by AndroidX Core
+    implementation("com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava")
+    implementation("dev.rikka.shizuku:api:12.1.0")
+    api("eu.agno3.jcifs:jcifs-ng:2.1.6")
+
+    api('me.zhanghai.android.fastscroll:library:1.1.8')
+
+    implementation("me.zhanghai.android.appiconloader:appiconloader:1.4.0")
+    implementation("me.zhanghai.android.libselinux:library:2.1.0")
+    api("me.zhanghai.android.retrofile:library:1.1.1")
+    implementation("me.zhanghai.android.systemuihelper:library:1.0.0")
+    implementation("net.sourceforge.streamsupport:android-retrostreams:1.7.4")
+    implementation("org.apache.commons:commons-compress:1.21")
+    // Optional dependency of Commons Compress for 7Z LZMA.
+    implementation("org.tukaani:xz:1.9")
+    // Also a dependency of jCIFS-NG and Junrar.
+    implementation("org.slf4j:slf4j-android:1.7.36")
+
+    implementation("com.google.protobuf:protobuf-java:3.19.1")
+    implementation("commons-io:commons-io:2.11.0")
+    api("com.google.guava:guava:31.1-android")
+    api("com.google.code.gson:gson:2.9.0")
+    implementation("info.guardianproject:tor-android:0.4.6.7")
+    implementation("info.guardianproject:jtorctl:0.4.5.7")
+    implementation("com.soywiz.korlibs.korte:korte-android:2.2.0")
+
+    // Text editor
+    implementation 'com.blacksquircle.ui:editorkit:2.1.1'
+    implementation 'com.blacksquircle.ui:language-actionscript:2.1.1'
+    implementation 'com.blacksquircle.ui:language-base:2.1.1' // for custom language
+    implementation 'com.blacksquircle.ui:language-c:2.1.1'
+    implementation 'com.blacksquircle.ui:language-cpp:2.1.1'
+    implementation 'com.blacksquircle.ui:language-csharp:2.1.1'
+    implementation 'com.blacksquircle.ui:language-groovy:2.1.1'
+    implementation 'com.blacksquircle.ui:language-html:2.1.1'
+    implementation 'com.blacksquircle.ui:language-java:2.1.1'
+    implementation 'com.blacksquircle.ui:language-javascript:2.1.1'
+    implementation 'com.blacksquircle.ui:language-json:2.1.1'
+    implementation 'com.blacksquircle.ui:language-julia:2.1.1'
+    implementation 'com.blacksquircle.ui:language-kotlin:2.1.1'
+    implementation 'com.blacksquircle.ui:language-lisp:2.1.1'
+    implementation 'com.blacksquircle.ui:language-lua:2.1.1'
+    implementation 'com.blacksquircle.ui:language-markdown:2.1.1'
+    implementation 'com.blacksquircle.ui:language-php:2.1.1'
+    implementation 'com.blacksquircle.ui:language-plaintext:2.1.1'
+    implementation 'com.blacksquircle.ui:language-python:2.1.1'
+    implementation 'com.blacksquircle.ui:language-ruby:2.1.1'
+    implementation 'com.blacksquircle.ui:language-shell:2.1.1'
+    implementation 'com.blacksquircle.ui:language-sql:2.1.1'
+    implementation 'com.blacksquircle.ui:language-typescript:2.1.1'
+    implementation 'com.blacksquircle.ui:language-visualbasic:2.1.1'
+    implementation 'com.blacksquircle.ui:language-xml:2.1.1'
+
+    // dev.chrisbanesinsetter:insetter:0.6.0 makes inset unstable when entering immersive.
+    implementation 'dev.chrisbanes:insetter-ktx:0.3.1'
+
+    implementation 'com.github.topjohnwu.libsu:service:5.0.2'
+    api('me.grantland:autofittextview:0.2.1')
+    api('net.objecthunter:exp4j:0.4.8')
+    api('commons-net:commons-net:3.8.0')
+
+    implementation 'androidx.documentfile:documentfile:1.0.1'
+
+    kapt 'com.github.bumptech.glide:compiler:4.13.2'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.13.2'
+
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.8.0'
+    implementation 'it.sephiroth.android.exif:library:1.0.1'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.24'
+    implementation 'com.google.vr:sdk-panowidget:1.180.0'
+    implementation 'com.google.vr:sdk-videowidget:1.180.0'
+    implementation 'org.apache.sanselan:sanselan:0.97-incubator'
+    implementation 'info.androidhive:imagefilters:1.0.7'
+    implementation 'com.caverock:androidsvg-aar:1.4'
+    implementation 'com.github.penfeizhou.android.animation:awebp:2.17.0'
+    implementation 'com.github.penfeizhou.android.animation:apng:2.17.0'
+    implementation 'com.squareup.okio:okio:3.0.0'
+    implementation('com.squareup.picasso:picasso:2.71828') {
+        exclude group: 'com.squareup.okhttp3', module: 'okhttp'
+    }
+
+    implementation 'com.github.jrvansuita:MaterialAbout:0.2.6'
+
+    implementation 'com.davemorrissey.labs:subsampling-scale-image-view:3.10.0'
+
+    implementation ('org.apache.mina:mina-core:2.1.6')
+
+    api('com.github.chrisbanes:PhotoView:2.3.0')
+
+    implementation('com.alimuzaffar.lib:pinentryedittext:2.0.6')
+    implementation('com.andrognito.patternlockview:patternlockview:1.0.0')
+}

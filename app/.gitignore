@@ -1,0 +1,12 @@
+/.gradle/
+/.idea/
+/build/
+/captures/
+/app/config/release.keystore
+/app/config/debug.keystore
+/local.properties
+/app/config/release.jks
+/signing.properties
+.DS_Store
+*.iml
+/*.log

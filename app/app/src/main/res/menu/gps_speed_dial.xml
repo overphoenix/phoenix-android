@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_resume"
+        android:icon="@drawable/gps_record_white_24dp"
+        android:title="@string/gps_speed_dial_resume" />
+    <item
+        android:id="@+id/action_save"
+        android:icon="@drawable/gps_save_icon_white_24dp"
+        android:title="@string/gps_speed_dial_save" />
+    <item
+        android:id="@+id/action_clear"
+        android:icon="@drawable/gps_clear_icon_white_24dp"
+        android:title="@string/gps_speed_dial_clear" />
+</menu>

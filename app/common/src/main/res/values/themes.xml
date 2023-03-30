@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    Notes-->
+
+    <style name="Blue">
+        <item name="colorPrimary">#2196f3</item>
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="colorSecondary">#2196f3</item>
+
+        <item name="colorDrawerHeaderBackground">#992196F3</item>
+        <item name="colorPrimaryTranscluent">#332196F3</item>
+
+    </style>
+
+    <style name="Green">
+        <item name="colorPrimary">#7CB342</item>
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="colorSecondary">#7CB342</item>
+
+        <item name="colorDrawerHeaderBackground">#997CB342</item>
+        <item name="colorPrimaryTranscluent">#337CB342</item>
+
+    </style>
+
+    <style name="Pink">
+        <item name="colorPrimary">#C2185B</item>
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="colorSecondary">#C2185B</item>
+
+        <item name="colorDrawerHeaderBackground">#80C2185B</item>
+        <item name="colorPrimaryTranscluent">#29C2185B</item>
+
+    </style>
+
+    <style name="Orange">
+        <item name="colorPrimary">#E47400</item>
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="colorSecondary">#FFB300</item>
+
+        <item name="colorDrawerHeaderBackground">#99FFB300</item>
+        <item name="colorPrimaryTranscluent">#29E39F00</item>
+
+    </style>
+
+    <style name="Purple">
+        <item name="colorPrimary">#8249E8</item>
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="colorSecondary">#673AB7</item>
+
+        <item name="colorDrawerHeaderBackground">#99673AB7</item>
+        <item name="colorPrimaryTranscluent">#29673AB7</item>
+
+    </style>
+
+
+    <style name="ShapeAppearance.Image.PILL" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="Theme_Dialog" parent="android:Theme.Holo.Dialog">
+        <item name="android:windowMinWidthMajor">80%</item>
+        <item name="android:windowMinWidthMinor">80%</item>
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="SettingsDialogAnim">
+        <item name="android:windowEnterAnimation">@anim/camera_slide_down</item>
+        <item name="android:windowExitAnimation">@anim/camera_slide_up</item>
+    </style>
+
+
+    <style name="BrowserTheme" parent="Theme.Material3.Light.NoActionBar">
+        <item name="android:statusBarColor">?attr/colorSurface</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="windowActionModeOverlay">true</item>
+    </style>
+
+
+    <style name="CameraTheme.App" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorAccent">@color/camera_selected_option_bg</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+
+        <item name="android:navigationBarColor">@android:color/black</item>
+        <item name="android:statusBarColor">@android:color/black</item>
+    </style>
+
+    <style name="CameraShapeAppearance.Image.PILL" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="CameraTheme_Dialog" parent="android:Theme.Holo.Dialog">
+        <item name="android:windowMinWidthMajor">80%</item>
+        <item name="android:windowMinWidthMinor">80%</item>
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="CameraOverlayActionBar" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowActionBar">true</item>
+
+        <item name="windowActionModeOverlay">true</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="windowActionBar">true</item>
+    </style>
+
+    
+    <style name="Platform.V21.Theme.Phoenix" parent="Theme.MaterialComponents.DayNight">
+        <item name="colorPrimaryDark">@color/system_window_scrim_compat</item>
+    </style>
+
+    <style name="Platform.V23.Theme.Phoenix" parent="Platform.V21.Theme.Phoenix">
+        <item name="colorPrimaryDark">@color/system_window_scrim</item>
+        <item name="android:windowLightStatusBar">?isLightTheme</item>
+    </style>
+
+    <style name="Platform.V27.Theme.Phoenix" parent="Platform.V23.Theme.Phoenix">
+        <item name="android:navigationBarColor">?colorPrimaryDark</item>
+        <item name="android:windowLightNavigationBar">?isLightTheme</item>
+    </style>
+
+    <style name="Platform.V29.Theme.Phoenix" parent="Platform.V27.Theme.Phoenix">
+        <item name="android:forceDarkAllowed">false</item>
+
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+`    </style>
+
+    <style name="Platform.Theme.Phoenix" parent="Platform.V29.Theme.Phoenix" />
+
+    <style name="Base.Theme.Phoenix" parent="Platform.Theme.Phoenix">
+        <item name="actionBarTheme">@style/ThemeOverlay.Phoenix.ActionBar</item>
+        <item name="actionBarPopupTheme">@style/ThemeOverlay.Phoenix.ActionBarPopup</item>
+        <item name="android:colorBackground">?colorSurface</item>
+        <item name="dropDownListViewStyle">@style/Widget.Phoenix.ListView.DropDown</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryVariant">?colorPrimary</item>
+        <item name="colorSecondary">?colorPrimary</item>
+        <item name="colorOnSecondary">?colorOnPrimary</item>
+        <item name="colorSecondaryVariant">?colorSecondary</item>
+        <item name="colorSurface">@color/color_surface</item>
+        <item name="shapeAppearanceMediumComponent">
+            @style/ShapeAppearance.Phoenix.MediumComponent
+        </item>
+        <item name="buttonBarButtonStyle">@style/Widget.MaterialComponents.Button.TextButton.Dialog</item>
+        <item name="materialCardViewStyle">@style/Widget.Phoenix.CardView</item>
+        <item name="navigationViewStyle">@style/Widget.Phoenix.NavigationView</item>
+        <item name="minTouchTargetSize">0dp</item>
+        <item name="textInputStyle">?textInputOutlinedStyle</item>
+
+        <item name="colorAppBarSurface">?colorSurface</item>
+
+        <!--        Notes-->
+        <!-- General -->
+        <item name="colorShadow">#24000000</item>
+        <item name="colorOutline">@color/material_grey_800</item>
+        <item name="colorTextOverlay">#99000000</item>
+
+        <item name="android:navigationBarColor">#121212</item>
+
+        <item name="colorBottomAppBarBackground">#FFFFFF</item>
+
+        <!-- Navigation -->
+        <item name="colorDrawerBackground">#FFFFFF</item>
+        <item name="colorDrawerItemRipple">#59000000</item>
+<!--        <item name="colorDrawerItemIconSelected">@color/state_drawer_selected_item_icon_color</item>-->
+<!--        <item name="colorDrawerItemTextSelected">@color/state_drawer_selected_item_color</item>-->
+        <!--        <item name="drawableDrawerItemBackground">@drawable/state_drawer_item_background</item>-->
+
+        <item name="colorNoteIndicator">#B3000000</item>
+        <item name="colorAttachmentIndicator">#89000000</item>
+        <item name="colorTaskDone">#80000000</item>
+        <item name="colorMarkdownTask">#80000000</item>
+        <item name="colorMediaControlsBackground">#CC000000</item>
+
+        <item name="colorTaskSwipe">#CCF44336</item>
+        <item name="colorHighlightMask">#1F000000</item>
+
+        <!--        <item name="popupTheme">@style/Widget.Custom.PopupMenu</item>-->
+        <!--        <item name="materialAlertDialogTheme">@style/DialogTheme</item>-->
+    </style>
+
+    <style name="Theme.Phoenix" parent="Base.Theme.Phoenix" />
+    <style name="Theme.Phoenix.ActionBar" parent="Theme.Phoenix" >
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">false</item>
+    </style>
+
+    <style name="Theme.Phoenix.NoActionBar" parent="Theme.Phoenix" >
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Phoenix.Widget" parent="Theme.Phoenix.ActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowShowWallpaper">true</item>
+    </style>
+
+    <style name="Platform.V21.Theme.Phoenix.Translucent" parent="Theme.Phoenix">
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="Theme.Phoenix.OverlayActionBar" parent="Theme.Phoenix.ActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowShowWallpaper">true</item>
+
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowActionBar">true</item>
+
+        <item name="windowActionModeOverlay">true</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="windowActionBar">true</item>
+    </style>
+
+    <style name="Platform.Theme.Phoenix.Translucent" parent="Platform.V21.Theme.Phoenix.Translucent" />
+
+    <style name="Base.Theme.Phoenix.Translucent" parent="Platform.Theme.Phoenix.Translucent">
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Phoenix.Translucent" parent="Base.Theme.Phoenix.Translucent" />
+
+    <style name="Platform.V21.Theme.Phoenix.Immersive" parent="Theme.MaterialComponents">
+        <item name="android:navigationBarColor">?colorPrimaryDark</item>
+
+        <item name="colorPrimaryDark">@color/dark_50_percent</item>
+    </style>
+
+    <style name="Platform.V28.Theme.Phoenix.Immersive" parent="Platform.V21.Theme.Phoenix.Immersive">
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+    </style>
+
+    <style name="Platform.V29.Theme.Phoenix.Immersive" parent="Platform.V28.Theme.Phoenix.Immersive">
+        <item name="android:forceDarkAllowed">false</item>
+
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+    </style>
+
+    <style name="Platform.Theme.Phoenix.Immersive" parent="Platform.V29.Theme.Phoenix.Immersive" />
+
+    <style name="Base.Theme.Phoenix.Immersive" parent="Platform.Theme.Phoenix.Immersive">
+
+        <item name="actionBarTheme">@style/ThemeOverlay.Phoenix.ActionBar</item>
+        <item name="actionBarPopupTheme">@style/ThemeOverlay.Phoenix.ActionBarPopup</item>
+        <item name="android:colorBackground">?colorSurface</item>
+        <item name="dropDownListViewStyle">@style/Widget.Phoenix.ListView.DropDown</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="windowNoTitle">true</item>
+
+        <item name="colorPrimary">@color/color_primary_dark</item>
+        <item name="colorPrimaryVariant">?colorPrimary</item>
+        <item name="colorSecondary">?colorPrimary</item>
+        <item name="colorOnSecondary">?colorOnPrimary</item>
+        <item name="colorSecondaryVariant">?colorSecondary</item>
+        <item name="colorSurface">@color/color_surface_dark</item>
+        <item name="shapeAppearanceMediumComponent">
+            @style/ShapeAppearance.Phoenix.MediumComponent
+        </item>
+        <item name="buttonBarButtonStyle">@style/Widget.MaterialComponents.Button.TextButton.Dialog</item>
+        <item name="materialCardViewStyle">@style/Widget.Phoenix.CardView</item>
+        <item name="minTouchTargetSize">0dp</item>
+        <item name="textInputStyle">?textInputOutlinedStyle</item>
+
+        <item name="colorAppBarSurface">@color/dark_50_percent</item>
+    </style>
+
+    <style name="Theme.Phoenix.Immersive" parent="Base.Theme.Phoenix.Immersive" />
+
+
+    <!--    Simplemenu-->
+    <declare-styleable name="Theme">
+        <!-- Default style for simple menu preferences. -->
+        <attr name="simpleMenuPreferenceStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="ForegroundCheckTextView">
+        <attr name="android:foregroundGravity" />
+        <attr name="android:foreground" />
+        <attr name="foregroundInsidePadding" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="SimpleMenuPreference">
+        <attr name="android:popupMenuStyle" />
+        <attr name="android:popupTheme" />
+        <attr name="popupBackgroundRadius" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="SimpleMenuPopup">
+
+        <attr name="listMarginHorizontal" format="dimension" />
+        <attr name="listMarginVertical" format="dimension" />
+        <attr name="listItemPadding" format="dimension" />
+        <attr name="listElevation" format="dimension" />
+
+        <attr name="dialogMarginHorizontal" format="dimension" />
+        <attr name="dialogMarginVertical" format="dimension" />
+        <attr name="dialogItemPadding" format="dimension" />
+        <attr name="dialogElevation" format="dimension" />
+        <attr name="dialogMaxWidth" format="dimension" />
+
+        <attr name="unit" format="dimension" />
+        <attr name="maxUnits" format="integer" />
+    </declare-styleable>
+</resources>

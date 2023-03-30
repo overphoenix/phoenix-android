@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="tech.nagual.phoenix.tools.organizer.gallery.GalleryActivity"
+    tools:ignore="AlwaysShowAction">
+    <item
+        android:id="@+id/edit_icon"
+        android:icon="@drawable/camera_edit"
+        android:title="@string/edit"
+        app:showAsAction="always" />
+<!--    <item-->
+<!--        android:id="@+id/delete_icon"-->
+<!--        android:icon="@drawable/camera_delete"-->
+<!--        android:title="@string/camera_delete_file"-->
+<!--        app:showAsAction="always" />-->
+    <item
+        android:id="@+id/info"
+        android:icon="@drawable/camera_info"
+        android:title="@string/properties"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/share_icon"
+        android:icon="@drawable/camera_share"
+        android:title="@string/share"
+        app:showAsAction="always" />
+</menu>

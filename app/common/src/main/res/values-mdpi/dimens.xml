@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="gps_activity_vertical_margin">16dp</dimen>
+    <dimen name="gps_simpleview_grid_iconwidth">25dp</dimen>
+    <dimen name="gps_simlpeview_grid_iconheight">25dp</dimen>
+    <dimen name="gps_simpleview_grid_labelwidth">95dp</dimen>
+    <dimen name="gps_simpleview_latlong_textsize">34dp</dimen>
+</resources>

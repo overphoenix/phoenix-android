@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    Preferences-->
+    <attr name="pref_masterSwitchStyle" format="reference" />
+    <attr name="pref_masterSwitchTextAppearance" format="reference" />
+    <attr name="pref_masterSwitchBackgroundOn" format="color" />
+    <attr name="pref_masterSwitchBackgroundOff" format="color" />
+
+    <declare-styleable name="PreferenceCategory">
+        <attr name="pref_categoryColor" format="color|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="EditTextPreference">
+        <attr name="pref_disableMessagePaddingFix" format="boolean|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="AutoSummaryEditTextPreference">
+        <attr name="pref_summaryHasText" format="string|reference" />
+        <attr name="pref_summaryPasswordSubstitute" format="string|reference" />
+        <attr name="pref_summaryPasswordSubstituteLength" format="integer|reference" />
+    </declare-styleable>
+
+
+    <declare-styleable name="PreferenceView">
+        <attr name="iconSrc" format="reference" />
+        <attr name="text" format="string" />
+        <attr name="subText" format="string" />
+    </declare-styleable>
+
+    <!--    Phoenix -->
+    <attr name="colorAppBarSurface" format="color" />
+
+    <declare-styleable name="NavigationViewExtra">
+        <attr name="itemSubtitleTextAppearance" format="reference" />
+        <attr name="itemSubtitleTextColor" format="color" />
+        <attr name="itemSubtitleTextSize" format="dimension" />
+        <attr name="dividerVerticalPadding" format="dimension" />
+    </declare-styleable>
+
+    <!--    Notes   -->
+    <attr name="colorBackground" format="color" />
+    <attr name="colorBottomAppBarBackground" format="color" />
+    <attr name="colorOutline" format="color" />
+    <attr name="colorShadow" format="color" />
+    <attr name="colorTextOverlay" format="color" />
+    <attr name="colorHighlightMask" format="color" />
+
+    <!-- Navigation drawer -->
+    <attr name="colorDrawerBackground" format="color" />
+    <attr name="colorDrawerHeaderBackground" format="color" />
+    <attr name="colorPrimaryTranscluent" format="color" />
+    <attr name="colorDrawerItemRipple" format="color" />
+
+    <attr name="colorDrawerItemTextSelected" format="color" />
+    <attr name="colorDrawerItemIconSelected" format="color" />
+    <!--    <attr name="drawableDrawerItemBackground" format="reference" />-->
+
+
+    <!-- Notes -->
+    <attr name="colorNoteIndicator" format="color" />
+    <attr name="colorAttachmentIndicator" format="color" />
+
+    <attr name="colorNoteDefault" format="color" />
+    <attr name="colorNoteGreen" format="color" />
+    <attr name="colorNotePink" format="color" />
+    <attr name="colorNoteBlue" format="color" />
+    <attr name="colorNoteRed" format="color" />
+    <attr name="colorNoteOrange" format="color" />
+    <attr name="colorNoteYellow" format="color" />
+
+    <attr name="colorTaskDone" format="color" />
+    <attr name="colorTaskSwipe" format="color" />
+    <attr name="colorMarkdownTask" format="color" />
+    <!-- Media -->
+    <attr name="colorMediaControlsBackground" format="color" />
+
+
+
+    <!--  Fab  -->
+    <declare-styleable name="FabWithLabelView">
+        <attr name="android:src" />
+        <attr name="srcCompat" />
+        <attr name="fabLabel" format="string" />
+        <attr name="fabBackgroundColor" format="color" />
+        <attr name="fabLabelColor" format="color" />
+        <attr name="fabLabelBackgroundColor" format="color" />
+        <attr name="fabLabelClickable" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="SpeedDialView">
+        <attr name="android:enabled" />
+        <attr name="sdExpansionMode" format="enum">
+            <enum name="top" value="0" />
+            <enum name="bottom" value="1" />
+            <enum name="left" value="2" />
+            <enum name="right" value="3" />
+        </attr>
+        <attr name="sdMainFabAnimationRotateAngle" format="float" />
+        <attr name="sdMainFabClosedSrc" format="reference" />
+        <attr name="sdMainFabClosedIconColor" format="color" />
+        <attr name="sdMainFabClosedBackgroundColor" format="color" />
+        <attr name="sdMainFabOpenedSrc" format="reference" />
+        <attr name="sdMainFabOpenedIconColor" format="color" />
+        <attr name="sdMainFabOpenedBackgroundColor" format="color" />
+        <attr name="sdOverlayLayout" format="reference" />
+        <attr name="sdUseReverseAnimationOnClose" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="SpeedDialOverlayLayout">
+        <attr name="clickable_overlay" format="boolean" />
+        <attr name="android:background" />
+    </declare-styleable>
+
+    <declare-styleable name="ClearableEditText">
+        <attr name="clearPosition" format="enum">
+            <enum name="left" value="0"/>
+            <enum name="right" value="1"/>
+        </attr>
+        <attr name="clearDrawable" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="ColorWheelView">
+        <attr name="layout_keep" format="enum">
+            <enum name="width" value="0"/>
+            <enum name="height" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <attr name="imageDialogTheme" format="reference"/>
+    <attr name="simpleDialogTheme" format="reference"/>
+
+
+<!--    thirdparty-->
+    <declare-styleable name="BottomActionMenuItem">
+        <attr name="android:id" />
+        <attr name="android:title" />
+        <attr name="android:icon" />
+        <attr name="android:visible" />
+        <attr name="showAsAction" />
+    </declare-styleable>
+</resources>

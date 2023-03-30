@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/organizer_nav_graph"
+    app:startDestination="@id/organizer_main_fragment"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/organizer_main_fragment"
+        android:name="tech.nagual.phoenix.tools.organizer.MainFragment"
+        android:layout="@layout/organizer_main_fragment">
+        <action
+            android:id="@+id/action_main_to_editor"
+            app:destination="@id/organizer_editor_fragment" />
+        <action
+            android:id="@+id/action_main_to_search"
+            app:destination="@id/organizer_search_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ogranizer_archive_fragment"
+        android:name="tech.nagual.phoenix.tools.organizer.archive.ArchiveFragment"
+        android:layout="@layout/organizer_archive_fragment">
+        <action
+            android:id="@+id/action_archive_to_editor"
+            app:destination="@id/organizer_editor_fragment" />
+        <action
+            android:id="@+id/action_archive_to_search"
+            app:destination="@id/organizer_search_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/organizer_deleted_fragment"
+        android:name="tech.nagual.phoenix.tools.organizer.deleted.DeletedFragment"
+        android:layout="@layout/organizer_deleted_fragment">
+
+        <action
+            android:id="@+id/action_deleted_to_editor"
+            app:destination="@id/organizer_editor_fragment" />
+        <action
+            android:id="@+id/action_deleted_to_search"
+            app:destination="@id/organizer_search_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/organizer_folder_fragment"
+        android:name="tech.nagual.phoenix.tools.organizer.folders.FolderFragment"
+        android:layout="@layout/organizer_main_fragment">
+        <action
+            android:id="@+id/action_notebook_to_editor"
+            app:destination="@id/organizer_editor_fragment" />
+        <action
+            android:id="@+id/action_notebook_to_search"
+            app:destination="@id/organizer_search_fragment" />
+        <argument
+            android:name="folderId"
+            android:defaultValue="-1L"
+            app:argType="long" />
+        <argument
+            android:name="folderName"
+            android:defaultValue=""
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/organizer_editor_fragment"
+        android:name="tech.nagual.phoenix.tools.organizer.editor.NoteEditorFragment"
+        android:label=""
+        android:layout="@layout/organizer_note_editor_fragment">
+        <deepLink app:uri="phoenix://notes/{transitionName}" />
+
+        <action
+            android:id="@+id/actionEditorToTags"
+            app:destination="@id/organizer_tags_fragment" />
+        <argument
+            android:name="transitionName"
+            app:argType="string" />
+        <argument
+            android:name="noteId"
+            android:defaultValue="0L"
+            app:argType="long" />
+        <argument
+            android:name="newNoteHidden"
+            android:defaultValue="false"
+            app:argType="boolean" />
+        <argument
+            android:name="newNoteFolderId"
+            android:defaultValue="0L"
+            app:argType="long" />
+        <argument
+            android:name="newNoteViewType"
+            android:defaultValue="Text"
+            app:argType="tech.nagual.phoenix.tools.organizer.data.model.NoteViewType" />
+        <argument
+            android:name="newNoteTitle"
+            android:defaultValue=""
+            app:argType="string" />
+        <argument
+            android:name="newNoteContent"
+            android:defaultValue=""
+            app:argType="string" />
+        <argument
+            android:name="newNoteAttachments"
+            android:defaultValue="@null"
+            app:argType="tech.nagual.phoenix.tools.organizer.data.model.Attachment[]"
+            app:nullable="true" />
+        <argument
+            android:name="newNoteRawCategories"
+            android:defaultValue="@null"
+            app:argType="tech.nagual.phoenix.tools.organizer.data.model.RawCategory[]"
+            app:nullable="true" />
+        <argument
+            android:name="newNoteWorkflowId"
+            android:defaultValue="0L"
+            app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/organizer_tags_fragment"
+        android:name="tech.nagual.phoenix.tools.organizer.tags.TagsFragment">
+        <action
+            android:id="@+id/actionTagsToSearch"
+            app:destination="@+id/organizer_search_fragment" />
+        <argument
+            android:name="noteId"
+            android:defaultValue="0L"
+            app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/organizer_workflows_fragment"
+        android:name="tech.nagual.phoenix.tools.organizer.workflows.WorkflowsFragment"
+        android:layout="@layout/organizer_workflows_fragment" />
+
+    <fragment
+        android:id="@+id/organizer_workflow_fragment"
+        android:name="tech.nagual.phoenix.tools.organizer.workflows.WorkflowFragment"
+        android:layout="@layout/organizer_workflow_fragment">
+        <argument
+            android:name="workflowId"
+            android:defaultValue="-1L"
+            app:argType="long" />
+        <argument
+            android:name="workflowName"
+            android:defaultValue=""
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/organizer_manage_notebooks_fragment"
+        android:name="tech.nagual.phoenix.tools.organizer.folders.FoldersFragment"
+        android:layout="@layout/organizer_folders_fragment" />
+
+    <fragment
+        android:id="@+id/organizer_categories_fragment"
+        android:name="tech.nagual.phoenix.tools.organizer.categories.CategoriesFragment"
+        android:layout="@layout/organizer_categories_fragment" />
+
+    <fragment
+        android:id="@+id/organizer_manage_variants_fragment"
+        android:name="tech.nagual.phoenix.tools.organizer.categories.variants.VariantsFragment"
+        android:layout="@layout/organizer_variants_fragment">
+        <argument
+            android:name="categoryId"
+            android:defaultValue="0L"
+            app:argType="long" />
+        <argument
+            android:name="categoryType"
+            app:argType="tech.nagual.phoenix.tools.organizer.data.model.CategoryType" />
+        <argument
+            android:name="categoryName"
+            android:defaultValue=""
+            app:argType="string" />
+        <argument
+            android:name="parentId"
+            android:defaultValue="0L"
+            app:argType="long" />
+        <argument
+            android:name="parentName"
+            android:defaultValue=""
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/organizer_settings_fragment"
+        android:name="tech.nagual.phoenix.tools.organizer.settings.SettingsFragment"
+        android:layout="@layout/organizer_settings_fragment" />
+
+    <fragment
+        android:id="@+id/organizer_search_fragment"
+        android:name="tech.nagual.phoenix.tools.organizer.search.SearchFragment"
+        android:layout="@layout/organizer_search_fragment">
+        <argument
+            android:name="searchQuery"
+            android:defaultValue=""
+            app:argType="string" />
+        <action
+            android:id="@+id/action_search_to_editor"
+            app:destination="@id/organizer_editor_fragment" />
+    </fragment>
+
+</navigation>

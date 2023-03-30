@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:transitionGroup="true">
+
+    <include layout="@layout/generic_app_bar_layout" />
+
+    <me.zhanghai.android.files.ui.CoordinatorScrollingFrameLayout
+        android:id="@+id/coordinatorScrollingFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/emptyView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="8dp"
+            android:gravity="center_horizontal"
+            android:paddingTop="12dp"
+            android:paddingBottom="32dp"
+            android:text="@string/organizer_workflow_empty_list"
+            android:textAppearance="?textAppearanceListItem"
+            android:visibility="gone"
+            app:drawableTopCompat="@drawable/organizer_workflow_icon_96dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:fitsSystemWindows="true"
+            android:paddingBottom="@dimen/list_bottom_padding_with_fab"
+            app:layout_anchor="@+id/coordinatorScrollingFrameLayout"
+            app:layout_anchorGravity="center"
+            tools:listitem="@layout/organizer_folder_item" />
+
+    </me.zhanghai.android.files.ui.CoordinatorScrollingFrameLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/screen_edge_margin"
+            android:src="@drawable/add_icon_white_24dp"
+            android:theme="?actionBarTheme" />
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

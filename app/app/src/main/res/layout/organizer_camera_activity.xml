@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tech.nagual.phoenix.tools.organizer.camera.ui.activities.CameraActivity">
+
+    <RelativeLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/camera_black"
+        tools:context="tech.nagual.phoenix.tools.organizer.camera.ui.activities.MainActivity">
+
+        <FrameLayout
+            android:id="@+id/main_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="8dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/preview_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.camera.view.PreviewView
+                    android:id="@+id/preview"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintDimensionRatio="H,9:16"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <FrameLayout
+                android:id="@+id/g_circle_frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/g_circle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="9dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="14sp"
+                    android:rotation="0">
+
+                    <TextView
+                        android:id="@+id/g_circle_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:shadowColor="#000000"
+                        android:shadowDx="1.5"
+                        android:shadowDy="1.3"
+                        android:shadowRadius="1.6"
+                        android:textAlignment="center"
+                        android:textColor="@color/camera_white"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:id="@+id/g_circle_line_x"
+                        android:layout_width="120dp"
+                        android:layout_height="2dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/camera_white_shadow_rect" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/g_circle_line_z"
+                    android:layout_width="100dp"
+                    android:layout_height="1.5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/camera_yellow_shadow_rect" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:clipToPadding="false"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:id="@+id/g_circle_left_dash"
+                        android:layout_width="8dp"
+                        android:layout_height="2dp"
+                        android:background="@drawable/camera_white_shadow_rect" />
+
+                    <View
+                        android:layout_width="120dp"
+                        android:layout_height="1dp"
+                        android:background="@android:color/transparent" />
+
+                    <View
+                        android:id="@+id/g_circle_right_dash"
+                        android:layout_width="8dp"
+                        android:layout_height="2dp"
+                        android:background="@drawable/camera_white_shadow_rect" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <tech.nagual.phoenix.tools.organizer.camera.ui.CountDownTimerUI
+                android:id="@+id/c_timer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:shadowColor="#000000"
+                android:shadowDx="1.5"
+                android:shadowDy="1.3"
+                android:shadowRadius="1.6"
+                android:textColor="@color/camera_white"
+                android:visibility="gone" />
+
+            <tech.nagual.phoenix.tools.organizer.camera.ui.CustomGrid
+                android:id="@+id/preview_grid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/focusRing"
+                android:layout_width="84dp"
+                android:layout_height="84dp"
+                android:contentDescription="@string/camera_focus_ring"
+                android:src="@drawable/camera_focus_ring"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/main_overlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/camera_loading_camera" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/three_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/camera_mode_tabs"
+            android:layout_marginBottom="12dp"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:visibility="invisible"
+            android:weightSum="3">
+
+            <FrameLayout
+                android:id="@+id/flip_camera_circle"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/flip_camera_icon"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/camera_flip_camera"
+                    android:src="@drawable/camera_circle" />
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/camera_flip_camera"
+                    android:src="@drawable/camera_option_circle" />
+
+                <ImageView
+                    android:id="@+id/flip_camera_icon_content"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/camera_flip_camera"
+                    android:src="@drawable/camera_flip_camera" />
+
+                <ImageView
+                    android:id="@+id/retake_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/camera_retake"
+                    android:src="@drawable/camera_retake"
+                    android:visibility="invisible" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="84dp"
+                android:layout_gravity="center"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/capture_button"
+                    android:layout_width="84dp"
+                    android:layout_height="84dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/camera_cbutton_bg"
+                    android:contentDescription="@string/camera_flip_camera"
+                    android:src="@drawable/camera_shutter" />
+
+                <ImageButton
+                    android:id="@+id/confirm_button"
+                    android:layout_width="84dp"
+                    android:layout_height="84dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/camera_cbutton_bg"
+                    android:contentDescription="@string/camera_flip_camera"
+                    android:src="@drawable/camera_done"
+                    android:visibility="invisible" />
+
+                <!-- Sp usage was ignore because -->
+                <TextView
+                    android:id="@+id/capture_button_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="28dp"
+                    android:textStyle="bold"
+                    tools:ignore="SpUsage" />
+
+                <ImageView
+                    android:id="@+id/capture_button_cross"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/camera_cancel_timer"
+                    android:src="@drawable/camera_cancel"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/mic_off"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:alpha="0.8"
+                    android:contentDescription="@string/camera_rec_without_audio"
+                    android:src="@drawable/camera_mic_off"
+                    android:visibility="gone" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/third_option"
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true">
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/add_photo_icon"-->
+<!--                    android:layout_width="64dp"-->
+<!--                    android:layout_height="64dp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:contentDescription="@string/camera_add_photo"-->
+<!--                    android:src="@drawable/camera_circle" />-->
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/camera_add_photo"
+                    android:src="@drawable/camera_option_circle" />
+
+                <ImageView
+                    android:id="@+id/add_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/camera_add_photo"
+                    android:src="@drawable/ic_plus_vector" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/zoom_bar_panel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/zoom_in_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:contentDescription="@string/camera_zoom_in"
+                android:src="@drawable/zoom_in" />
+
+            <tech.nagual.phoenix.tools.organizer.camera.ui.seekbar.ZoomBar
+                android:id="@+id/zoom_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:progressTint="@android:color/transparent" />
+
+            <ImageView
+                android:id="@+id/zoom_out_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="32dp"
+                android:contentDescription="@string/camera_zoom_out"
+                android:src="@drawable/zoom_out" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/exposure_bar_panel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/exposure_plus_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="8dp"
+                android:contentDescription="@string/camera_zoom_in"
+                android:src="@drawable/camera_exposure_plus" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="250dp">
+
+                <View
+                    android:layout_width="8dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:background="#99ffffff" />
+
+                <tech.nagual.phoenix.tools.organizer.camera.ui.seekbar.ExposureBar
+                    android:id="@+id/exposure_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:progressTint="@android:color/transparent"
+                    android:thumb="@drawable/camera_exposure_thumb" />
+
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/exposure_neg_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="24dp"
+                android:contentDescription="@string/camera_zoom_out"
+                android:src="@drawable/camera_exposure_neg" />
+
+        </LinearLayout>
+
+        <tech.nagual.phoenix.tools.organizer.camera.ui.BottomTabLayout
+            android:id="@+id/camera_mode_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="4dp"
+            android:background="@android:color/transparent"
+            android:overScrollMode="never"
+            app:tabIndicator="@drawable/camera_mode_indicator"
+            app:tabIndicatorFullWidth="false"
+            app:tabIndicatorHeight="30dp"
+            app:tabMode="auto"
+            app:tabPaddingEnd="16dp"
+            app:tabPaddingStart="16dp"
+            app:tabRippleColor="@android:color/transparent" />
+
+        <FrameLayout
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp">
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/flash_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?actionBarItemBackground"
+                android:contentDescription="@string/camera_flash_mode"
+                android:orientation="vertical" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp">
+
+            <ImageView
+                android:id="@+id/cancel_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?actionBarItemBackground"
+                android:contentDescription="@string/camera_capture_mode" />
+
+        </FrameLayout>
+
+        <ImageButton
+            android:id="@+id/settings_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="16dp"
+            android:background="@null"
+            android:contentDescription="@string/camera_capture_mode"
+            android:paddingHorizontal="16dp"
+            android:src="@drawable/camera_settings_icon"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/three_buttons"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/camera_timer"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="2dp"
+            android:text="@string/camera_start_value_timer"
+            android:textColor="@color/camera_white"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

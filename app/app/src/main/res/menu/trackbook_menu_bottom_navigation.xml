@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/gps_map_fragment"
+        android:icon="@drawable/trackbook_ic_compass_needle_black_24dp"
+        android:title="@string/trackbook_tab_map" />
+
+    <item
+        android:id="@+id/gps_tracklist_fragment"
+        android:icon="@drawable/trackbook_ic_notebook_black_24dp"
+        android:title="@string/trackbook_tab_tracks" />
+
+    <item
+        android:id="@+id/trackbook_settings_fragment"
+        android:icon="@drawable/trackbook_ic_settings_black_24dp"
+        android:title="@string/trackbook_tab_settings" />
+
+</menu>

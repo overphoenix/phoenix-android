@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="?android:attr/actionBarSize"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/action_next_page"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:contentDescription="@string/browser_next_page"
+                android:padding="12dp"
+                android:src="@drawable/browser_arrow_right"
+                app:tint="?attr/colorControlNormal" />
+
+            <ImageButton
+                android:id="@+id/action_find_page"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:contentDescription="@string/browser_find_page"
+                android:padding="12dp"
+                android:src="@drawable/browser_search"
+                app:tint="?attr/colorControlNormal" />
+
+            <ImageButton
+                android:id="@+id/action_download"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:contentDescription="@string/download"
+                android:padding="12dp"
+                android:src="@drawable/browser_download"
+                app:tint="?attr/colorControlNormal" />
+
+            <ImageButton
+                android:id="@+id/action_share"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:contentDescription="@string/share"
+                android:padding="12dp"
+                android:src="@drawable/browser_share"
+                app:tint="?attr/colorControlNormal" />
+
+            <ImageButton
+                android:id="@+id/action_reload"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:contentDescription="@string/browser_reload_page"
+                android:padding="12dp"
+                android:src="@drawable/browser_reload"
+                app:tint="?attr/colorControlNormal" />
+        </LinearLayout>
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/action_information"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:drawableEnd="@drawable/browser_qrcode"
+            android:drawableTint="?attr/colorControlNormal"
+            android:gravity="center|start"
+            android:padding="12dp"
+            android:singleLine="true"
+            android:text="@string/browser_information"
+            android:textAlignment="textStart"
+            android:textAppearance="?android:textAppearanceLargePopupMenu" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/action_history"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center|start"
+            android:padding="12dp"
+            android:singleLine="true"
+            android:text="@string/browser_history"
+            android:textAlignment="textStart"
+            android:textAppearance="?android:textAppearanceLargePopupMenu" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/action_downloads"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center|start"
+            android:padding="12dp"
+            android:singleLine="true"
+            android:text="@string/browser_downloads"
+            android:textAlignment="textStart"
+            android:textAppearance="?android:textAppearanceLargePopupMenu" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/action_cleanup"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center|start"
+            android:padding="12dp"
+            android:singleLine="true"
+            android:text="@string/browser_action_cleanup"
+            android:textAlignment="textStart"
+            android:textAppearance="?android:textAppearanceLargePopupMenu" />
+
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/action_settings"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:drawableTint="?attr/colorControlNormal"
+            android:gravity="center|start"
+            android:padding="12dp"
+            android:singleLine="true"
+            android:text="@string/settings"
+            android:textAlignment="textStart"
+            android:textAppearance="?android:textAppearanceLargePopupMenu"
+            app:drawableEndCompat="@drawable/browser_tune" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

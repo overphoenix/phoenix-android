@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="sd_close_animation_duration">200</integer>
+    <integer name="sd_open_animation_duration">150</integer>
+    <integer name="sd_rotate_animation_duration">200</integer>
+
+    <integer name="simple_menu_max_units">5</integer>
+
+    <integer name="visibility_visible">0</integer>
+    <integer name="visibility_invisible">1</integer>
+    <integer name="visibility_gone">2</integer>
+
+    <integer name="scrollFlags_noScroll">0</integer>
+    <integer name="scrollFlags_scroll_enterAlways">5</integer>
+
+    <integer name="file_list_toolbar_scroll_flags">@integer/scrollFlags_scroll_enterAlways</integer>
+
+    <!--    thirdparty-->
+    <integer name="gallery_directory_columns_vertical_scroll">2</integer>
+    <integer name="gallery_directory_columns_horizontal_scroll">3</integer>
+    <integer name="gallery_media_columns_vertical_scroll">3</integer>
+    <integer name="gallery_media_columns_horizontal_scroll">4</integer>
+
+    <integer name="default_font_size">1</integer>
+    <integer name="default_viewpager_page">0</integer>
+
+    <integer name="default_sorting">33794</integer>
+</resources>

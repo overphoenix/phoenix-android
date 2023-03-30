@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_add_smb_server"
+        android:icon="@drawable/lan_icon_white_24dp"
+        android:title="@string/storage_add_storage_smb_server" />
+
+    <item
+        android:id="@+id/action_add_sftp_server"
+        android:icon="@drawable/network_folder_icon_white_24dp"
+        android:title="@string/storage_add_storage_sftp_server" />
+
+    <item
+        android:id="@+id/action_add_document_tree"
+        android:icon="@drawable/directory_icon_white_24dp"
+        android:title="@string/storage_add_storage_document_tree" />
+
+</menu>

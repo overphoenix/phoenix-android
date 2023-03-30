@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="activity_icon_tint">@color/secondary_text_default_material_dark</color>
+
+
+    <color name="file_icon_light_blue">#6F9EF3</color>
+    <color name="file_icon_blue">#4285F4</color>
+    <color name="file_icon_cyan">#78D9EC</color>
+    <color name="file_icon_light_green">#81C995</color>
+    <color name="file_icon_green">#4FB885</color>
+    <color name="file_icon_deep_green">#3FB179</color>
+    <color name="file_icon_grey">#9AA0A6</color>
+    <color name="file_icon_orange">#FD9167</color>
+    <color name="file_icon_purple">#C58AF9</color>
+    <color name="file_icon_red">#F28B82</color>
+    <color name="file_icon_deep_red">#E8877F</color>
+    <color name="file_icon_yellow">#F8CF5C</color>
+
+
+    <!-- NIGHT THEME COLORS -->
+
+    <color name="trackbook_app_window_background">@color/trackbook_grey_darker</color>
+
+    <color name="trackbook_bottom_navigation_background">@color/trackbook_black</color>
+    <color name="trackbook_bottom_navigation_element">@color/material_grey_500</color>
+    <color name="trackbook_bottom_navigation_element_selected">@color/trackbook_blue</color>
+
+    <color name="trackbook_fab_button_card_text">@color/color_white</color>
+    <color name="trackbook_fab_button_card_background">@color/trackbook_grey_dark</color>
+
+    <color name="gps_location_button_icon">@color/color_white</color>
+    <color name="gps_location_button_background">@color/trackbook_black</color>
+
+    <color name="trackbook_text_default">@color/color_white</color>
+    <color name="trackbook_text_lightweight">@color/trackbook_grey_very_light</color>
+
+    <color name="trackbook_icon_default">@color/color_white</color>
+    <color name="trackbook_icon_lightweight">@color/trackbook_grey_very_light</color>
+    <color name="trackbook_icon_star_selected">@color/trackbook_blue</color>
+
+    <color name="trackbook_list_card_background">@color/trackbook_grey_dark</color>
+    <color name="trackbook_list_card_delete_background">@color/material_red_600</color>
+
+    <color name="trackbook_statistic_sheet_background_expanded">@color/trackbook_black_85percent</color>
+    <color name="trackbook_statistic_sheet_background_collapsed">@color/trackbook_black</color>
+    <color name="trackbook_statistic_sheet_background_border">@color/trackbook_grey_dark</color>
+
+
+    <color name="system_window_scrim">@color/system_window_scrim_dark</color>
+
+    <color name="system_window_scrim_compat">@color/system_window_scrim_dark</color>
+
+    <color name="color_primary_dark_black">@color/system_window_scrim_dark_black</color>
+
+    <color name="color_primary">@color/color_primary_dark</color>
+
+    <color name="color_surface">@color/color_surface_dark</color>
+
+</resources>

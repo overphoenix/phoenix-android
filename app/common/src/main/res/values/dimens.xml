@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="screen_edge_margin">16dp</dimen>
+    <dimen name="screen_edge_margin_minus_4dp">12dp</dimen>
+    <dimen name="screen_edge_margin_minus_8dp">8dp</dimen>
+    <dimen name="screen_edge_margin_minus_12dp">4dp</dimen>
+    <dimen name="screen_edge_margin_minus_12dp_at_least_8dp">8dp</dimen>
+    <dimen name="screen_edge_margin_minus_16dp">0dp</dimen>
+    <dimen name="content_start_margin">72dp</dimen>
+    <dimen name="content_start_margin_minus_12dp">60dp</dimen>
+    <dimen name="content_start_from_screen_edge_margin_minus_24dp">32dp</dimen>
+    <dimen name="content_start_from_screen_edge_margin_minus_36dp_considering_at_least_8dp">16dp</dimen>
+    <dimen name="content_start_from_screen_edge_margin_minus_40dp">16dp</dimen>
+    <dimen name="content_start_from_screen_edge_margin_minus_44dp">12dp</dimen>
+    <dimen name="dialog_padding">24dp</dimen>
+    <dimen name="dialog_padding_minus_4dp">20dp</dimen>
+    <dimen name="dialog_padding_minus_6dp">18dp</dimen>
+    <dimen name="dialog_padding_minus_7dp">17dp</dimen>
+    <dimen name="dialog_padding_minus_16dp">8dp</dimen>
+    <dimen name="navigation_max_width">320dp</dimen>
+    <dimen name="navigation_header_height">172dp</dimen>
+    <dimen name="navigation_item_horizontal_padding">24dp</dimen>
+    <dimen name="navigation_item_icon_padding">24dp</dimen>
+    <dimen name="tab_layout_height">48dp</dimen>
+    <dimen name="list_vertical_padding">8dp</dimen>
+    <dimen name="list_bottom_padding_with_fab">88dp</dimen>
+    <dimen name="dense_single_line_list_item_height">40dp</dimen>
+    <dimen name="two_line_list_item_height">72dp</dimen>
+    <dimen name="list_item_vertical_padding">16dp</dimen>
+    <dimen name="horizontal_divider_height">1dp</dimen>
+    <dimen name="small_icon_size">18dp</dimen>
+    <dimen name="icon_size">24dp</dimen>
+    <dimen name="large_icon_size">40dp</dimen>
+    <dimen name="touch_target_size">48dp</dimen>
+    <dimen name="touch_target_icon_padding">12dp</dimen>
+    <dimen name="touch_target_large_icon_padding">4dp</dimen>
+    <dimen name="badge_size">18dp</dimen>
+    <dimen name="badge_size_plus_1dp">19dp</dimen>
+
+    <integer name="config_activityShortDur">550</integer>
+    <integer name="config_activityDefaultDur">220</integer>
+
+
+    <!--    Notes-->
+
+    <dimen name="recycler_padding">8dp</dimen>
+    <dimen name="card_note_padding">12dp</dimen>
+    <dimen name="card_note_icon_size">16dp</dimen>
+    <dimen name="icon_indicator_empty_size">96dp</dimen>
+
+
+    <dimen name="camera_toggle_button_padding">10dp</dimen>
+    <dimen name="camera_toggle_button_size">46dp</dimen>
+
+    <dimen name="camera_qr_toggle_button_size">52dp</dimen>
+
+    <dimen name="camera_grid_on_toggle_button_padding">6dp</dimen>
+    <dimen name="camera_grid_off_toggle_button_padding">12dp</dimen>
+
+    <dimen name="camera_settings_dialog_padding_vertical">12dp</dimen>
+    <dimen name="camera_settings_dialog_padding_horizontal">14dp</dimen>
+
+    <dimen name="camera_settings_dialog_menu_item_horizontal">4dp</dimen>
+    <dimen name="camera_settings_dialog_menu_item_vertical">8dp</dimen>
+
+    <dimen name="camera_settings_dialog_horizontal_margin">12dp</dimen>
+
+
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <item name="trackbook_custom_match_parent" type="dimen">-1</item> <!-- CUSTOM MATCH_PARENT - see https://developer.android.com/reference/android/view/ViewGroup.LayoutParams.html#MATCH_PARENT -->
+    <dimen name="trackbook_activity_horizontal_margin">16dp</dimen>
+    <dimen name="trackbook_bottom_sheet_width">@dimen/trackbook_custom_match_parent</dimen>
+
+    
+    <dimen name="one_dp">1dp</dimen>
+    <dimen name="tiny_margin">2dp</dimen>
+    <dimen name="small_margin">4dp</dimen>
+    <dimen name="smaller_margin">6dp</dimen>
+    <dimen name="medium_margin">8dp</dimen>
+    <dimen name="normal_margin">12dp</dimen>
+    <dimen name="activity_margin">16dp</dimen>
+    <dimen name="bigger_margin">20dp</dimen>
+    <dimen name="big_margin">24dp</dimen>
+    <dimen name="section_margin">32dp</dimen>
+
+    <dimen name="tiny_text_size">8sp</dimen>
+    <dimen name="small_text_size">10sp</dimen>
+    <dimen name="smaller_text_size">12sp</dimen>
+    <dimen name="normal_text_size">14sp</dimen>
+    <dimen name="bigger_text_size">16sp</dimen>
+    <dimen name="middle_text_size">17sp</dimen>
+    <dimen name="big_text_size">18sp</dimen>
+    <dimen name="actionbar_text_size">20sp</dimen>
+    <dimen name="extra_big_text_size">22sp</dimen>
+
+    <dimen name="sd_close_elevation">5dp</dimen>
+    <dimen name="sd_fab_mini_size">54dp</dimen>
+    <dimen name="sd_fab_normal_size">72dp</dimen>
+    <dimen name="sd_fab_side_margin">12dp</dimen>|
+    <dimen name="sd_label_max_width">160dp</dimen>
+    <dimen name="sd_open_elevation">8dp</dimen>
+    <dimen name="sd_overlay_elevation">@dimen/sd_close_elevation</dimen>
+
+    <dimen name="fs_min_touch_target_size">48dp</dimen>
+    <dimen name="fs_popup_min_size">88dp</dimen>
+    <dimen name="fs_popup_margin_end">16dp</dimen>
+    <dimen name="fs_popup_text_size">45dp</dimen>
+    <dimen name="fs_md2_popup_min_width">78dp</dimen>
+    <dimen name="fs_md2_popup_min_height">64dp</dimen>
+    <dimen name="fs_md2_popup_margin_end">14dp</dimen>
+    <dimen name="fs_md2_popup_padding_start">16dp</dimen>
+    <dimen name="fs_md2_popup_padding_end">29dp</dimen>
+    <dimen name="fs_md2_popup_elevation">3dp</dimen>
+    <dimen name="fs_md2_popup_text_size">34dp</dimen>
+
+    <dimen name="simple_menu_unit">56dp</dimen>
+    <dimen name="simple_menu_margin">15dp</dimen>
+    <dimen name="simple_menu_dialog_max_width">600dp</dimen>
+
+    <dimen name="app_bar_elevation">8dp</dimen>
+    <dimen name="app_toolbar_padding_start">8dp</dimen>
+    <dimen name="app_toolbar_padding_end_no_overflow">14dp</dimen>
+    <dimen name="app_toolbar_padding_end_with_overflow">10dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="dialog_color_item_size">50dp</dimen>
+
+<!--    Thirdparty-->
+    <dimen name="social_logo">40dp</dimen>
+    <dimen name="color_sample_size">30dp</dimen>
+    <dimen name="shortcut_size">64dp</dimen>
+    <dimen name="colorpicker_size">240dp</dimen>
+    <dimen name="colorpicker_size_with_padding">272dp</dimen>
+    <dimen name="colorpicker_hue_width">30dp</dimen>
+    <dimen name="colorpicker_items_height">30dp</dimen>
+    <dimen name="colorpicker_color_width">70dp</dimen>
+
+    <dimen name="normal_icon_size">48dp</dimen>
+    <dimen name="fastscroll_width">8dp</dimen>
+    <dimen name="fastscroll_height">40dp</dimen>
+    <dimen name="fingerprint_icon_size">72dp</dimen>
+    <dimen name="fab_size">56dp</dimen>
+    <dimen name="secondary_fab_bottom_margin">76dp</dimen>
+    <dimen name="file_picker_icon_size">54dp</dimen>
+    <dimen name="list_avatar_size">40dp</dimen>
+    <dimen name="min_row_height">60dp</dimen>
+    <dimen name="top_shadow_height">100dp</dimen>
+    <dimen name="rounded_corner_radius_small">4dp</dimen>
+    <dimen name="rounded_corner_radius_big">10dp</dimen>
+    <dimen name="bottom_sheet_corner_radius">24dp</dimen>
+    <dimen name="breadcrumbs_layout_height">48dp</dimen>
+
+    <dimen name="dragselect_hotspot_height">56dp</dimen>
+    <dimen name="selection_check_size">26dp</dimen>
+    <dimen name="widget_colorpicker_size">50dp</dimen>
+    <dimen name="line_color_picker_height">80dp</dimen>
+    <dimen name="line_color_picker_margin">10dp</dimen>
+    <dimen name="line_color_picker_app_icon_size">64dp</dimen>
+
+    <dimen name="cab_popup_menu_max_width">336dp</dimen>
+    <dimen name="cab_popup_menu_min_width">168dp</dimen>
+    <dimen name="cab_item_min_width">85dp</dimen>
+
+    <dimen name="play_outline_icon_size">22dp</dimen>
+    <dimen name="favorite_list_icon_size">17dp</dimen>
+    <dimen name="drag_handle_size">34dp</dimen>
+    <dimen name="play_outline_size_big">96dp</dimen>
+    <dimen name="media_side_slider_width">60dp</dimen>
+    <dimen name="video_player_play_pause_size">60dp</dimen>
+    <dimen name="list_view_folder_thumbnail_size">72dp</dimen>
+    <dimen name="bottom_actions_height">64dp</dimen>
+    <dimen name="bottom_actions_height_double">128dp</dimen>
+    <dimen name="bottom_actions_height_bigger">164dp</dimen>
+    <dimen name="bottom_editor_color_picker_size">48dp</dimen>
+    <dimen name="bottom_filters_thumbnail_size">76dp</dimen>
+    <dimen name="bottom_filters_height">90dp</dimen>
+    <dimen name="bottom_filters_height_with_margin">98dp</dimen>
+    <dimen name="bottom_editor_actions_shadow_height">180dp</dimen>
+    <dimen name="portrait_photos_stripe_height">48dp</dimen>
+    <dimen name="default_status_action_height">86dp</dimen>
+    <dimen name="widget_initial_size">110dp</dimen>
+    <dimen name="full_brush_size">40dp</dimen>
+    <dimen name="sample_thumbnail_size">180dp</dimen>
+
+    <dimen name="audio_toggle_recording_button_size">64dp</dimen>
+    <dimen name="audio_player_button_margin">48dp</dimen>
+    <dimen name="audio_main_button_size">150dp</dimen>
+
+    <dimen name="calc_button_text_size">28sp</dimen>
+    <dimen name="calc_formula_text_size">20sp</dimen>
+    <dimen name="calc_display_text_size">40sp</dimen>
+
+    <dimen name="flashlight_seekbar_width">250dp</dimen>
+    <dimen name="flashlight_main_button_size">150dp</dimen>
+    <dimen name="flashlight_sos_text_size">26sp</dimen>
+
+    <dimen name="paint_stroke_bar_size">150dp</dimen>
+    <dimen name="paint_preview_dot_stroke_size">1dp</dimen>
+    <dimen name="paint_full_brush_size">40dp</dimen>
+</resources>

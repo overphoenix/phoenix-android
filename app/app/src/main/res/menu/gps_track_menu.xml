@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_track_info"
+        android:icon="@drawable/gps_track_info_icon_normal_24dp"
+        android:title="@string/gps_track_info"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_track_rename"
+        android:icon="@drawable/gps_track_rename_icon_normal_24dp"
+        android:title="@string/gps_track_rename"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_track_delete"
+        android:icon="@drawable/gps_track_delete_icon_normal_24dp"
+        android:title="@string/gps_track_delete"
+        app:showAsAction="ifRoom" />
+</menu>

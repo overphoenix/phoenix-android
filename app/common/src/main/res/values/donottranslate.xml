@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pro">Pro</string>
+    <string name="simple_commons">Simple Commons</string>
+    <string name="progress">%1$s / %2$s</string>
+    <string name="a_m">a.m.</string>
+    <string name="p_m">p.m.</string>
+
+    <!-- Message digest algorithms -->
+    <string name="md5">MD5</string>
+
+    <string name="gif">GIF</string>
+    <string name="raw">RAW</string>
+    <string name="svg">SVG</string>
+    <string name="package_name">me.zhanghai.android.files.features.gallery</string>
+
+    <string name="audio_m4a">m4a</string>
+    <string name="audio_mp3">mp3</string>
+    <string name="audio_ogg">ogg</string>
+    <string name="audio_bitrate_value">%d kbps</string>
+</resources>

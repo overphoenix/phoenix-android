@@ -1,0 +1,23 @@
+<resources>
+
+    <style name="GpsAppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/gpsSurfaceDark</item>
+    </style>
+
+    <color name="gpsPrimaryColor">#212121</color>
+    <color name="gpsPrimaryColorDark">#000000</color>
+
+
+ <!-- Base application theme. -->
+    <style name="TrackbookTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <!-- Set AppCompat’s colors -->
+        <item name="colorPrimary">@color/trackbook_grey_very_light</item>
+        <item name="colorPrimaryDark">@color/color_white</item>
+        <item name="colorAccent">@color/trackbook_blue</item>
+
+        <!-- Don't show white status bar -->
+        <item name="android:windowTranslucentStatus">true</item>
+
+    </style>
+</resources>

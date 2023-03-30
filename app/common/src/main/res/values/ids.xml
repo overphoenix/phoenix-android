@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="pref_master_switch_view" type="id" />
+
+    <item name="sd_main_fab" type="id" />
+
+    <item name="map_icon_frame" type="id" />
+    <item name="map_widget_frame" type="id" />
+    <item name="map_bottom_barrier" type="id" />
+
+
+    <item name="default_notebook" type="id" />
+
+    <item name="workflow0" type="id" />
+    <item name="workflow1" type="id" />
+    <item name="workflow2" type="id" />
+    <item name="workflow3" type="id" />
+    <item name="workflow4" type="id" />
+    <item name="workflow5" type="id" />
+    <item name="workflow6" type="id" />
+    <item name="workflow7" type="id" />
+    <item name="workflow8" type="id" />
+    <item name="workflow9" type="id" />
+
+
+<!--    Thirdparty-->
+    <item name="properties_size" type="id"/>
+    <item name="properties_direct_children_count" type="id"/>
+    <item name="properties_file_count" type="id"/>
+    <item name="properties_last_modified" type="id"/>
+    <item name="properties_md5" type="id"/>
+
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="app_toolbar_padding_start">16dp</dimen>
+    <dimen name="app_toolbar_padding_end_no_overflow">22dp</dimen>
+    <dimen name="app_toolbar_padding_end_with_overflow">14dp</dimen>
+
+    <dimen name="simple_menu_margin">23dp</dimen>
+
+    <dimen name="screen_edge_margin">24dp</dimen>
+    <dimen name="screen_edge_margin_minus_4dp">20dp</dimen>
+    <dimen name="screen_edge_margin_minus_8dp">16dp</dimen>
+    <dimen name="screen_edge_margin_minus_12dp">12dp</dimen>
+    <dimen name="screen_edge_margin_minus_12dp_at_least_8dp">12dp</dimen>
+    <dimen name="screen_edge_margin_minus_16dp">8dp</dimen>
+    <dimen name="content_start_margin">80dp</dimen>
+    <dimen name="content_start_margin_minus_12dp">68dp</dimen>
+    <dimen name="content_start_from_screen_edge_margin_minus_36dp_considering_at_least_8dp">20dp</dimen>
+    <dimen name="navigation_header_height">192dp</dimen>
+    <dimen name="navigation_item_horizontal_padding">32dp</dimen>
+    <dimen name="list_bottom_padding_with_fab">104dp</dimen>
+
+    <!--    thirdparty-->
+    <dimen name="colorpicker_color_width">80dp</dimen>
+    <dimen name="colorpicker_items_height">40dp</dimen>
+
+    <dimen name="selection_check_size">38dp</dimen>
+
+    <dimen name="normal_text_size">18sp</dimen>
+    <dimen name="big_text_size">22sp</dimen>
+    <dimen name="extra_big_text_size">26sp</dimen>
+
+    <dimen name="gallery_dir_tmb_size">150dp</dimen>
+    <dimen name="gallery_medium_tmb_size">120dp</dimen>
+    <dimen name="gallery_sd_card_icon_size">30dp</dimen>
+    <dimen name="gallery_selection_check_size">38dp</dimen>
+    <dimen name="gallery_tmb_shadow_height">70dp</dimen>
+    <dimen name="gallery_lock_padding">80dp</dimen>
+
+    <dimen name="calc_button_text_size">42sp</dimen>
+    <dimen name="calc_formula_text_size">30sp</dimen>
+    <dimen name="calc_display_text_size">60sp</dimen>
+</resources>

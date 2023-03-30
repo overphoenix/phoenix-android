@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/camera_qr_dialog"
+    android:orientation="vertical">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="6dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/camera_black"
+            android:textSize="20sp"
+            android:layout_marginBottom="2sp"
+            android:text="@string/camera_scan_result"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/copy_qr_text"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:src="@drawable/camera_copy_to_clipboard"
+                android:contentDescription="@string/copy_to_clipboard"/>
+
+            <ImageButton
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="?selectableItemBackgroundBorderless"
+                android:id="@+id/share_qr_text"
+                android:src="@drawable/camera_share_grey"
+                android:contentDescription="@string/camera_share_qr_text"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/encoding_tabs"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@android:color/tab_indicator_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/scan_result_text"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="6dp"
+        android:background="@drawable/camera_qr_result_background"
+        android:maxHeight="200dp"
+        android:autoLink="all"
+        android:scrollbars="vertical"
+        android:fadeScrollbars="false"
+        android:overScrollMode="always"
+        android:textIsSelectable="true"
+        android:layout_width="match_parent" />
+    
+</LinearLayout>

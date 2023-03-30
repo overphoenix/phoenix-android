@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/ic_sort"
+        android:title="@string/sort"
+        app:showAsAction="ifRoom">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/action_sort_name_asc"
+                    android:title="@string/notes_sort_by_title_asc" />
+                <item
+                    android:id="@+id/action_sort_name_desc"
+                    android:title="@string/notes_sort_by_title_desc" />
+                <item
+                    android:id="@+id/action_sort_created_asc"
+                    android:title="@string/notes_sort_by_created_asc" />
+                <item
+                    android:id="@+id/action_sort_created_desc"
+                    android:title="@string/notes_sort_by_created_desc" />
+                <item
+                    android:id="@+id/action_sort_modified_asc"
+                    android:title="@string/notes_sort_by_modified_asc" />
+                <item
+                    android:id="@+id/action_sort_modified_desc"
+                    android:title="@string/notes_sort_by_modified_desc" />
+            </group>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/action_layout_mode"
+        android:title="@string/layout_mode"
+        android:visible="false"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_search"
+        android:title="@string/search"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_show_hidden_notes"
+        android:checkable="true"
+        android:checked="false"
+        android:title="@string/organizer_show_hidden_title"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_select_all"
+        android:title="@string/select_all"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_workflows"
+        android:title="@string/organizer_workflows_title"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_notebooks"
+        android:title="@string/organizer_folders_title"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_categories"
+        android:title="@string/categories_title"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_tags"
+        android:title="@string/tags_title"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_archived"
+        android:title="@string/notes_archive_title"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_deleted"
+        android:title="@string/notes_deleted_title"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_database_settings"
+        android:title="@string/settings_title"
+        app:showAsAction="never" />
+</menu>

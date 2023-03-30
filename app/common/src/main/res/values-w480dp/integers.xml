@@ -1,0 +1,6 @@
+<resources>
+    <integer name="gallery_directory_columns_vertical_scroll">3</integer>
+    <integer name="gallery_directory_columns_horizontal_scroll">3</integer>
+    <integer name="gallery_media_columns_vertical_scroll">5</integer>
+    <integer name="gallery_media_columns_horizontal_scroll">5</integer>
+</resources>

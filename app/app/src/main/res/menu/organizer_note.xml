@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_attachments"
+        android:icon="@drawable/attachment_icon_24dp"
+        android:title="@string/organizer_attachments_title"
+        android:visible="false"
+        app:showAsAction="ifRoom">
+        <menu>
+            <item
+                android:id="@+id/action_attach_file"
+                android:icon="@drawable/file_icon_24dp"
+                android:title="@string/action_attach_files" />
+            <item
+                android:id="@+id/action_take_photo"
+                android:icon="@drawable/camera_icon_24dp"
+                android:title="@string/action_take_photo" />
+            <item
+                android:id="@+id/action_take_video"
+                android:icon="@drawable/video_icon_24dp"
+                android:title="@string/action_take_video" />
+            <item
+                android:id="@+id/action_record_audio"
+                android:icon="@drawable/voice_icon_24dp"
+                android:title="@string/action_record_audio" />
+            <item
+                android:id="@+id/action_drawing"
+                android:icon="@drawable/paint_icon_white_24dp"
+                android:title="@string/action_drawing" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/action_note_type"
+        android:icon="@drawable/organizer_note_view_type_icon_24dp"
+        android:title="@string/organizer_note_type"
+        android:visible="false"
+        app:showAsAction="ifRoom">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/action_note_simple"
+                    android:icon="@drawable/organizer_note_simple_icon_24dp"
+                    android:title="@string/action_note_text" />
+                <item
+                    android:id="@+id/action_note_task_list"
+                    android:icon="@drawable/organizer_note_task_list_icon_24dp"
+                    android:title="@string/action_note_task_list" />
+                <item
+                    android:id="@+id/action_note_categories"
+                    android:icon="@drawable/category_icon_24dp"
+                    android:title="@string/action_note_categories" />
+            </group>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/action_pin_note"
+        android:checkable="true"
+        android:checked="false"
+        android:title="@string/pin_title"
+        android:visible="false"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_hide_note"
+        android:checkable="true"
+        android:checked="false"
+        android:title="@string/hide_action"
+        android:visible="false"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_view_reminders"
+        android:icon="@drawable/bell_icon_24dp"
+        android:title="@string/reminders"
+        android:visible="false"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_view_tags"
+        android:title="@string/tags_title"
+        android:visible="false"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_enable_disable_markdown"
+        android:title="@string/enable_markdown_action"
+        android:visible="false"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_change_color"
+        android:title="@string/change_color_action"
+        android:visible="false"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_export_note"
+        android:title="@string/export_action"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_share"
+        android:title="@string/share_action"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_archive_note"
+        android:title="@string/archive_action"
+        android:visible="false"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_restore_note"
+        android:icon="@drawable/ic_restore"
+        android:title="@string/action_restore"
+        android:visible="false"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_delete_note"
+        android:title="@string/delete_action"
+        android:visible="false"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_delete_permanently_note"
+        android:title="@string/action_delete_permanently"
+        android:visible="false"
+        app:showAsAction="never" />
+</menu>

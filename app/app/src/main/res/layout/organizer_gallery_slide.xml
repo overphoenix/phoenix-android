@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <tech.nagual.phoenix.tools.organizer.gallery.ZoomableImageView
+        android:id="@+id/organizer_slide_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/camera_preview" />
+
+    <ImageView
+        android:id="@+id/play_button"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/camera_preview"
+        android:src="@drawable/camera_play_button_circle"
+        android:visibility="gone" />
+
+</FrameLayout>

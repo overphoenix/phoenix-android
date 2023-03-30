@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="simple_menu_max_units">7</integer>
+    <integer name="file_list_toolbar_scroll_flags">@integer/scrollFlags_noScroll</integer>
+
+</resources>
+

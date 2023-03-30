@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <style name="Theme.Phoenix.Material3.Black">
+        <item name="colorPrimaryDark">@color/color_primary_dark_black</item>
+        <item name="colorSurface">@android:color/black</item>
+    </style>
+</resources>

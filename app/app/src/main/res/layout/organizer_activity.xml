@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+<!--    <androidx.drawerlayout.widget.DrawerLayout-->
+<!--        android:id="@+id/drawerLayout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:fitsSystemWindows="true">-->
+
+<!--        <tech.nagual.phoenix.common.ui.drawer.IgnoreFitsSystemWindowsFullyDraggableDrawerContentLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:fitsSystemWindows="true">-->
+
+            <me.zhanghai.android.files.ui.PersistentBarLayout
+                android:id="@+id/persistentBarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true">
+
+                <androidx.fragment.app.FragmentContainerView
+                    android:id="@+id/nav_host_fragment"
+                    android:name="androidx.navigation.fragment.NavHostFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fitsSystemWindows="true"
+                    app:defaultNavHost="true"
+                    app:navGraph="@navigation/organizer_nav_graph" />
+
+            </me.zhanghai.android.files.ui.PersistentBarLayout>
+<!--        </tech.nagual.phoenix.common.ui.drawer.IgnoreFitsSystemWindowsFullyDraggableDrawerContentLayout>-->
+
+<!--        <tech.nagual.phoenix.common.ui.NavigationFrameLayout-->
+<!--            android:id="@+id/navigationFragment"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_gravity="start"-->
+<!--            android:background="?colorSurface"-->
+<!--            android:fitsSystemWindows="true" />-->
+<!--    </androidx.drawerlayout.widget.DrawerLayout>-->
+</FrameLayout>

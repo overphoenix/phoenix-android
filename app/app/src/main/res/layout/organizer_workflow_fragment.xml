@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:transitionGroup="true">
+
+    <include layout="@layout/generic_app_bar_layout" />
+
+    <me.zhanghai.android.files.ui.CoordinatorScrollingFrameLayout
+        android:id="@+id/coordinatorScrollingFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <tech.nagual.phoenix.tools.organizer.workflows.WorkflowCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/note_color_default"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="4dp"
+                    app:checkedIcon="@null">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:animateLayoutChanges="true"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="?textInputOutlinedExposedDropdownMenuStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/organizer_note_type"
+                            app:errorEnabled="true"
+                            app:expandedHintEnabled="false">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/noteTypeEdit"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="none" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="?textInputOutlinedExposedDropdownMenuStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/folder"
+                            app:errorEnabled="true"
+                            app:expandedHintEnabled="false">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/folderEdit"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="none" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="?textInputOutlinedExposedDropdownMenuStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/organizer_attachments_title"
+                            app:errorEnabled="true"
+                            app:expandedHintEnabled="false">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/attachmentsEdit"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="none" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <CheckBox
+                            android:id="@+id/hiddenCheck"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="-7dp"
+                            android:text="@string/organizer_note_hidden"
+                            android:textAppearance="?textAppearanceListItem" />
+                    </LinearLayout>
+
+                </tech.nagual.phoenix.tools.organizer.workflows.WorkflowCardView>
+
+                <tech.nagual.phoenix.tools.organizer.workflows.WorkflowCardView
+                    android:id="@+id/categoriesCardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:padding="8dp"
+                    app:cardBackgroundColor="@color/note_color_default"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="4dp"
+                    app:checkedIcon="@null">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerCategories"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clipToPadding="false"
+                        android:fitsSystemWindows="true"
+                        tools:listitem="@layout/organizer_folder_item" />
+
+                </tech.nagual.phoenix.tools.organizer.workflows.WorkflowCardView>
+
+            </LinearLayout>
+        </ScrollView>
+    </me.zhanghai.android.files.ui.CoordinatorScrollingFrameLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,1903 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="close">Закрыть</string>
+    <string name="copy">Копировать</string>
+    <string name="cut">Вырезать</string>
+    <string name="discard">Отказаться</string>
+    <string name="edit">Редактировать</string>
+    <string name="empty">Пусто</string>
+    <string name="empty_placeholder">(Пусто)</string>
+    <string name="error">Ошибка</string>
+    <string name="hide">Скрыть</string>
+    <string name="install">Установить</string>
+    <string name="keep_editing">Продолжить редактирование</string>
+    <string name="loading">Загрузка…</string>
+    <string name="maybe_later">Возможно позже</string>
+    <string name="merge">Объеденить</string>
+    <string name="none">Нет</string>
+    <string name="open_navigation_drawer">Открыть боковое меню</string>
+    <string name="paste">Вставить</string>
+    <string name="refresh">Обновить</string>
+    <string name="reload">Перезагрузить</string>
+    <string name="remove">Удалить</string>
+    <string name="rename">Переименовать</string>
+    <string name="replace">Заменить</string>
+    <string name="reset">Сбросить</string>
+    <string name="retry">Повторить</string>
+    <string name="save">Сохранить</string>
+    <string name="search">Поиск</string>
+    <string name="select">Выбрать</string>
+    <string name="select_all">Выбрать всё</string>
+    <string name="share">Поделиться</string>
+    <string name="show">Показать</string>
+    <string name="skip">Пропустить</string>
+    <string name="sort">Сортировка</string>
+    <string name="stop">Остановить</string>
+    <string name="unknown">Неизвестно</string>
+    <string name="view">Просмотр</string>
+    <string name="layout_mode">Режим макета</string>
+    <string name="pin">Закрепить</string>
+    <string name="pin_title">Закрепить</string>
+    <string name="unpin_title">Открепить</string>
+    <string name="organizer_note_type">Тип заметки</string>
+    <string name="organizer_note_hidden">Скрытая заметка</string>
+
+    <string name="organizer_attachments_title">Вложения</string>
+
+    <string name="organizer_export_dialog_title">Экспорт органайзера</string>
+    <string name="organizer_export_title">Экспортировать</string>
+
+    <string name="organizer_export_type">Тип экспорта</string>
+    <string-array name="organizer_export_types">
+        <item>Копировать всё</item>
+        <item>Только заметки</item>
+        <item>Только категории</item>
+    </string-array>
+    <string name="organizer_export_without_attachments">Не копировать вложения</string>
+    <!--    <string name="organizer_export_type_full">Копировать всё</string>-->
+    <!--    <string name="organizer_export_type_notes">Только заметки</string>-->
+    <!--    <string name="organizer_export_type_categories">Только категории</string>-->
+    <!--    <string name="organizer_pref_backup_strategy_keep_info">Только описание и локальный путь</string>-->
+    <!--    <string name="organizer_pref_backup_strategy_keep_nothing">Не копировать вложения</string>-->
+
+    <string name="organizer_notification_exporting">Экспортирование органайзера…</string>
+    <string name="organizer_notification_export_complete">Экспортирование завершено!</string>
+    <string name="organizer_notification_export_failed">Экспортирование не удалось</string>
+    <string name="organizer_notification_importing_notes">Импортирование органайзера…</string>
+    <string name="organizer_notification_import_complete">Импортирование завершено!</string>
+    <string name="organizer_notification_import_failed">Импортирование не удалось</string>
+
+    <string-array name="organizer_note_view_types">
+        <item>Текст</item>
+        <item>Список задач</item>
+        <item>Категории</item>
+    </string-array>
+
+    <string name="not_specified">Не указано</string>
+
+    <string name="archive_action">Архивировать</string>
+    <string name="delete_action">Удалить</string>
+    <string name="hide_action">Скрыть</string>
+    <string name="change_color_action">Изменить цвет</string>
+    <string name="enable_markdown_action">Включить markdown</string>
+    <string name="disable_markdown_action">Отключить markdown</string>
+    <string name="export_action">"Экспортировать"</string>
+    <string name="share_action">Поделиться</string>
+    <string name="move_to_action">Переместить в…</string>
+
+    <!-- android.R.string.app_not_found -->
+    <string name="open_settings">Открыть настройки</string>
+    <string name="shortcut_created">Шорткат создан</string>
+
+    <plurals name="size_in_bytes_format">
+        <item quantity="one">%1$,d байт</item>
+        <item quantity="few">%1$,d байт</item>
+        <item quantity="many">%1$,d байт</item>
+        <item quantity="other">%1$,d байт</item>
+    </plurals>
+
+    <string name="storage_permission_rationale_message">Приложению требуется разрешение для доступа к файлам. Пожалуйста, нажмите «РАЗРЕШИТЬ» в появившемся системном диалоговом окне.</string>
+    <string name="storage_permission_permanently_denied_message">Приложению требуется разрешение для управления всеми файлами. Пожалуйста, предоставьте соответствующее разрешение в системных настройках.</string>
+    <string name="all_files_access_rationale_message">Приложению требуется доступ для управления всеми файлами. Пожалуйста, разрешите доступ в появившемся окне настроек системы.</string>
+
+    <string name="notification_channel_file_job_name">Операции с файлами</string>
+    <string name="notification_channel_file_job_description">Отображать и управлять операциями с файлами</string>
+    <string name="notification_channel_ftp_server_name">FTP сервер</string>
+    <string name="notification_channel_ftp_server_description">Отображать и управлять FTP сервером</string>
+
+    <plurals name="file_job_archive_scan_notification_title_format">
+        <item quantity="one">Подготовка к сжатию %1$,d файла (%2$s)</item>
+        <item quantity="few">Подготовка к сжатию %1$,d файлов (%2$s)</item>
+        <item quantity="many">Подготовка к сжатию %1$,d файлов (%2$s)</item>
+        <item quantity="other">Подготовка к сжатию %1$,d файлов (%2$s)</item>
+    </plurals>
+    <string name="file_job_archive_notification_title_one_format">Сжатие “%1$s” в “%2$s”</string>
+    <plurals name="file_job_archive_notification_title_multiple_format">
+        <item quantity="one">Сжатие %1$,d файла в “%2$s”</item>
+        <item quantity="few">Сжатие %1$,d файлов в “%2$s”</item>
+        <item quantity="many">Сжатие %1$,d файлов в “%2$s”</item>
+        <item quantity="other">Сжатие %1$,d файлов в “%2$s”</item>
+    </plurals>
+    <plurals name="file_job_copy_scan_notification_title_format">
+        <item quantity="one">Подготовка к копированию %1$,d файла (%2$s)</item>
+        <item quantity="few">Подготовка к копированию %1$,d файлов (%2$s)</item>
+        <item quantity="many">Подготовка к копированию %1$,d файлов (%2$s)</item>
+        <item quantity="other">Подготовка к копированию %1$,d файлов (%2$s)</item>
+    </plurals>
+    <string name="file_job_copy_notification_title_one_format">Копирование “%1$s” в “%2$s”</string>
+    <plurals name="file_job_copy_notification_title_multiple_format">
+        <item quantity="one">Копирование %1$,d файла в “%2$s”</item>
+        <item quantity="few">Копирование %1$,d файлов в “%2$s”</item>
+        <item quantity="many">Копирование %1$,d файлов в “%2$s”</item>
+        <item quantity="other">Копирование %1$,d файлов в “%2$s”</item>
+    </plurals>
+    <plurals name="file_job_extract_scan_notification_title_format">
+        <item quantity="one">Подготовка к извлечению %1$,d файла (%2$s)</item>
+        <item quantity="few">Подготовка к извлечению %1$,d файлов (%2$s)</item>
+        <item quantity="many">Подготовка к извлечению %1$,d файлов (%2$s)</item>
+        <item quantity="other">Подготовка к извлечению %1$,d файлов (%2$s)</item>
+    </plurals>
+    <string name="file_job_extract_notification_title_one_format">Извлечение “%1$s” в “%2$s”</string>
+    <plurals name="file_job_extract_notification_title_multiple_format">
+        <item quantity="one">Извлечение %1$,d файла в “%2$s”</item>
+        <item quantity="few">Извлечение %1$,d файлов в “%2$s”</item>
+        <item quantity="many">Извлечение %1$,d файлов в “%2$s”</item>
+        <item quantity="other">Извлечение %1$,d файлов в “%2$s”</item>
+    </plurals>
+    <plurals name="file_job_move_scan_notification_title_format">
+        <item quantity="one">Подготовка к перемещению %1$,d файла (%2$s)</item>
+        <item quantity="few">Подготовка к перемещению %1$,d файлов (%2$s)</item>
+        <item quantity="many">Подготовка к перемещению %1$,d файлов (%2$s)</item>
+        <item quantity="other">Подготовка к перемещению %1$,d файлов (%2$s)</item>
+    </plurals>
+    <string name="file_job_move_notification_title_one_format">Перемещение “%1$s” в “%2$s”</string>
+    <plurals name="file_job_move_notification_title_multiple_format">
+        <item quantity="one">Перемещение %1$,d файла в “%2$s”</item>
+        <item quantity="few">Перемещение %1$,d файлов в “%2$s”</item>
+        <item quantity="many">Перемещение %1$,d файлов в “%2$s”</item>
+        <item quantity="other">Перемещение %1$,d файлов в “%2$s”</item>
+    </plurals>
+    <string name="file_job_transfer_size_notification_text_one_format">%1$s / %2$s</string>
+    <string name="file_job_transfer_size_notification_text_multiple_format">%1$,d / %2$,d</string>
+    <plurals name="file_job_delete_scan_notification_title_format">
+        <item quantity="one">Подготовка к удалению %1$,d файла</item>
+        <item quantity="few">Подготовка к удалению %1$,d файлов</item>
+        <item quantity="many">Подготовка к удалению %1$,d файлов</item>
+        <item quantity="other">Подготовка к удалению %1$,d файлов</item>
+    </plurals>
+    <string name="file_job_delete_notification_title_one_format">Удаление “%1$s”</string>
+    <plurals name="file_job_delete_notification_title_multiple_format">
+        <item quantity="one">Удаление %1$,d файла</item>
+        <item quantity="few">Удаление %1$,d файлов</item>
+        <item quantity="many">Удаление %1$,d файлов</item>
+        <item quantity="other">Удаление %1$,d файлов</item>
+    </plurals>
+    <plurals name="file_job_set_owner_scan_notification_title_format">
+        <item quantity="one">Подготовка к смене владельца для %1$,d файла</item>
+        <item quantity="few">Подготовка к смене владельца для %1$,d файлов</item>
+        <item quantity="many">Подготовка к смене владельца для %1$,d файлов</item>
+        <item quantity="other">Подготовка к смене владельца для %1$,d файлов</item>
+    </plurals>
+    <string name="file_job_set_owner_notification_title_one_format">Смена владельца для “%1$s”</string>
+    <plurals name="file_job_set_owner_notification_title_multiple_format">
+        <item quantity="one">Смена владельца для %1$,d файла</item>
+        <item quantity="few">Смена владельца для %1$,d файлов</item>
+        <item quantity="many">Смена владельца для %1$,d файлов</item>
+        <item quantity="other">Смена владельца для %1$,d файлов</item>
+    </plurals>
+    <plurals name="file_job_set_group_scan_notification_title_format">
+        <item quantity="one">Подготовка к смене группы для %1$,d файла</item>
+        <item quantity="few">Подготовка к смене группы для %1$,d файлов</item>
+        <item quantity="many">Подготовка к смене группы для %1$,d файлов</item>
+        <item quantity="other">Подготовка к смене группы для %1$,d файлов</item>
+    </plurals>
+    <string name="file_job_set_group_notification_title_one_format">Смена группы для “%1$s”</string>
+    <plurals name="file_job_set_group_notification_title_multiple_format">
+        <item quantity="one">Смена группы для %1$,d файла</item>
+        <item quantity="few">Смена группы для %1$,d файлов</item>
+        <item quantity="many">Смена группы для %1$,d файлов</item>
+        <item quantity="other">Смена группы для %1$,d файлов</item>
+    </plurals>
+    <plurals name="file_job_set_mode_scan_notification_title_format">
+        <item quantity="one">Подготовка к изменению прав доступа для %1$,d файла</item>
+        <item quantity="few">Подготовка к изменению прав доступа для %1$,d файлов</item>
+        <item quantity="many">Подготовка к изменению прав доступа для %1$,d файлов</item>
+        <item quantity="other">Подготовка к изменению прав доступа для %1$,d файлов</item>
+    </plurals>
+    <string name="file_job_set_mode_notification_title_one_format">Изменение прав доступа для “%1$s”</string>
+    <plurals name="file_job_set_mode_notification_title_multiple_format">
+        <item quantity="one">Изменение прав доступа для %1$,d файла</item>
+        <item quantity="few">Изменение прав доступа для %1$,d файлов</item>
+        <item quantity="many">Изменение прав доступа для %1$,d файлов</item>
+        <item quantity="other">Изменение прав доступа для %1$,d файлов</item>
+    </plurals>
+    <plurals name="file_job_set_selinux_context_scan_notification_title_format">
+        <item quantity="one">Подготовка к изменению контекста SELinux для %1$,d файла</item>
+        <item quantity="few">Подготовка к изменению контекста SELinux для %1$,d файлов</item>
+        <item quantity="many">Подготовка к изменению контекста SELinux для %1$,d файлов</item>
+        <item quantity="other">Подготовка к изменению контекста SELinux для %1$,d файлов</item>
+    </plurals>
+    <string name="file_job_set_selinux_context_notification_title_one_format">Изменение контекста SELinux для “%1$s”</string>
+    <plurals name="file_job_set_selinux_context_notification_title_multiple_format">
+        <item quantity="one">Изменение контекста SELinux для %1$,d файла</item>
+        <item quantity="few">Изменение контекста SELinux для %1$,d файлов</item>
+        <item quantity="many">Изменение контекста SELinux для %1$,d файлов</item>
+        <item quantity="other">Изменение контекста SELinux для %1$,d файлов</item>
+    </plurals>
+    <plurals name="file_job_restore_selinux_context_scan_notification_title_format">
+        <item quantity="one">Подготовка к восстановлению контекста SELinux для %1$,d файла</item>
+        <item quantity="few">Подготовка к восстановлению контекста SELinux для %1$,d файлов</item>
+        <item quantity="many">Подготовка к восстановлению контекста SELinux для %1$,d файлов</item>
+        <item quantity="other">Подготовка к восстановлению контекста SELinux для %1$,d файлов</item>
+    </plurals>
+    <string name="file_job_restore_selinux_context_notification_title_one_format">Восстановление контекста SELinux для “%1$s”</string>
+    <plurals name="file_job_restore_selinux_context_notification_title_multiple_format">
+        <item quantity="one">Восстановление контекста SELinux для %1$,d файла</item>
+        <item quantity="few">Восстановление контекста SELinux для %1$,d файлов</item>
+        <item quantity="many">Восстановление контекста SELinux для %1$,d файлов</item>
+        <item quantity="other">Восстановление контекста SELinux для %1$,d файлов</item>
+    </plurals>
+    <string name="file_job_transfer_count_notification_text_multiple_format">%1$,d / %2$,d</string>
+    <string name="file_job_write_notification_title_format">Запись “%1$s”</string>
+    <string name="file_job_create_error_title">Ошибка во время создания</string>
+    <string name="file_job_create_error_message_format">Произошла ошибка при создании “%1$s”.\n%2$s</string>
+    <string name="file_job_cannot_copy_into_itself_title">Невозможно скопировать папку саму в себя</string>
+    <string name="file_job_cannot_extract_into_itself_title">Невозможно извлечь папку саму в себя</string>
+    <string name="file_job_cannot_move_into_itself_title">Невозможно переместить папку саму в себя</string>
+    <string name="file_job_cannot_copy_move_into_itself_message">Папка назначения находится внутри исходной папки.</string>
+    <string name="file_job_cannot_copy_over_itself_title">Невозможно скопировать файл поверх самого себя</string>
+    <string name="file_job_cannot_extract_over_itself_title">Невозможно извлечь файл поверх самого себя</string>
+    <string name="file_job_cannot_move_over_itself_title">Невозможно переместить файл поверх самого себя</string>
+    <string name="file_job_cannot_copy_move_over_itself_message">Исходный файл будет перезаписан файлов назначения.</string>
+    <string name="file_job_replace_title_format">Заменить файл “%1$s”?</string>
+    <string name="file_job_replace_message_format">Другой файл с таким именем уже существует в “%1$s”.\nЗамена перезапишет его содержимое.</string>
+    <string name="file_job_replace_target_name">Исходный файл</string>
+    <string name="file_job_replace_source_name">Заменить на</string>
+    <string name="file_job_merge_title_format">Объеденить папку “%1$s”?</string>
+    <string name="file_job_merge_copy_message_format">Объединение будет запрашивать подтверждение перед заменой любых файлов в папке, конфликтующих с копируемыми файлами.</string>
+    <string name="file_job_merge_extract_message_format">Объединение будет запрашивать подтверждение перед заменой любых файлов в папке, конфликтующих с извлекаемыми файлами.</string>
+    <string name="file_job_merge_move_message_format">Объединение будет запрашивать подтверждение перед заменой любых файлов в папке, конфликтующих с перемещаемыми файлами.</string>
+    <string name="file_job_merge_target_name">Исходная папка</string>
+    <string name="file_job_merge_source_name">Объеденить с</string>
+    <string name="file_job_conflict_show_name">Выберите новое имя для файла назначения</string>
+    <string name="file_job_conflict_name_hint">Новое имя</string>
+    <string name="file_job_archive_error_title_format">Ошибка при сжатии “%1$s”</string>
+    <string name="file_job_archive_error_message_format">При сжатии файла в “%1$s” произошла ошибка.\n%2$s</string>
+    <string name="file_job_copy_error_title_format">Ошибка при копировании “%1$s”</string>
+    <string name="file_job_copy_error_message_format">При копировании файла в “%1$s” произошла ошибка.\n%2$s</string>
+    <string name="file_job_extract_error_title_format">Ошибка при извлечении “%1$s”</string>
+    <string name="file_job_extract_error_message_format">При извлечении файла в “%1$s” произошла ошибка.\n%2$s</string>
+    <string name="file_job_move_error_title_format">Ошибка при перемещении “%1$s”</string>
+    <string name="file_job_move_error_message_format">При перемещении файла в “%1$s” произошла ошибка.\n%2$s</string>
+    <string name="file_job_delete_error_title">Ошибка при удалении</string>
+    <string name="file_job_delete_error_message_format">Произошла ошибка при удалении “%1$s”.\n%2$s</string>
+    <string name="file_job_rename_error_title_format">Ошибка переименования “%1$s”</string>
+    <string name="file_job_rename_error_message_format">Произошла ошибка при переименовании файла в “%1$s”.\n%2$s</string>
+    <string name="file_job_set_owner_error_title_format">Ошибка при смене владельца для “%1$s”</string>
+    <string name="file_job_set_owner_error_message_format">Произошла ошибка при смене владельца на “%1$s”.\n%2$s</string>
+    <string name="file_job_set_group_error_title_format">Ошибка при изменении группы для “%1$s”</string>
+    <string name="file_job_set_group_error_message_format">Произошла ошибка при изменении группы на “%1$s”.\n%2$s</string>
+    <string name="file_job_set_mode_error_title_format">Ошибка при изменении режима для “%1$s”</string>
+    <string name="file_job_set_mode_error_message_format">Произошла ошибка при изменении режима на “%1$s”.\n%2$s</string>
+    <string name="file_job_set_selinux_context_error_title_format">Ошибка при изменении контекста SELinux для “%1$s”</string>
+    <string name="file_job_set_selinux_context_error_message_format">Произошла ошибка при изменении контекста SELinux на “%1$s”.\n%2$s</string>
+    <string name="file_job_restore_selinux_context_error_title">Ошибка при восстановлении контекста SELinux</string>
+    <string name="file_job_restore_selinux_context_error_message_format">Произошла ошибка при восстановлении контекста SELinux для “%1$s”.\n%2$s</string>
+    <string name="file_job_write_error_title">Ошибка во время записи</string>
+    <string name="file_job_write_error_message_format">Произошла ошибка записи “%1$s”.\n%2$s</string>
+    <string name="file_job_get_information_error_message_format">Произошла ошибка при получении информации о “%1$s”.</string>
+    <string name="file_job_remount_format">Перемонтировать “%1$s” в режим чтение-запись</string>
+    <string name="file_job_remount_loading_format">Перемонтирование “%1$s” в режим чтение-запиcь…</string>
+    <string name="file_job_remount_success_format">“%1$s” был перемонтирован в режим чтение-запись</string>
+    <string name="file_job_action_all">Применить действие ко всем файлам</string>
+
+    <string name="file_open_apk_message">Этот файл представляет собой Android-пакет. Вы хотите установить его или посмотреть его содержимое?</string>
+    <string name="file_open_as_title">Открыть как…</string>
+    <string name="file_open_as_title_format">Открыть “%1$s” как</string>
+    <string name="file_open_as_type_text">Текст</string>
+    <string name="file_open_as_type_image">Изображение</string>
+    <string name="file_open_as_type_audio">Аудио</string>
+    <string name="file_open_as_type_video">Видео</string>
+    <string name="file_open_as_type_directory">Папка</string>
+    <string name="file_open_as_type_any">Другое</string>
+    <string name="file_install_apk_from_background_title_format">“%1$s” готов к установке</string>
+    <string name="file_install_apk_from_background_text">Нажмите, чтобы установить</string>
+    <string name="file_open_from_background_title_format">“%1$s” готов к открытию</string>
+    <string name="file_open_from_background_text">Нажмите, чтобы открыть</string>
+    <string name="file_name_error_empty">Имя файла не может быть пустым</string>
+    <string name="file_name_error_invalid">Неверное имя файла</string>
+    <string name="file_name_error_already_exists">Файл с таким именем уже существует</string>
+    <string name="file_delete_message_file_format">Удалить “%1$s”?</string>
+    <string name="file_delete_message_directory_format">Удалить папку “%1$s” и её содержимое?</string>
+    <plurals name="file_delete_message_multiple_files_format">
+        <item quantity="one">Удалить %1$,d файл?</item>
+        <item quantity="few">Удалить %1$,d файла?</item>
+        <item quantity="many">Удалить %1$,d файлов?</item>
+        <item quantity="other">Удалить %1$,d файлов?</item>
+    </plurals>
+    <plurals name="file_delete_message_multiple_directories_format">
+        <item quantity="one">Удалить %1$,d папку и её содержимое?</item>
+        <item quantity="few">Удалить %1$,d папки и их содержимое?</item>
+        <item quantity="many">Удалить %1$,d папок и их содержимое?</item>
+        <item quantity="other">Удалить %1$,d папок и их содержимое?</item>
+    </plurals>
+    <plurals name="file_delete_message_multiple_mixed_format">
+        <item quantity="one">Удалить %1$,d элемент?</item>
+        <item quantity="few">Удалить %1$,d элемента?</item>
+        <item quantity="many">Удалить %1$,d элементов?</item>
+        <item quantity="other">Удалить %1$,d элементов?</item>
+    </plurals>
+    <string name="file_create_archive_title">Создать архив</string>
+    <string name="file_create_archive_type_zip">.zip</string>
+    <string name="file_create_archive_type_tar_xz">.tar.xz</string>
+    <string name="file_create_archive_type_7z">.7z</string>
+    <string name="file_add_bookmark_success">Закладка добавлена</string>
+    <string name="file_create_file_title">Новый файл</string>
+    <string name="file_create_directory_title">Новая папка</string>
+
+    <string name="file_list_title">Файлы</string>
+    <plurals name="file_list_title_pick_file">
+        <item quantity="one">Выбрать файл</item>
+        <item quantity="few">Выбрать файлы</item>
+        <item quantity="many">Выбрать файлы</item>
+        <item quantity="other">Выбрать файлы</item>
+    </plurals>
+    <plurals name="file_list_title_pick_directory">
+        <item quantity="one">Выбрать папку</item>
+        <item quantity="few">Выбрать папки</item>
+        <item quantity="many">Выбрать папки</item>
+        <item quantity="other">Выбрать папки</item>
+    </plurals>
+    <plurals name="file_list_subtitle_directory_count_format">
+        <item quantity="one">%1$,d папка</item>
+        <item quantity="few">%1$,d папки</item>
+        <item quantity="many">%1$,d папок</item>
+        <item quantity="other">%1$,d папки</item>
+    </plurals>
+    <plurals name="file_list_subtitle_file_count_format">
+        <item quantity="one">%1$,d файл</item>
+        <item quantity="few">%1$,d файла</item>
+        <item quantity="many">%1$,d файлов</item>
+        <item quantity="other">%1$,d файлов</item>
+    </plurals>
+    <string name="file_list_subtitle_separator">,\u0020</string>
+    <string name="file_list_path_error_empty">Путь не может быть пустым</string>
+    <string name="file_list_path_error_invalid">Неверный путь</string>
+    <string name="file_list_action_sort_by_name">Имя</string>
+    <string name="file_list_action_sort_by_type">Тип</string>
+    <string name="file_list_action_sort_by_size">Размер</string>
+    <string name="file_list_action_sort_by_last_modified">Последнее изменение</string>
+    <string name="file_list_action_sort_order_ascending">По возрастанию</string>
+    <string name="file_list_action_sort_directories_first">Папки первые</string>
+    <string name="file_list_action_sort_path_specific">Только для этой папки</string>
+    <string name="file_list_action_new_task">Новое окно</string>
+    <string name="file_list_action_navigate_up">Вверх</string>
+    <string name="file_list_action_navigate_to">Перейти к</string>
+    <string name="file_list_action_show_hidden_files">Показывать скрытые файлы</string>
+    <string name="file_list_action_copy_path">Скопировать путь</string>
+    <string name="file_list_action_open_in_terminal">Открыть в терминале</string>
+    <string name="file_list_action_add_bookmark">Добавить закладку</string>
+    <string name="file_list_action_create_shortcut">Создать шорткат</string>
+    <string name="file_list_breadcrumb_action_open_in_new_task">Открыть в новом окне</string>
+    <string name="list_select_title_format">%1$,d выбрано</string>
+    <string name="file_list_select_current_directory_format">Выбрать “%1$s”</string>
+    <string name="file_list_paste_move_title_format">Перемещение %1$,d</string>
+    <string name="file_list_paste_copy_title_format">Копирование %1$,d</string>
+    <string name="file_list_paste_extract_title_format">Извлечение %1$,d</string>
+    <string name="file_list_paste_action_extract_here">Извлечь здесь</string>
+    <string name="file_list_empty">Нет файлов</string>
+    <string name="file_list_action_create_file">Файл</string>
+    <string name="file_list_action_create_directory">Папка</string>
+
+    <string name="file_item_description_separator">\u0020\u0020\u0020\u0020</string>
+    <string name="file_item_action_open_with">Открыть с помощью</string>
+    <string name="file_item_action_extract">Извлечь</string>
+    <string name="file_item_action_archive">Сжать</string>
+    <string name="file_item_action_properties">Свойства</string>
+
+    <string name="file_properties_title_format">Свойства “%1$s”</string>
+    <string name="file_properties_basic">Основное</string>
+    <string name="file_properties_basic_name">Имя</string>
+    <string name="file_properties_basic_type">Тип</string>
+    <string name="file_properties_basic_type_format">%1$s (%2$s)</string>
+    <string name="file_properties_basic_type_symbolic_link_format">Ссылка на %1$s (%2$s)</string>
+    <string name="file_properties_basic_symbolic_link_target">Цель ссылки</string>
+    <string name="file_properties_basic_size">Размер</string>
+    <string name="file_properties_basic_size_with_human_readable_format">%1$s (%2$s)</string>
+    <string name="file_properties_basic_contents">Содержимое</string>
+    <plurals name="file_properties_basic_contents_format">
+        <item quantity="one">%1$,d элемент, размер %2$s</item>
+        <item quantity="few">%1$,d элемента, суммарный размер %2$s</item>
+        <item quantity="many">%1$,d элементов, суммарный размер %2$s</item>
+        <item quantity="other">%1$,d элементов, суммарный размер %2$s</item>
+    </plurals>
+    <string name="file_properties_basic_last_modification_time">Последнее изменение</string>
+    <string name="file_properties_basic_parent_directory">Родительская папка</string>
+    <string name="file_properties_basic_archive_file">Файл архива</string>
+    <string name="file_properties_basic_archive_entry">Элемент архива</string>
+    <string name="file_properties_basic_free_space">Свободное место</string>
+    <string name="file_properties_permissions">Разрешения</string>
+    <string name="file_properties_permissions_owner">Владелец</string>
+    <string name="file_properties_permissions_group">Группа</string>
+    <string name="file_properties_permissions_principal_format">%1$s (%2$d)</string>
+    <string name="file_properties_permissions_set_owner_title">Изменить владельца</string>
+    <string name="file_properties_permissions_set_group_title">Изменить группу</string>
+    <string name="file_properties_permissions_set_principal_filter_hint">Введите имя или ID</string>
+    <string name="file_properties_permissions_set_principal_system">Система</string>
+    <string name="file_properties_permissions_mode">Режим</string>
+    <string name="file_properties_permissions_mode_format">%1$s (%2$04o)</string>
+    <string name="file_properties_permissions_set_mode_title">Изменить режим</string>
+    <string name="file_properties_permissions_set_mode_others">Другие</string>
+    <string-array name="file_properties_permissions_set_mode_normal_mode_bits_file">
+        <item>Чтение</item>
+        <item>Запись</item>
+        <item>Выполнение</item>
+    </string-array>
+    <string-array name="file_properties_permissions_set_mode_normal_mode_bits_directory">
+        <item>Чтение</item>
+        <item>Запись</item>
+        <item>Поиск</item>
+    </string-array>
+    <string name="file_properties_permissions_set_mode_special">Специальный</string>
+    <string-array name="file_properties_permissions_set_mode_special_mode_bits">
+        <item>UID</item>
+        <item>GID</item>
+        <item>Sticky-бит</item>
+    </string-array>
+    <string name="file_properties_permissions_set_mode_uppercase_x">Не устаналивать “Выполнение” для вложенных файлов</string>
+    <string name="file_properties_permissions_selinux_context">Контекст SELinux</string>
+    <string name="file_properties_permissions_set_selinux_context_title">Изменить контекст SELinux</string>
+    <string name="file_properties_permissions_set_selinux_context_restore">Восстановить</string>
+    <string name="file_properties_permissions_recursive">Применить ко вложенным файлам</string>
+    <string name="file_properties_image">Изображение</string>
+    <string name="file_properties_media_dimensions">Размеры</string>
+    <string name="file_properties_media_dimensions_format">%1$d \u00d7 %2$d</string>
+    <string name="file_properties_media_date_time">Время съёмки</string>
+    <string name="file_properties_media_coordinates">Координаты</string>
+    <string name="file_properties_media_coordinates_format">%1$.3f, %2$.3f</string>
+    <string name="file_properties_media_address">Местоположение</string>
+    <string name="file_properties_image_gps_altitude">Высота</string>
+    <string name="file_properties_image_gps_altitude_format">%1$,.3f м</string>
+    <string name="file_properties_image_equipment">Камера</string>
+    <string name="file_properties_image_equipment_format">%1$s %2$s</string>
+    <string name="file_properties_image_f_number">Апертура</string>
+    <string name="file_properties_image_shutter_speed">Скорость затвора</string>
+    <string name="file_properties_image_focal_length">Фокусное расстояние</string>
+    <string name="file_properties_image_focal_length_format">%1$.2f мм</string>
+    <string name="file_properties_image_photographic_sensitivity">Чувствительность ISO</string>
+    <string name="file_properties_image_photographic_sensitivity_format">ISO %1$d</string>
+    <string name="file_properties_image_software">Программное обеспечение</string>
+    <string name="file_properties_image_description">Описание</string>
+    <string name="file_properties_image_artist">Автор</string>
+    <string name="file_properties_image_copyright">Авторское право</string>
+    <string name="file_properties_audio">Аудио</string>
+    <string name="file_properties_media_title">Название</string>
+    <string name="file_properties_audio_artist">Исполнитель</string>
+    <string name="file_properties_audio_album">Альбом</string>
+    <string name="file_properties_audio_album_artist">Исполнитель альбома</string>
+    <string name="file_properties_audio_composer">Композитор</string>
+    <string name="file_properties_audio_disc_number">Диск</string>
+    <string name="file_properties_audio_track_number">Трек</string>
+    <string name="file_properties_audio_year">Год</string>
+    <string name="file_properties_audio_genre">Жанр</string>
+    <string name="file_properties_media_duration">Длительность</string>
+    <string name="file_properties_media_bit_rate">Битрейт</string>
+    <string name="file_properties_media_bit_rate_format">%1$d кбит/с</string>
+    <string name="file_properties_audio_sample_rate">Частота дискретизации</string>
+    <string name="file_properties_audio_sample_rate_format">%1$d Гц</string>
+    <string name="file_properties_video">Видео</string>
+    <string name="file_properties_apk">APK</string>
+    <string name="file_properties_apk_label">Имя</string>
+    <string name="file_properties_apk_package_name">Имя пакета</string>
+    <string name="file_properties_apk_version">Версия</string>
+    <string name="file_properties_apk_version_format">%1$s (%2$d)</string>
+    <string name="file_properties_apk_min_sdk_version">Минимальная версия системы</string>
+    <string name="file_properties_apk_target_sdk_version">Целевая версия системы</string>
+    <string name="file_properites_apk_sdk_version_format">%1$s (%2$s, %3$d)</string>
+    <string name="file_properties_apk_requested_permissions">Разрешения</string>
+    <string name="file_properties_apk_requested_permissions_zero">Разрешения не запрашиваются</string>
+    <plurals name="file_properties_apk_requested_permissions_positive_format">
+        <item quantity="one">Запрошено %1$,d разрешение</item>
+        <item quantity="few">Запрошено %1$,d разрешения</item>
+        <item quantity="many">Запрошено %1$,d разрешений</item>
+        <item quantity="other">Запрошено %1$,d разрешений</item>
+    </plurals>
+    <string name="file_properties_apk_signature_digests">Подписи</string>
+    <string name="file_properties_apk_signature_digests_empty">Нет действительных подписей</string>
+    <string name="file_properties_apk_past_signature_digests">Старые подписи</string>
+
+    <string name="storage_file_system_root_title">Root</string>
+    <string name="storage_list_title">Накопители</string>
+    <string name="storage_list_empty">Нет накопителей</string>
+    <string name="storage_add_storage_title">Добавить накопитель</string>
+    <string name="storage_add_storage_document_tree">Внешний накопитель</string>
+    <string name="storage_add_storage_ftp_server">FTP-сервер</string>
+    <string name="storage_add_storage_sftp_server">SFTP сервер</string>
+    <string name="storage_add_storage_smb_server">SMB сервер</string>
+    <string name="storage_edit_device_storage_title">Редактировать накопитель</string>
+    <string name="storage_edit_device_storage_name">Имя</string>
+    <string name="storage_edit_device_storage_path">Путь</string>
+    <string name="storage_add_document_tree_title">Добавить внешний накопитель</string>
+    <string name="storage_edit_document_tree_title">Редактировать внешний накопитель</string>
+    <string name="storage_edit_document_tree_name">Имя</string>
+    <string name="storage_edit_document_tree_uri">URI</string>
+    <string name="storage_edit_document_tree_path">Путь</string>
+    <string name="storage_edit_ftp_server_title_edit">Редактировать FTP сервер</string>
+    <string name="storage_edit_ftp_server_title_add">Добавить FTP сервер</string>
+    <string name="storage_edit_ftp_server_host">Имя хоста</string>
+    <string name="storage_edit_ftp_server_host_error_empty">Введите имя хоста</string>
+    <string name="storage_edit_ftp_server_host_error_invalid">Неверное имя хоста</string>
+    <string name="storage_edit_ftp_server_port">Порт</string>
+    <string name="storage_edit_ftp_server_port_error_invalid">Неверный порт</string>
+    <string name="storage_edit_ftp_server_path">Путь</string>
+    <string name="storage_edit_ftp_server_path_placeholder">Можно оставить пустым</string>
+    <string name="storage_edit_ftp_server_name">Имя</string>
+    <string name="storage_edit_ftp_server_name_placeholder">Используйте имя хоста</string>
+    <string name="storage_edit_ftp_server_protocol">Протокол</string>
+    <string name="storage_edit_ftp_server_authentication_type">Авторизация</string>
+    <string-array name="storage_edit_ftp_server_authentication_type_entries">
+        <item>Пароль</item>
+        <item>Анонимно</item>
+    </string-array>
+    <string name="storage_edit_ftp_server_username">Имя пользователя</string>
+    <string name="storage_edit_ftp_server_username_error_empty">Введите имя пользователя</string>
+    <string name="storage_edit_ftp_server_password">Пароль</string>
+    <string name="storage_edit_ftp_server_mode">Режим</string>
+    <string-array name="storage_edit_ftp_server_mode_entries">
+        <item>Активный</item>
+        <item>Пассивный</item>
+    </string-array>
+    <string name="storage_edit_ftp_server_encoding">Кодировка</string>
+    <string name="storage_edit_ftp_server_connect_and_add">Соединиться и добавить</string>
+    <string name="storage_edit_ftp_server_add">Добавить</string>
+    <string name="storage_edit_sftp_server_title_edit">Редактировать SFTP сервер</string>
+    <string name="storage_edit_sftp_server_title_add">Добавить SFTP сервер</string>
+    <string name="storage_edit_sftp_server_host">Имя хоста</string>
+    <string name="storage_edit_sftp_server_host_error_empty">Введите имя хоста</string>
+    <string name="storage_edit_sftp_server_host_error_invalid">Неверное имя хоста</string>
+    <string name="storage_edit_sftp_server_port">Порт</string>
+    <string name="storage_edit_sftp_server_port_error_invalid">Неверный порт</string>
+    <string name="storage_edit_sftp_server_path">Путь</string>
+    <string name="storage_edit_sftp_server_path_placeholder">Можно оставить пустым</string>
+    <string name="storage_edit_sftp_server_name">Имя</string>
+    <string name="storage_edit_sftp_server_name_placeholder">Используйте имя хоста</string>
+    <string name="storage_edit_sftp_server_authentication_type">Авторизация</string>
+    <string-array name="storage_edit_sftp_server_authentication_type_entries">
+        <item>Пароль</item>
+        <item>Публичный ключ</item>
+    </string-array>
+    <string name="storage_edit_sftp_server_username">Имя пользователя</string>
+    <string name="storage_edit_sftp_server_username_error_empty">Введите имя пользователя</string>
+    <string name="storage_edit_sftp_server_password">Пароль</string>
+    <string name="storage_edit_sftp_server_private_key">Приватный ключ</string>
+    <string name="storage_edit_sftp_server_private_key_open_file">Открыть файл</string>
+    <string name="storage_edit_sftp_server_private_key_error_empty">Введите приватный ключ</string>
+    <string name="storage_edit_sftp_server_private_key_error_invalid">Неверный приватный ключ</string>
+    <string name="storage_edit_sftp_server_private_key_password">Пароль закрытого ключа</string>
+    <string name="storage_edit_sftp_server_private_key_password_placeholder">Можно оставить пустым</string>
+    <string name="storage_edit_sftp_server_private_key_password_error_invalid">Неверный пароль закрытого ключа</string>
+    <string name="storage_edit_sftp_server_connect_and_add">Соединиться и добавить</string>
+    <string name="storage_edit_sftp_server_add">Добавить</string>
+    <string name="storage_add_lan_smb_server_loading">Поиск SMB-серверов…</string>
+    <string name="storage_add_lan_smb_server_add">Добавить вручную</string>
+    <string name="storage_edit_smb_server_title_edit">Редактировать SMB-сервер</string>
+    <string name="storage_edit_smb_server_title_add">Добавить SMB-сервер</string>
+    <string name="storage_edit_smb_server_host">Имя хоста</string>
+    <string name="storage_edit_smb_server_host_error_empty">Введите имя хоста</string>
+    <string name="storage_edit_smb_server_host_error_invalid">Неверное имя хоста</string>
+    <string name="storage_edit_smb_server_port">Порт</string>
+    <string name="storage_edit_smb_server_port_error_invalid">Неверный порт</string>
+    <string name="storage_edit_smb_server_path">Путь</string>
+    <string name="storage_edit_smb_server_path_placeholder">Можно оставить пустым</string>
+    <string name="storage_edit_smb_server_name">Имя</string>
+    <string name="storage_edit_smb_server_name_placeholder">Используйте имя хоста</string>
+    <string name="storage_edit_smb_server_authentication_type">Авторизация</string>
+    <string-array name="storage_edit_smb_server_authentication_type_entries">
+        <item>Пароль</item>
+        <item>Гость</item>
+        <item>Анонимно</item>
+    </string-array>
+    <string name="storage_edit_smb_server_username">Имя пользователя</string>
+    <string name="storage_edit_smb_server_username_error_empty">Введите имя пользователя</string>
+    <string name="storage_edit_smb_server_password">Пароль</string>
+    <string name="storage_edit_smb_server_domain">Домен</string>
+    <string name="storage_edit_smb_server_connect_and_add">Добавить и соединиться</string>
+    <string name="storage_edit_smb_server_add">Добавить</string>
+
+    <string name="generic_editor_name_title">Имя</string>
+    <string name="generic_editor_description_title">Описание</string>
+
+    <string name="organizers_title">Органайзеры</string>
+    <string name="organizer_settings_title">Настройки органайзера</string>
+    <string name="organizer_list_empty">Нет органайзеров</string>
+    <string name="organizer_create_new">Создать органайзер</string>
+    <string name="organizer_edit_existing">Редактировать органайзер</string>
+    <string name="organizer_new_placeholder">Новый органайзер</string>
+    <string name="organizer_delete_notebook_ask_message">Уверены, что хотите удалить папку “%1$s”?</string>
+    <string name="organizer_delete_workflow_ask_message">Уверены, что хотите удалить процесс “%1$s”?</string>
+    <string name="organizer_delete_attachment_ask_message">Уверены, что хотите удалить вложение “%1$s”?</string>
+
+    <string name="organizer_category_choose_one">Выберите вариант</string>
+
+    <string name="organizer_pref_header_common">Основные</string>
+    <string name="organizer_pref_default_note_type">Тип новосозданных заметок</string>
+    <!--    <string name="organizer_pref_default_note_type_summary">Тип новосозданных заметок.</string>-->
+    <string name="organizer_pref_group_unassigned_notes">Группировать нераспределённые заметки</string>
+    <string name="organizer_pref_group_unassigned_notes_summary">Заметки, которых нет ни в одном блокноте, будут сгруппированы в виртуальном блокноте под названием \'Другие\'.</string>
+    <string name="organizer_pref_note_deletion_time">Удаление заметок из корзины</string>
+    <string name="organizer_pref_note_deletion_time_instantly">Мгновенно</string>
+    <string name="organizer_pref_note_deletion_time_week">Через 7 дней</string>
+    <string name="organizer_pref_note_deletion_time_two_weeks">Через 14 дней</string>
+    <string name="organizer_pref_note_deletion_time_month">Через 30 дней</string>
+
+    <string name="organizer_pref_header_extra">Дополнительно</string>
+    <string name="organizer_pref_organizer_export">Экспортировать…</string>
+    <string name="organizer_pref_create_backup_summary">Экспорт данных в резервный файл.</string>
+    <string name="organizer_pref_organizer_import">Импортировать…</string>
+    <string name="organizer_pref_restore_summary">Загрузка данных из резервного файла.</string>
+
+    <string name="preferences_note_text">Текст</string>
+    <string name="preferences_note_task_list">Список задач</string>
+    <string name="preferences_note_categories">Категории</string>
+
+    <string name="edit_tool_title">Редактировать инструмент</string>
+
+    <string name="notes_title">Заметки</string>
+    <string name="notes_empty_title">Нет заметок</string>
+    <string name="notes_archive_title">Архив</string>
+    <string name="notes_deleted_title">Удалённые</string>
+    <string name="notes_all_notes_title">Все заметки</string>
+    <string name="organizer_show_hidden_title">Показывать скрытые</string>
+    <string name="organizer_manage_folders">Управлять папками</string>
+    <string name="notes_sort_by_title_asc">Имя ▲</string>
+    <string name="notes_sort_by_title_desc">Имя ▼</string>
+    <string name="notes_sort_by_created_asc">Дата создания ▲</string>
+    <string name="notes_sort_by_created_desc">Дата создания ▼</string>
+    <string name="notes_sort_by_modified_asc">Дата изменения ▲</string>
+    <string name="notes_sort_by_modified_desc">Дата изменения ▼</string>
+    <string name="notes_location">Локация</string>
+    <string name="note_dates">Создана %1$s\nИзменена %2$s</string>
+
+    <string name="notes_color_default">По-умолчанию</string>
+    <string name="notes_color_blue">Синий</string>
+    <string name="notes_color_pink">Розовый</string>
+    <string name="notes_color_green">Зелёный</string>
+    <string name="notes_color_orange">Оранжевый</string>
+    <string name="notes_color_brown">Коричневый</string>
+    <string name="notes_color_purple">Фиолетовый</string>
+    <string name="notes_color_red">Красный</string>
+
+    <string name="organizer_workflows_title">Рабочие процессы</string>
+    <string name="organizer_folders_title">Папки</string>
+    <string name="organizer_without_folder">&lt;Без папки&gt;</string>
+    <string name="organizer_category_no_default_variant">&lt;Ничего&gt;</string>
+    <string name="organizer_without_attachment">&lt;Без вложений&gt;</string>
+    <string name="organizer_attachment_generic">Файл(ы)</string>
+    <string name="organizer_attachment_photo">Фото</string>
+    <string name="organizer_attachment_video">Видео</string>
+    <string name="organizer_attachment_audio">Аудио</string>
+    <string name="organizer_folder_create_title">Создать папку</string>
+    <string name="organizer_folder_rename_title">Переименовать папку</string>
+    <string name="organizer_workflow_create_title">Создать рабочий процесс</string>
+    <string name="organizer_workflow_rename_title">Переименовать процесс</string>
+    <string name="organizer_folder_already_exists">Папка %1$s уже существует</string>
+    <string name="organizer_workflow_already_exists">Рабочий процесс %1$s уже существует</string>
+    <string name="organizer_folder_empty_list">Нет папки</string>
+    <string name="organizer_workflow_empty_list">Нет рабочих процессов</string>
+    <string name="organizer_default_folder_name">Новая папка</string>
+    <string name="organizer_default_tag_name">Новая метка</string>
+
+    <plurals name="more_items">
+        <item quantity="one">+%d элемент</item>
+        <item quantity="few">+%d элемента</item>
+        <item quantity="many">+%d элементов</item>
+    </plurals>
+
+    <plurals name="selected_notes">
+        <item quantity="one">Выбрана %d заметка</item>
+        <item quantity="few">Выбрано %d заметки</item>
+        <item quantity="many">Выбрано %d заметок</item>
+    </plurals>
+
+    <string name="categories_title">Категории</string>
+    <string name="no_categories">Нет категорий</string>
+    <string name="category_title">Категория \"%1$s\"</string>
+    <string name="category_display_name_placeholder">Новая категория</string>
+    <!--    <string name="category_rename_title">Rename category</string>-->
+    <string name="category_already_exists">Категория “%1$s“ уже существует</string>
+    <string name="category_not_exists">Категория “%1$s“ не существует</string>
+    <string name="category_empty_list">Нет категорий</string>
+    <string name="category_name_title">Имя</string>
+    <string name="category_display_name_title">Отображаемое имя</string>
+    <string name="category_current_value_title">Текущее значение</string>
+    <string name="category_minimum_value_title">Минимум</string>
+    <string name="category_maximum_value_title">Максимум</string>
+    <string name="category_increment_value_title">Приращение</string>
+    <string name="category_autoincrement_min_greater_max">Минимальное значение не может быть равно максимальному или больше него</string>
+    <string name="category_default_value_title">Вариант по умолчанию</string>
+
+    <string name="category_type_variants">Вариации</string>
+    <string name="category_type_complex_variants">Вариации+</string>
+    <string name="category_type_autoincrement">Автоинкремент</string>
+    <string name="category_type_geo">GEO локация</string>
+    <string name="category_type_datetime">Дата и время</string>
+    <string name="category_type_password">Пароль</string>
+
+    <string name="category_variants_title">Вариации “%1$s“</string>
+    <string name="category_variant_empty_list">Нет вариаций</string>
+    <string name="category_variants_create_title">Создать вариацию</string>
+    <string name="category_variants_edit_title">Редактировать вариацию</string>
+    <string name="category_variant_already_exists">Вариация “%1$s“ уже существует</string>
+    <string name="category_variants_value_placeholder">Новая вариация</string>
+
+    <string name="tags_title">Метки</string>
+    <string name="tag_empty_list">Нет меток</string>
+    <string name="tag_create_title">Создать метку</string>
+    <string name="tag_already_exists">Метка “%1$s“ уже существует</string>
+    <string name="tag_rename_title">Переименовать метку</string>
+
+    <string name="extra_title">Дополнительно</string>
+
+    <string name="tools_title">Инструменты</string>
+    <string name="settings_tools_summary_empty">Нет видимых инструментов</string>
+
+    <string name="security_title">Безопасность</string>
+
+    <string name="appinfo_title">Информация</string>
+    <string name="appinfo_version">Версия</string>
+
+    <string name="action_restore">Восстановить</string>
+    <string name="action_pin_unpin">Закрепить / Открепить</string>
+    <string name="action_duplicate">Создать копию</string>
+    <string name="action_select_more">Выделить больше…</string>
+
+    <string name="attachments_edit_description">Изменить описание</string>
+    <string name="attachments_hint_description">Описание вложения</string>
+    <string name="action_attach_files">Прикрепить файлы</string>
+    <string name="action_take_photo">Сфотографировать</string>
+    <string name="action_take_video">Снять видео</string>
+    <string name="action_record_audio">Записать аудио</string>
+    <string name="action_drawing">Рисование</string>
+    <string name="action_note_text">Текст</string>
+    <string name="action_note_task_list">Список задач</string>
+    <string name="action_note_categories">Категории</string>
+
+    <string name="reminders">Напоминания</string>
+    <string name="reminder">Reminder</string>
+    <string name="new_reminder">Новое напоминание</string>
+
+    <string name="indicator_archive_empty">Заархивированные заметки появятся здесь</string>
+    <string name="action_delete_permanently">Удалить навсегда</string>
+    <string name="action_unarchive">Разархивировать</string>
+
+    <!-- Deleted -->
+    <string name="action_empty_bin">Удалить всё</string>
+    <string name="empty_bin_warning_title">Вы уверены?</string>
+    <string name="empty_bin_warning_text">Все удаленные заметки будут потеряны</string>
+    <string name="indicator_deleted_note_cannot_be_edited">Заметки в корзине нельзя редактировать</string>
+    <string name="indicator_deleted_empty">Ваши удаленные заметки будут отображаться здесь %1$d дней</string>
+    <string name="indicator_bin_disabled">Заметки настроены на мгновенное удаление</string>
+    <string name="indicator_deleted_notes_permanently">Заметки удалены навсегда</string>
+    <string name="indicator_deleted_note_permanently">Заметка удалена навсегда</string>
+
+    <string name="search_hint">Поиск…</string>
+    <string name="indicator_search_empty">Здесь будут отображаться результаты поиска</string>
+    <string name="indicator_no_results_found">Ничего не найдено</string>
+
+    <string name="action_add_task">Задача</string>
+    <string name="action_add_category">Поле</string>
+
+    <string name="navigation_storage_subtitle_format">%1$s свободно из %2$s</string>
+    <string name="navigation_add_storage">Добавить накопитель…</string>
+    <string name="navigation_create_organizer">Создать органайзер</string>
+    <string name="navigation_standard_directory_alarms">Будильник</string>
+    <string name="navigation_standard_directory_dcim">DCIM</string>
+    <string name="navigation_standard_directory_documents">Документы</string>
+    <string name="navigation_standard_directory_downloads">Загрузки</string>
+    <string name="navigation_standard_directory_movies">Фильмы</string>
+    <string name="navigation_standard_directory_music">Музыка</string>
+    <string name="navigation_standard_directory_notifications">Уведомления</string>
+    <string name="navigation_standard_directory_pictures">Изображения</string>
+    <string name="navigation_standard_directory_podcasts">Подкасты</string>
+    <string name="navigation_standard_directory_ringtones">Мелодии</string>
+    <string name="navigation_phoenix_internal_appdata">Внутренние данные приложения</string>
+    <string name="navigation_phoenix_external_appdata">Внешние данные приложения</string>
+    <string name="navigation_edit_bookmark_directory_title">Закладка папки</string>
+    <string name="navigation_edit_bookmark_directory_name">Имя</string>
+    <string name="navigation_edit_bookmark_directory_path">Путь</string>
+    <string name="archive_viewer_title">Просмотрщик архивов</string>
+    <string name="navigation_camera">Камера</string>
+    <string name="navigation_browser">Браузер</string>
+    <string name="navigation_gallery">Галерея</string>
+    <string name="navigation_voicerec">Диктофон</string>
+    <string name="navigation_calc">Калькулятор</string>
+
+    <string name="image_viewer_title">Просмотрщик изображений</string>
+    <string name="image_viewer_subtitle_format">%1$,d/%2$,d</string>
+    <string name="text_editor_title">Текстовый редактор</string>
+    <string name="text_editor_title_format">%1$s</string>
+    <string name="text_editor_title_changed_format">*%1$s</string>
+    <string name="text_editor_save_success">Сохранено</string>
+    <string name="text_editor_reload_message">Вы уверены что хотите перезагрузить? Несохраненные изменения в  документе будут потеряны.</string>
+    <string name="text_editor_encoding">Кодировка</string>
+    <string name="text_editor_close_message">Вы уверены что хотите отказаться от несохраненных изменений в документе?</string>
+
+    <string name="ftp_server_title">FTP сервер</string>
+    <string name="ftp_server_state_title">Статус</string>
+    <string name="ftp_server_state_summary_starting">Запуск…</string>
+    <string name="ftp_server_state_summary_running">Запущен</string>
+    <string name="ftp_server_state_summary_stopping">Остановка…</string>
+    <string name="ftp_server_state_summary_stopped">Не запущен</string>
+    <string name="ftp_server_url_title">URL</string>
+    <string name="ftp_server_url_summary_no_local_inet_address">Не удаётся получить локальный IP-адрес</string>
+    <string name="ftp_server_url_menu_copy_url">Скопировать URL</string>
+    <string name="ftp_server_url_menu_copy_password">Скопировать пароль</string>
+    <string name="ftp_server_configuration_title">Конфигурация</string>
+    <string name="ftp_server_anonymous_login_title">Анонимный вход</string>
+    <string name="ftp_server_username_title">Имя пользователя</string>
+    <string name="ftp_server_password_title">Пароль</string>
+    <string name="ftp_server_port_title">Порт</string>
+    <string name="ftp_server_home_directory_title">Корневой каталог</string>
+    <string name="ftp_server_writable_title">Разрешить запись</string>
+    <string name="ftp_server_notification_text">FTP сервер запущен</string>
+
+    <string name="settings_title">Настройки</string>
+    <string name="settings_interface_title">Интерфейс</string>
+    <string name="settings_theme_color_title">Цвет темы</string>
+    <string name="settings_theme_color_summary">Цвет который чаще всего используется в приложении</string>
+    <string name="settings_material_design_3_title">Material Design 3</string>
+    <string name="settings_night_mode_title">Ночной режим</string>
+    <string-array name="settings_night_mode_entries">
+        <item>Использовать системную тему</item>
+        <item>Выключить</item>
+        <item>Включить</item>
+        <item>На основе времени</item>
+        <item>На основе энергосберегающего режима</item>
+    </string-array>
+    <string name="settings_black_night_mode">Ночная тема</string>
+    <string name="settings_lists_animation_title">Анимация списков</string>
+    <string name="settings_name_ellipsize_title">Отображать длинные имена</string>
+    <string-array name="settings_file_name_ellipsize_entries">
+        <item>Многоточие в начале</item>
+        <item>Многоточие в середине</item>
+        <item>Многоточие в конце</item>
+        <item>Бегущая строка</item>
+    </string-array>
+    <string name="settings_files_title">Файлы</string>
+    <string name="settings_default_directory_title">Папка по умолчанию</string>
+    <string name="settings_standard_directories_title">Стандартные папки</string>
+    <string name="settings_standard_directories_summary_empty">Стандартные папки не включены</string>
+    <string name="settings_bookmark_directory_screenshots">Скриншоты</string>
+    <string name="settings_bookmark_directories_title">Закладки папок</string>
+    <string name="settings_bookmark_directories_summary_empty">Нет закладок папок</string>
+    <string name="settings_root_strategy_title">Root-доступ</string>
+    <plurals name="settings_root_strategy_message_format">
+        <item quantity="one">У вас запущена %1$,d файловая операция и изменение режима root-доступа может привести к непредвиденной ошибке. Вы уверены, что хотите изменить сейчас?</item>
+        <item quantity="few">У вас запущены %1$,d файловые операции и изменение режима root-доступа может привести к непредвиденной ошибке. Вы уверены, что хотите изменить сейчас?</item>
+        <item quantity="many">У вас запущены %1$,d файловых операций и изменение режима root-доступа может привести к непредвиденной ошибке. Вы уверены, что хотите изменить сейчас?</item>
+        <item quantity="other">У вас запущены %1$,d файловых операций и изменение режима root-доступа может привести к непредвиденной ошибке. Вы уверены, что хотите изменить сейчас?</item>
+    </plurals>
+    <string-array name="settings_root_strategy_entries">
+        <item>Только нормальный доступ</item>
+        <item>Автоматически</item>
+        <item>Только root-доступ</item>
+    </string-array>
+    <string name="settings_archive_file_name_encoding_title">Кодировка имени файла архива</string>
+    <string name="settings_open_apk_default_action_title">Открытие Android-пакета</string>
+    <string-array name="settings_open_apk_default_action_entries">
+        <item>Установка</item>
+        <item>Просмотр содержимого</item>
+        <item>Спрашивать что делать</item>
+    </string-array>
+    <string name="settings_show_pdf_thumbnail_pre_28_title">Показывать миниатюры для файлов PDF</string>
+    <string name="settings_show_pdf_thumbnail_pre_28_summary">Приложение может стать нестабильным на старых версиях Android</string>
+    <string name="settings_read_remote_files_for_thumbnail_title">Считывать удалённые (сетевые) файлы для миниатюр</string>
+    <string name="settings_adding_storages_from_menu">Добавление накопителей из меню</string>
+    <string name="settings_creating_organizers_from_menu">Создание органайзеров из меню</string>
+    <string name="settings_starting_organizers_from_menu">Запуск органайзеров из меню</string>
+
+    <string name="camera_camera">ФОТО</string>
+    <string name="camera_video">ВИДЕО</string>
+    <string name="camera_qr_scan_mode">СКАН QR</string>
+
+    <string name="camera_include_audio">Включить аудио</string>
+    <string name="camera_video_quality">Качество видео</string>
+    <string name="camera_sounds">Звуки камеры</string>
+    <string name="camera_optimize_for">Оптимизировать</string>
+    <string name="camera_quality">Качество</string>
+    <string name="camera_latency">Задержку</string>
+    <string name="camera_timer">Таймер</string>
+    <string name="camera_focus_timeout">Таймаут фокуса</string>
+    <string name="camera_focus_timeout_off">Отключить</string>
+
+    <string name="navigation_gps">GPS</string>
+    <string name="gps_title">GPS навигация</string>
+    <string name="gps_dashboard">Информация</string>
+    <string name="gps_tracks">Треки</string>
+    <string name="gps_settings">Настройки</string>
+    <string name="gps_tracks_empty">Ваши треки будут отображаться здесь</string>
+    <string name="gps_total_distance">Общее расстояние: %1$s</string>
+    <string name="gps_track_info">Информация о треке</string>
+    <string name="gps_track_rename">Переименовать трек</string>
+    <string name="gps_track_delete">Удалить трек</string>
+    <string name="gps_snackbar_message_location_offline">Местоположение отключено. GPS навигация работать не будет.</string>
+    <string name="gps_snackbar_message_location_permission_denied">GPS навигация не работает, т. к. нет разрешений на определение местоположения.</string>
+    <string name="gps_pref_header_common">Основные</string>
+    <string name="gps_listeners_gps_title">GPS/GNSS местоположения</string>
+    <string name="gps_listeners_gps_summary">Использовать местоположения, полученные при помощи спутниковой системы навигации вашего устройства.</string>
+    <string name="gps_listeners_cell_title">Сетевые местоположения</string>
+    <string name="gps_listeners_cell_summary">Использовать местоположения, полученные на основе сети вашего устройства.</string>
+    <string name="gps_listeners_passive_title">Пассивные данные</string>
+    <string name="gps_listeners_passive_summary">Использовать местоположения, полученные из других источников (полезно для внешних GPS-приёмников).</string>
+    <string name="gps_minimum_interval_title">Интервал записи местоположения</string>
+    <string name="gps_minimum_interval_summary">Используйте 0 для максимальной частоты, но более быстрого расхода батареи.</string>
+    <plurals name="gps_seconds_plural">
+        <item quantity="one">%d секунда</item>
+        <item quantity="few">%d секунды</item>
+        <item quantity="many">%d секунд</item>
+    </plurals>
+    <string name="gps_minimum_interval_hint">[0..9999] секунд</string>
+    <string name="gps_minimum_distance_title">Минимальное расстояния</string>
+    <string name="gps_minimum_distance_summary">Минимальное расстояние между точками сохранения.</string>
+    <string name="gps_minimum_accuracy_title">Минимальная точность</string>
+    <string name="gps_minimum_accuracy_summary">Минимальная точность, необходимая для сохранения местоположения.</string>
+    <plurals name="gps_meters_plural">
+        <item quantity="one">%d метр</item>
+        <item quantity="few">%d матра</item>
+        <item quantity="many">%d метров</item>
+    </plurals>
+    <string name="gps_settings_enter_meters">[0..9999] метров</string>
+    <string name="gps_detection_retry_time_title">Продолжительность определения точности</string>
+    <string name="gps_detection_retry_time_summary">Как долго необходимо продолжать попытки определения местоположения, после получения первоначального местоположения, чтобы получить местоположение, которое будет соответствовать настройкам точности фильтрации.</string>
+    <string name="gps_absolute_timeout_title">Время между определениями местоположения</string>
+    <string name="gps_absolute_timeout_summary">Время определения местоположения. Количество секунд , по прошествии которых приложение перестанет пытаться получит местоположение, не зависимо от других параметров. Это особоенно полезно внутри зданий, чтобы не разряжать батарею. Установите 0 если задержка не требуется.</string>
+    <string name="gps_time_hint">[0..9999] секунд</string>
+
+    <string name="gps_profiles_title">GPS профили</string>
+    <string name="gps_empty_profile_list">Нет GPS профилей</string>
+    <string name="gps_profile_create_title">Создать профиль</string>
+    <string name="gps_profile_edit_title">Редактироватьпрофиль</string>
+    <string name="gps_profile_name_placeholder">Новый профиль</string>
+    <string name="gps_profile_already_exists">GPS профиль %1$s уже существует</string>
+    <string name="gps_profile_active">активный</string>
+    <string name="gps_profile_activate">Активировать</string>
+    <string name="gps_main_profile_name">Основной</string>
+    <string name="trackbook_pref_general_title">Общие</string>
+    <string name="trackbook_pref_advanced_title">Расширенный</string>
+    <string name="trackbook_track_list_onboarding_h1_part_1">Ваши записанные треки</string>
+    <string name="trackbook_quick_settings_tile_title_default">Запись</string>
+    <string name="trackbook_statistics_sheet_p_velocity">Средняя скорость:</string>
+    <string name="trackbook_statistics_sheet_p_recording_stop">Запись остановлена:</string>
+    <string name="trackbook_statistics_sheet_p_recording_start">Началась запись:</string>
+    <string name="trackbook_statistics_sheet_p_recording_paused">Запись приостановлена:</string>
+    <string name="trackbook_statistics_sheet_p_duration">Общая продолжительность:</string>
+    <string name="trackbook_statistics_sheet_p_waypoints">Записанные путевые точки:</string>
+    <string name="trackbook_statistics_sheet_p_steps_no_pedometer">шагомер недоступен</string>
+    <string name="trackbook_statistics_sheet_p_distance">Общее расстояние:</string>
+    <string name="trackbook_marker_description_accuracy">Точность</string>
+    <string name="trackbook_marker_description_time">Время</string>
+    <string name="trackbook_toast_message_save_gpx">Сохранение записи как GPX.</string>
+    <string name="trackbook_toast_message_install_file_helper">Не удалось сохранить. Пожалуйста, сначала установите файловый менеджер.</string>
+    <string name="trackbook_toast_message_elevation_info">Подсказка: Точность данных о высоте зависит от вашего устройства. Измеряется высота подъема и спуска всего маршрута.</string>
+    <string name="trackbook_toast_message_copied_to_clipboard">Скопировано в буфер обмена.</string>
+    <string name="trackbook_dialog_yes_no_message_delete_recording">Удалить эту запись\?</string>
+    <string name="trackbook_dialog_yes_no_positive_button_delete_non_starred">Удалить</string>
+    <string name="trackbook_dialog_yes_no_positive_button_delete_recording">Удалить</string>
+    <string name="trackbook_dialog_yes_no_positive_button_default">Да</string>
+    <string name="trackbook_dialog_share_gpx">Поделиться файлом GPX через</string>
+    <string name="trackbook_dialog_rename_track_input_hint">Введите новое имя</string>
+    <string name="trackbook_dialog_rename_track_button">Переименовать</string>
+    <string name="gps_dialog_error_empty_recording_action_resume">Возобновить запись</string>
+    <string name="gps_dialog_error_empty_recording_message">Нет ни одной записанной путевой точки.</string>
+    <string name="gps_dialog_error_empty_recording_title">Не удалось сохранить</string>
+    <string name="trackbook_dialog_generic_details_button">Показать подробности</string>
+    <string name="trackbook_dialog_generic_button_okay">ОЕ</string>
+    <string name="trackbook_dialog_generic_button_cancel">Отмена</string>
+    <string name="gps_speed_dial_resume">Продолжить</string>
+    <string name="gps_speed_dial_save">Сохранить</string>
+    <string name="gps_speed_dial_clear">Очистить</string>
+    <string name="trackbook_notification_channel_recording_description">Отображение продолжительности и расстояния. Возможность остановить запись движения.</string>
+    <string name="trackbook_notification_channel_recording_name">Состояние записи движения</string>
+    <string name="trackbook_notification_show">Показать</string>
+    <string name="trackbook_notification_resume">Продолжить</string>
+    <string name="trackbook_notification_stop">Остановить</string>
+    <string name="gps_notification_title_not_running">GPS не запущен</string>
+    <string name="gps_notification_title_running">GPS запущен</string>
+    <string name="trackbook_tab_settings">Настройки</string>
+    <string name="trackbook_tab_tracks">Треки</string>
+    <string name="trackbook_tab_map">Карта</string>
+    <string name="trackbook_dialog_yes_no_message_delete_non_starred">Удалить все записи, не отмеченные звездочками\? Это действие нельзя отменить.</string>
+    <string name="trackbook_toast_message_poi_removed">Маркер точки интереса удален.</string>
+    <string name="trackbook_toast_message_poi_added">Добавлен маркер точки интереса.</string>
+    <string name="trackbook_statistics_sheet_p_steps">Принятые меры:</string>
+    <string name="trackbook_statistics_sheet_p_positive_elevation">Высота (в гору):</string>
+    <string name="trackbook_statistics_sheet_p_min_altitude">Низшая путевая точка:</string>
+    <string name="trackbook_statistics_sheet_p_max_altitude">Наивысшая путевая точка:</string>
+    <string name="trackbook_statistics_sheet_p_negative_elevation">Возвышение (спуск):</string>
+    <string name="trackbook_quick_settings_tile_title_stop">Остановить запись</string>
+    <string name="trackbook_quick_settings_tile_title_start">Начать запись</string>
+    <string name="trackbook_layout_onboarding_description_app_icon">Иконка приложения Trackbook</string>
+    <string name="trackbook_track_list_onboarding_h1_part_2">... появится здесь.</string>
+    <string name="trackbook_pref_accuracy_threshold_title">Порог точности</string>
+    <string name="trackbook_pref_accuracy_threshold_summary">Отбросьте исправления местоположения с точностью более (метров):</string>
+    <string name="trackbook_pref_delete_non_starred_summary">Удалите все записи в \"Дорожках\", не отмеченные звездочками.</string>
+    <string name="trackbook_pref_gps_only_summary_gps_and_network">В настоящее время для локализации используется GPS и сеть.</string>
+    <string name="trackbook_pref_gps_only_summary_gps_only">В настоящее время для локализации используется только GPS.</string>
+    <string name="trackbook_pref_recording_accuracy_title">Точность записи</string>
+    <string name="trackbook_pref_recording_accuracy_summary_default">Путевые точки имеют более низкую точность, но встречаются чаще.</string>
+    <string name="trackbook_pref_reset_advanced_summary">Сброс расширенных настроек до значений по умолчанию.</string>
+    <string name="trackbook_pref_theme_selection_mode_dark">Темный режим</string>
+    <string name="trackbook_pref_reset_advanced_title">Сброс</string>
+    <string name="trackbook_pref_theme_selection_mode_light">Световой режим</string>
+    <string name="trackbook_pref_theme_selection_summary">Текущая тема:</string>
+    <string name="trackbook_pref_theme_selection_title">Тема приложения</string>
+    <string name="trackbook_abbreviation_hours">часы</string>
+    <string name="gps_descr_map_current_track">Составление карты текущего пути</string>
+    <string name="trackbook_abbreviation_seconds">сек</string>
+    <string name="trackbook_abbreviation_minutes">мин</string>
+    <string name="trackbook_pref_report_issue_summary">Сообщайте об ошибках и предлагайте улучшения на GitHub.</string>
+    <string name="trackbook_pref_recording_accuracy_summary_high">Путевые точки имеют более высокую точность, но встречаются реже.</string>
+    <string name="trackbook_pref_gps_only_title">Ограничение на GPS</string>
+    <string name="trackbook_pref_maintenance_title">Обслуживание</string>
+    <string name="trackbook_pref_delete_non_starred_title">Удаление записей, не включенных в список</string>
+    <string name="trackbook_descr_quick_settings_tile_title_stop">Остановить запись</string>
+    <string name="trackbook_descr_quick_settings_tile_title_start">Начать запись</string>
+    <string name="trackbook_descr_mark_starred_button">Кнопка \"Пометить звездой</string>
+    <string name="trackbook_descr_fab_sub_menu_button_resume">Кнопка резюме</string>
+    <string name="trackbook_descr_fab_sub_menu_button_clear">Кнопка очистки</string>
+    <string name="trackbook_descr_fab_sub_menu_button_save">Кнопка сохранения</string>
+    <string name="trackbook_descr_fab_main_start">Кнопка начала записи</string>
+    <string name="trackbook_descr_map_last_track">Отображение последнего трека</string>
+    <string name="trackbook_pref_theme_selection_mode_device_default">Аналогично устройству</string>
+    <string name="trackbook_descr_statistics_sheet_edit_button">Кнопка редактирования трека</string>
+    <string name="trackbook_descr_statistics_sheet_save_button">Сохранить как GPX</string>
+    <string name="trackbook_descr_statistics_sheet_delete_button">Кнопка удаления трека</string>
+
+    <string name="gps_no_indicators">Нет индикаторов</string>
+    <string name="gps_indicator_coordinates">Координаты</string>
+    <string name="gps_indicator_accuracy">Точность</string>
+    <string name="gps_indicator_direction">Направление</string>
+    <string name="gps_indicator_altitude">Высота</string>
+    <string name="gps_indicator_speed">Скорость</string>
+    <string name="gps_indicator_satellites">Спутники</string>
+    <string name="gps_indicator_distance">Расстояние</string>
+    <string name="gps_indicator_duration">Продолжительность</string>
+    <string name="gps_indicator_waypoints">Количество точек</string>
+
+    <string name="gps_settings_screen_name">Настройки GPSLogger</string>
+    <string name="gps_letters_numbers">Используйте только буквы и цифры</string>
+    <!-- main form labels -->
+    <string name="gps_txt_altitude">Высота:</string>
+    <string name="gps_txt_speed">Скорость:</string>
+    <string name="gps_txt_direction">Направление:</string>
+    <string name="gps_txt_satellites">Спутники:</string>
+    <string name="gps_txt_accuracy">Точность:</string>
+    <string name="gps_txt_travel_distance">Пройдено:</string>
+    <string name="gps_btn_start_logging">Начать запись</string>
+    <string name="gps_btn_stop_logging">Прекратить запись</string>
+    <string name="gps_gpslogger_still_running">GPSLogger запущен.</string>
+    <string name="gps_sharing_location_only">Только координаты</string>
+    <string name="gps_sharing_mylocation">Мои координаты</string>
+    <string name="gps_sharing_via">Опубликовать через</string>
+    <!-- general -->
+    <string name="gps_feet">&#160;футы</string>
+    <string name="gps_meters">&#160;метры</string>
+    <string name="gps_error">Ошибка</string>
+    <string name="gps_seconds">сек.</string>
+    <string name="gps_minutes">мин.</string>
+    <string name="gps_hours">час</string>
+    <string name="gps_gpsprovider_unavailable">Нет доступных источников GPS-данных. Проверьте настройки местоположения и выберите источник.</string>
+    <string name="gps_meters_per_second">&#160;м/с</string>
+    <string name="gps_miles_per_hour">&#160;миль/ч</string>
+    <string name="gps_miles">&#160;миль</string>
+    <string name="gps_kilometers_per_hour">&#160;км/ч</string>
+    <string name="gps_kilometers">&#160;км</string>
+    <string name="gps_time_onesecond">1 секунда</string>
+    <string name="gps_time_halfminute">30 секунд</string>
+    <string name="gps_time_oneminute">1 минута</string>
+    <string name="gps_time_onehour">1 час</string>
+    <string name="gps_time_quarterhour">15 минут</string>
+    <string name="gps_time_halfhour">30 минут</string>
+    <string name="gps_time_oneandhalfhours">90 минут</string>
+    <string name="gps_time_twoandhalfhours">150 минут</string>
+    <string name="gps_time_hms_format" formatted="false">%s:%s:%s</string>
+    <!-- Settings activity -->
+    <string name="gps_settings_distance_in_meters">Дистанция в метрах</string>
+    <string name="gps_settings_accuracy_in_meters">Точность в метрах</string>
+
+    <!-- Settings -->
+    <string name="gps_log_gpx_title">Писать лог в GPX</string>
+    <string name="gps_log_gpx_summary">Записывать трек в файл GPX v1.1</string>
+    <string name="gps_log_json_title">Запись в GeoJSON</string>
+    <string name="gps_log_json_summary">Записывать трек в файл GeoJSON</string>
+    <string name="gps_new_file_creation_onceaday">Один раз в день</string>
+    <string name="gps_new_file_creation_everystart">При старте записи лога</string>
+    <string name="gps_new_file_creation_custom">Пользовательский файл</string>
+    <string name="gps_time_before_logging_dialog_title">Время в секундах</string>
+
+    <string name="gps_enabledisablegps_title">Вкл/Выкл GPS</string>
+    <string name="gps_enabledisablegps_summary">Перейти в настройки GPS телефона.</string>
+    <string name="gps_txt_travel_duration">Продолжительность:</string>
+    <string name="gps_points">Точки</string>
+    <string name="gps_txt_number_of_points">Количество точек</string>
+    <string name="gps_pref_filedetails_title">Файл и папка, детали</string>
+    <string name="gps_pref_logging_file_no_permissions">Этот каталог не доступен программе GPSLogger для записи. Пожалуйста, выберите другой каталог.</string>
+    <string name="gps_altitude_subtractgeoidheight_summary">Использует MSL вместо WGS84. Пересчитывать высоту, учитывая высоту геоида. Применяется только при GPS, но не при позиционировании от сети или NMEA.</string>
+    <string name="gps_altitude_subtractgeoidheight_title">Использование MSL вместо WGS84</string>
+    <string name="gps_altitude_subtractoffset_title">Вычесть смещение высоты</string>
+    <string name="gps_altitude_subtractoffset_summary">Значение в метрах для вычитания из GPS высот. Используйте отрицательные числа для увеличения значение высоты. Применяется только при GPS, но не при позиционировании от сети или NMEA.</string>
+    <string name="gps_profile_default">Профиль по умолчанию</string>
+    <string name="gpslogger_permissions_rationale_title">Необходимые разрешения</string>
+    <string name="gpslogger_permissions_rationale_message_location"><![CDATA[<b>Местоположение</b> - это разрешение позволяет считывать данные о местоположении по вышкам сети и данным GPS.]]></string>
+    <string name="gpslogger_permissions_rationale_message_storage"><![CDATA[<b>Фото, медиа, файлы</b> - это разрешение позволяет писать файлы лога и файлы тестов для хранения, чтения, загрузки или обмена. Этот приложение не имеет доступ к вашим фото или медиа.]]></string>
+    <string name="gpslogger_permissions_permanently_denied"><![CDATA[Вы не предоставили одно или несколько разрешений, необходимых для фоновой работы GPS навигации. Вам нужно перейти на экран настроек приложения, чтобы предоставить эти разрешения.<br/><br/>Если у вас навсегда отказано в разрешениях, вы можете сбросить их в настройках системы.]]></string>
+    <string name="gpslogger_permissions_background_location">Для работы GPS навигации в фоновом режиме, необходимо предоставить дополнительное разрешение. На следующем экране выберите: \"%1$s\"</string>
+
+    <string name="browser_title">Браузер</string>
+    <string name="browser_storage_channel_name">Загрузки</string>
+    <string name="browser_storage_channel_description">Notifications for active and finished downloads</string>
+    <string name="browser_share">Поделиться</string>
+    <string name="browser_no_activity_found_to_handle_uri">No application found which support this kind of file.</string>
+    <string name="browser_download_failed">Download failed for \"%1$s\"</string>
+    <string name="browser_download_complete">Download complete for \"%1$s\"</string>
+    <string name="browser_search">Поиск</string>
+    <string name="browser_file_has_no_write_permission">No \"Write Permission\" on the location</string>
+    <string name="browser_download_title">Download Data</string>
+    <string name="browser_bookmarks">Закладки</string>
+    <string name="browser_bookmark">Alter Bookmark</string>
+    <string name="browser_bookmark_added">Bookmark \"%1$s\" added</string>
+    <string name="browser_bookmark_removed">Bookmark \"%1$s\" removed</string>
+    <string name="browser_share_link">Share Link</string>
+    <string name="browser_find_page">Найти на странице</string>
+    <string name="browser_history">История</string>
+
+    <string name="browser_clear_browser_data">Очистка кэша, куки, истории, паролей итд…</string>
+    <string name="browser_password">Пароль</string>
+    <string name="browser_user_name">Имя пользователя</string>
+    <string name="browser_authentication">Authentication</string>
+    <string name="browser_downloads">Загрузки</string>
+    <string name="browser_enter_url">Scan-URL or search input</string>
+    <string name="browser_action_cleanup">Удалить данные браузера</string>
+    <string name="browser_next_page">Следущая страница</string>
+    <string name="browser_reload_page">Перезагрузить страницу</string>
+    <string name="browser_download">Download</string>
+    <string name="browser_more_options">Больше опций</string>
+
+    <string name="browser_enable_javascript">Включить Javascript</string>
+    <string name="browser_redirect_url_support">Поддержка URL перенаправления</string>
+    <string name="browser_settings">Настройки</string>
+    <string name="browser_redirect_index_support">Redirect Index HTML</string>
+    <string name="browser_javascript_text">When javascript is disabled, many websites might not work properly.</string>
+    <string name="browser_redirect_url_support_text">When this option is enabled, URLs which references IPFS or IPNS content, will be automatically redirected to the local IPFS node. Currently only URLs of the form https://xxx/ipfs/… or https://xxx/ipns/… will be redirected.</string>
+    <string name="browser_redirect_index_support_text">If this option is enabled, the local node tries to find an HTML index file for a given ipfs or ipns URL if it is not specified.</string>
+    <string name="browser_information">Информация</string>
+    <string name="browser_url_access">QR-код содержит URL-адрес текущего веб-сайта</string>
+    <string name="browser_scan_url">Scan URL</string>
+    <string name="browser_permission_camera_denied">Permission camera</string>
+    <string name="browser_feature_camera_required">Feature camera required</string>
+    <string name="browser_codec_not_supported">Not supported QR-Code</string>
+    <string name="browser_home">Домой</string>
+    <string name="browser_previous_search">Предыдущий</string>
+    <string name="browser_next_search">Следующий</string>
+
+    <string name="ok">OK</string>
+    <string name="cancel">Отмена</string>
+
+    <string name="default_">По умолчанию</string>
+
+    <string name="activity_not_found">Приложение не найдено для обработки данного действия</string>
+    <string name="bottom_sheet_untitled">Без названия</string>
+
+    <string name="notification_channel_background_activity_start_name">Действия в фоновом режиме</string>
+    <string name="notification_channel_background_activity_start_description">Разрешить действия, пока приложение находится в фоновом режиме</string>
+
+    <string name="an_error_occurred">Произошла ошибка: %s</string>
+
+    <string name="enter_pin">Ввод PIN-кода</string>
+    <string name="please_enter_pin">Введите PIN-код</string>
+    <string name="wrong_pin">Неправильный PIN-код</string>
+    <string name="repeat_pin">Повторите PIN-код</string>
+    <string name="biometrics">Биометрические данные</string>
+    <string name="fingerprint">Отпечаток пальца</string>
+    <string name="add_fingerprint">Добавить отпечаток</string>
+    <string name="pincode">PIN-код</string>
+    <string name="pattern">Графический ключ</string>
+    <string name="open_biometric_dialog">Открыть диалог подтверждения биометрических данных</string>
+    <string name="place_finger">Поместите палец на датчик отпечатков</string>
+    <string name="go_to_settings">Перейдите в настройки</string>
+    <string name="no_fingerprints_registered">Отсутствуют зарегистрированные отпечатки пальцев, добавьте их в настройках устройства</string>
+    <string name="authentication_failed">Ошибка авторизации</string>
+    <string name="authentication_blocked">Авторизация заблокирована, повторите попытку через некоторое время</string>
+    <string name="authenticate">Авторизация</string>
+    <string name="insert_pattern">Установить ключ</string>
+    <string name="wrong_pattern">Неправильный графический ключ</string>
+    <string name="repeat_pattern">Повторите ключ</string>
+
+    <string name="no_reminder">Без напоминания</string>
+    <string name="at_start">С наступлением события</string>
+    <string name="during_day_at_hh_mm">В течение дня в чч:мм</string>
+    <string name="during_day_at">В течение дня в %02d:%02d</string>
+
+    <string name="pref_date_format">Формат даты</string>
+    <string name="pref_password_protect_whole_app">Защита паролем всего приложения</string>
+    <string name="pref_password_protect_settings">Защита паролем настроек</string>
+
+<!--    Thirdparty-->
+    <string name="nothing">Ничего</string>
+    <string name="later">Позже</string>
+    <string name="save_as">Сохранить как</string>
+    <string name="file_saved">Файл сохранён</string>
+    <string name="invalid_file_format">Неправильный формат файла</string>
+    <string name="out_of_memory_error">Память переполнена</string>
+    <string name="open_with">Открыть в…</string>
+    <string name="edit_with">Редактировать в…</string>
+    <string name="no_app_found">Приложение не найдено</string>
+    <string name="set_as">Установить как…</string>
+    <string name="copy_to_clipboard">Копировать в буфер обмена</string>
+    <string name="copy_number_to_clipboard">Копировать номер в буфер обмена</string>
+    <string name="value_copied_to_clipboard">Скопировано в буфер обмена</string>
+    <string name="value_copied_to_clipboard_show">Скопировано в буфер обмена:\n%s</string>
+    <string name="dial_number">Набрать номер</string>
+    <string name="always">Всегда</string>
+    <string name="never">Никогда</string>
+    <string name="notes">Заметки</string>
+    <string name="deleting_folder">Удаление папки \"%s\"</string>
+    <string name="label">Метка</string>
+    <string name="transparent">Прозрачный</string>
+    <string name="transparent_color">Прозрачный цвет</string>
+    <string name="select_a_different_color">Выберите другой цвет</string>
+    <string name="download">Загрузка</string>
+    <string name="notification">Уведомление</string>
+    <string name="notifications">Уведомления</string>
+    <string name="email">Электронная почта</string>
+    <string name="previous">Предыдущая</string>
+    <string name="playpause">Воспроизведение/Пауза</string>
+    <string name="next">Следующая</string>
+    <string name="number">Номер</string>
+    <string name="no_contacts_found">Контакты не найдены</string>
+    <string name="request_the_required_permissions">Запрос необходимых разрешений</string>
+    <string name="no_access_to_contacts">Приложение не может получить доступ к вашим контактам</string>
+    <string name="insert_text_here">Введите текст здесь</string>
+    <string name="call_person">Вызов %s</string>
+    <string name="zero">Ноль</string>
+    <string name="one">One</string>
+    <string name="two">Два</string>
+    <string name="three">Три</string>
+    <string name="four">Четыре</string>
+    <string name="five">Пять</string>
+    <string name="six">Шесть</string>
+    <string name="seven">Семь</string>
+    <string name="eight">Восемь</string>
+    <string name="nine">Девять</string>
+    <string name="value_cannot_be_empty">Значение не может быть пустым</string>
+
+    <!-- View types -->
+    <string name="change_view_type">Вид</string>
+    <string name="grid">Сетка</string>
+    <string name="list">Список</string>
+    <string name="increase_column_count">Добавить столбец</string>
+    <string name="reduce_column_count">Убрать столбец</string>
+    <string name="change_cover_image">Изменить обложку</string>
+    <string name="select_photo">Выбрать изображение</string>
+
+    <string name="more_info">Подробнее</string>
+
+    <!-- Favorites -->
+    <string name="favorites">Избранное</string>
+    <string name="add_favorites">Добавить избранное</string>
+    <string name="add_to_favorites">Добавить в избранное</string>
+    <string name="remove_from_favorites">Убрать из избранного</string>
+    <!-- Search -->
+    <string name="type_2_characters">Введите как минимум 2 символа для начала поиска.</string>
+    <!-- Filters -->
+    <string name="filter">Фильтр</string>
+    <string name="no_items_found">Ничего не найдено.</string>
+    <string name="change_filter">Изменить фильтр</string>
+    <!-- Permissions -->
+    <string name="no_storage_permissions">Требуется разрешение для доступа к хранилищу</string>
+    <string name="no_contacts_permission">Требуется разрешение для доступа к контактам</string>
+    <string name="no_camera_permissions">Требуется разрешение для доступа к камере</string>
+    <string name="no_audio_permissions">Требуется разрешение для доступа аудиосистеме</string>
+    <!-- Renaming -->
+    <string name="rename_file">Изменение имени файла</string>
+    <string name="rename_folder">Изменение имени папки</string>
+    <string name="rename_file_error">Невозможно переименовать файл</string>
+    <string name="rename_folder_error">Невозможно переименовать папку</string>
+    <string name="rename_folder_empty">Имя папки не должно быть пустым</string>
+    <string name="rename_folder_exists">Папка с таким именем уже существует</string>
+    <string name="rename_folder_root">Нельзя переименовать корневую папку</string>
+    <string name="rename_folder_ok">Папка переименована</string>
+    <string name="renaming_folder">Изменение имени папки</string>
+    <string name="filename_cannot_be_empty">Имя файла не может быть пустым</string>
+    <string name="filename_invalid_characters">Имя файла содержит недопустимые символы</string>
+    <string name="filename_invalid_characters_placeholder">Имя файла \"%s\" содержит недопустимые символы</string>
+    <string name="extension_cannot_be_empty">Расширение не может быть пустым</string>
+    <string name="source_file_doesnt_exist">Исходный файл \"%s\" не существует</string>
+    <string name="prepend_filenames">Перед именем файла</string>
+    <string name="append_filenames">После имени файла</string>
+    <string name="simple_renaming">Простое переименование</string>
+    <string name="pattern_renaming">Шаблон</string>
+    <string name="string_to_add">Строка для добавления</string>
+    <string name="rename_date_time_pattern">%Y — год
+\n%M — месяц
+\n%D — день
+\n%h — час
+\n%m — минута
+\n%s — секунда
+\n%i — порядковый номер с 1</string>
+    <string name="filename_without_txt">Имя файла (без .txt)</string>
+    <string name="filename_without_json">Имя файла (без .json)</string>
+    <!-- Copy / Move -->
+    <string name="move">Переместить</string>
+    <string name="copy_move">Копировать/переместить</string>
+    <string name="copy_to">Копировать в…</string>
+    <string name="move_to">Переместить в…</string>
+    <string name="source">Путь источника</string>
+    <string name="destination">Путь назначения</string>
+    <string name="select_destination">Выберите путь назначения</string>
+    <string name="click_select_destination">Нажмите здесь, чтобы выбрать расположение</string>
+    <string name="invalid_destination">Невозможно записать в выбранное расположение</string>
+    <string name="please_select_destination">Выберите путь назначения</string>
+    <string name="source_and_destination_same">Исходный и конечный пути не могут совпадать</string>
+    <string name="copy_failed">Невозможно скопировать файлы</string>
+    <string name="copying">Копирование…</string>
+    <string name="copying_success">Копирование файлов завершено</string>
+    <string name="copying_success_one">Копирование файла завершено</string>
+    <string name="copy_move_failed">Произошла ошибка</string>
+    <string name="moving">Перемещение…</string>
+    <string name="moving_success">Перемещение файлов завершено</string>
+    <string name="moving_success_one">Перемещение файла завершено</string>
+    <string name="moving_success_partial">Некоторые файлы не могут быть перемещены</string>
+    <string name="copying_success_partial">Некоторые файлы не могут быть скопированы</string>
+    <string name="no_files_selected">Файлы не выбраны</string>
+    <string name="saving">Сохранение…</string>
+    <string name="could_not_create_folder">Невозможно создать папку \"%s\"</string>
+    <string name="could_not_create_file">Невозможно создать файл \"%s\"</string>
+    <string name="no_new_items">Ничего не найдено</string>
+    <string name="no_space">По выбранному пути недостаточно свободного места.\nНеобходимо %1$s, доступно %2$s.</string>
+    <!-- Create new -->
+    <string name="create_new">Создать</string>
+    <string name="folder">Папка</string>
+    <string name="file">Файл</string>
+    <string name="name_taken">Папка или файл с таким именем уже существует</string>
+    <string name="invalid_name">Имя содержит недопустимые символы</string>
+    <string name="empty_name">Введите имя</string>
+    <string name="unknown_error_occurred">Произошла неизвестная ошибка</string>
+    <!-- File operation conflicts -->
+    <string name="file_already_exists">Файл \"%s\" уже существует</string>
+    <string name="file_already_exists_overwrite">Файл \"%s\" уже существует. Перезаписать?</string>
+    <string name="folder_already_exists">Папка \"%s\" уже существует</string>
+    <string name="keep_both">Сохранить оба</string>
+    <string name="overwrite">Перезаписать</string>
+    <string name="append">Добавить \"_1\" к имени</string>
+    <string name="apply_to_all">Применить ко всем</string>
+    <!-- File picker -->
+    <string name="select_folder">Выбор папки</string>
+    <string name="select_file">Выбор файла</string>
+    <string name="confirm_storage_access_title">Предоставление доступа к внешнему накопителю</string>
+    <string name="confirm_folder_access_title">Подтвердить доступ к папке</string>
+    <string name="confirm_storage_access_text">Чтобы предоставить право на запись, выберите корневую папку SD-карты на следующем шаге</string>
+    <string name="confirm_storage_access_text_sd">Если SD-карта не видна, попробуйте это</string>
+    <string name="confirm_storage_access_android_text">Разрешите приложению доступ к выбранному хранилищу на следующем экране, нажав \"Использовать эту папку\" в нижней части.</string>
+    <string name="confirm_storage_access_android_text_specific">Разрешите доступ к \"&lt;b&gt;%s&lt;/b&gt;\" на следующем экране, нажав \"&lt;b&gt;Использовать эту папку&lt;/b&gt;\" внизу.</string>
+    <string name="confirm_create_doc_for_new_folder_text">Нажмите \"&lt;b&gt;Сохранить&lt;/b&gt;\" внизу на следующем экране, чтобы создать новую папку.</string>
+    <string name="confirm_selection">Подтвердить выделение</string>
+    <plurals name="items">
+        <item quantity="one">%d элемент</item>
+        <item quantity="few">%d элемента</item>
+        <item quantity="many">%d элементов</item>
+    </plurals>
+    <!-- Are you sure you want to delete 5 items? -->
+    <plurals name="delete_items">
+        <item quantity="one">%d элемент</item>
+        <item quantity="few">%d элемента</item>
+        <item quantity="many">%d элементов</item>
+    </plurals>
+    <plurals name="deleting_items">
+        <item quantity="one">Удаление %d элемента</item>
+        <item quantity="few">Удаление %d элементов</item>
+        <item quantity="many">Удаление %d элементов</item>
+    </plurals>
+
+    <!-- Storages -->
+    <string name="select_storage">Выбрать хранилище</string>
+    <string name="internal">Внутренняя память</string>
+    <string name="sd_card">SD-карта</string>
+    <string name="root">Корневая папка</string>
+    <string name="wrong_root_selected">Папка выбрана неверно, выберите SD-карту</string>
+    <string name="sd_card_usb_same">Пути к SD-карте и USB-накопителю не могут быть одинаковыми</string>
+    <string name="app_on_sd_card">Похоже, что приложение у вас установлено на SD-карту, а это делает виджеты приложений недоступными. Вы даже не увидите их в списке доступных виджетов.
+        Это системное ограничение, поэтому, если хотите использовать виджеты, вам нужно переместить приложение обратно во внутреннюю память.</string>
+    <string name="wrong_folder_selected">Выбрана неправильная папка, выберите \"%s\"</string>
+
+    <!-- File properties -->
+    <string name="properties">Свойства</string>
+    <string name="path">Расположение</string>
+    <string name="items_selected">Выбрано элементов</string>
+    <string name="direct_children_count">Дочерних элементов</string>
+    <string name="files_count">Всего файлов внутри</string>
+    <string name="resolution">Разрешение</string>
+    <string name="duration">Длительность</string>
+    <string name="artist">Исполнитель</string>
+    <string name="album">Альбом</string>
+    <string name="focal_length">Фокусное расстояние</string>
+    <string name="exposure_time">Выдержка</string>
+    <string name="iso_speed">Светочувствительность (ISO)</string>
+    <string name="f_number">Относительное отверстие</string>
+    <string name="camera">Камера</string>
+    <string name="exif">EXIF</string>
+    <string name="song_title">Название композиции</string>
+    <string name="gps_coordinates">Координаты GPS</string>
+    <string name="altitude">Высота над уровнем моря</string>
+    <!-- Color customization -->
+    <string name="accent_color_white">Цвет акцента белой темы</string>
+    <string name="accent_color_black_and_white">Цвет акцента чёрно-белой темы</string>
+    <string name="foreground_color">Цвет переднего плана</string>
+    <string name="bottom_navigation_bar_color">Цвет нижней панели навигации</string>
+    <string name="restore_defaults">Сбросить к стандартным</string>
+    <string name="use_default">Использовать по умолчанию</string>
+    <string name="default_color">По умолчанию</string>
+    <string name="change_color">Изменить цвет</string>
+    <string name="theme">Тема</string>
+    <string name="changing_color_description">Изменение цвета повлечёт переключение на пользовательскую тему</string>
+    <string name="undo_changes">Отменить изменения</string>
+    <string name="undo_changes_confirmation">Отменить изменения?</string>
+    <string name="save_before_closing">У вас есть несохранённые изменения. Сохранить перед выходом?</string>
+    <string name="share_colors_success">Цвета обновлены. Добавлена новая тема с названием \"Общая\", в дальнейшем используйте её для обновления цветов всех приложений.</string>
+    <string name="shared_theme_note">Обратите внимание, что даже если вы используете версию Pro, вам всё равно требуется приложение \"Simple Thank You\" по техническим причинам, т.к. оно обеспечивает синхронизацию цветов.</string>
+    <!-- Themes -->
+    <string name="light_theme">Светлая</string>
+    <string name="dark_theme">Тёмная</string>
+    <string name="auto_theme">Автовыбор</string>
+    <string name="custom">Своё</string>
+    <!-- Actionbar items -->
+    <string name="delete">Удалить</string>
+    <string name="share_via">Поделиться через…</string>
+    <string name="select_text">Выделить текст</string>
+    <string name="unhide">Показать</string>
+    <string name="hide_folder">Скрыть папку</string>
+    <string name="unhide_folder">Показать папку</string>
+    <string name="maximum_share_reached">Слишком большой объём данных для функции \"Поделиться\"</string>
+    <string name="empty_and_disable_recycle_bin">Очистить и отключить корзину</string>
+    <string name="undo">Отменить</string>
+    <string name="redo">Повторить</string>
+    <string name="print">Печать</string>
+    <string name="add_number_to_contact">Добавить номер контакту</string>
+    <string name="view_contact_details">Просмотр данных контакта</string>
+    <string name="call_from_sim_1">Вызов с SIM 1</string>
+    <string name="call_from_sim_2">Вызов с SIM 2</string>
+    <string name="toggle_filename">Переключить отображение имени файла</string>
+    <string name="move_to_top">Переместить наверх</string>
+    <string name="move_to_bottom">Переместить вниз</string>
+    <string name="pin_item">Закрепить элемент</string>
+    <string name="unpin_item">Открепить элемент</string>
+    <!-- Sorting -->
+    <string name="sort_by">Сортировать по…</string>
+    <string name="name">Имя</string>
+    <string name="size">Размер</string>
+    <string name="last_modified">Время изменения</string>
+    <string name="date_created">Время создания</string>
+    <string name="date_taken">Время создания</string>
+    <string name="title">Название</string>
+    <string name="filename">Имя файла</string>
+    <string name="extension">Расширение</string>
+    <string name="random">Случайно</string>
+    <string name="sort_randomly">Случайный порядок</string>
+    <string name="ascending">По возрастанию</string>
+    <string name="descending">По убыванию</string>
+    <string name="use_for_this_folder">Только для данной папки</string>
+    <string name="sort_numeric_parts">Сортировать числовые части по их значению</string>
+    <string name="first_name">Имя</string>
+    <string name="middle_name">Отчество</string>
+    <string name="surname">Фамилия</string>
+    <string name="full_name">Полное имя</string>
+    <string name="use_custom_sorting">Произвольная сортировка</string>
+    <string name="change_order">Изменить порядок</string>
+    <!-- Confirmation dialog -->
+    <string name="proceed_with_deletion">Подтверждение удаления</string>
+    <string name="deletion_confirmation">Удалить %s?</string>
+    <!-- Are you sure you want to delete 5 items? -->
+    <string name="move_to_recycle_bin_confirmation">Переместить %s в корзину?</string>
+    <!-- Are you sure you want to move 3 items into the Recycle Bin? -->
+    <string name="are_you_sure_delete">Удалить этот элемент?</string>
+    <string name="are_you_sure_recycle_bin">Переместить этот элемент в корзину?</string>
+    <string name="do_not_ask_again">Больше не спрашивать (до следующего запуска)</string>
+    <string name="do_not_show_again">Больше не показывать</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+    <string name="maybe">Возможно</string>
+    <plurals name="delete_warning">
+        <item quantity="one">ПРЕДУПРЕЖДЕНИЕ: вы удаляете %d папку</item>
+        <item quantity="few">ПРЕДУПРЕЖДЕНИЕ: вы удаляете %d папки</item>
+        <item quantity="many">ПРЕДУПРЕЖДЕНИЕ: вы удаляете %d папок</item>
+    </plurals>
+    <!-- Password protection -->
+
+    <string name="protection_setup_successfully">Пароль установлен. Переустановите приложение в случае, если вы его забудете.</string>
+    <string name="fingerprint_setup_successfully">Установка защиты выполнена успешно. Переустановите приложение в случае возникновения проблем с её отключением.</string>
+    <string name="lock_folder">Защитить папку</string>
+    <string name="unlock_folder">Снять защиту папки</string>
+    <string name="lock_folder_notice">Данная защита работает только в этом приложении, она не должна заменять собой реальное общесистемное шифрование.</string>
+    <!-- Times -->
+    <string name="yesterday">Вчера</string>
+    <string name="today">Сегодня</string>
+    <string name="tomorrow">Завтра</string>
+    <string name="hide_year">Скрыть год</string>
+    <string name="seconds_raw">секунд</string>
+    <string name="minutes_raw">минут</string>
+    <string name="hours_raw">часов</string>
+    <string name="days_raw">дней</string>
+    <string name="seconds_letter">с</string>
+    <string name="minutes_letter">м</string>
+    <string name="hours_letter">ч</string>
+    <plurals name="seconds">
+        <item quantity="one">%d секунда</item>
+        <item quantity="few">%d секунды</item>
+        <item quantity="many">%d секунд</item>
+    </plurals>
+    <plurals name="minutes">
+        <item quantity="one">%d минута</item>
+        <item quantity="few">%d минуты</item>
+        <item quantity="many">%d минут</item>
+    </plurals>
+    <plurals name="hours">
+        <item quantity="one">%d час</item>
+        <item quantity="few">%d часа</item>
+        <item quantity="many">%d часов</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="one">%d день</item>
+        <item quantity="few">%d дня</item>
+        <item quantity="many">%d дней</item>
+    </plurals>
+    <plurals name="weeks">
+        <item quantity="one">%d неделя</item>
+        <item quantity="few">%d недели</item>
+        <item quantity="many">%d недель</item>
+    </plurals>
+    <plurals name="months">
+        <item quantity="one">%d месяц</item>
+        <item quantity="few">%d месяца</item>
+        <item quantity="many">%d месяцев</item>
+    </plurals>
+    <plurals name="years">
+        <item quantity="one">%d год</item>
+        <item quantity="few">%d года</item>
+        <item quantity="many">%d лет</item>
+    </plurals>
+    <!-- For example: I will be there in 5 minutes -->
+    <plurals name="in_seconds">
+        <item quantity="one">%d секунду</item>
+        <item quantity="few">%d секунды</item>
+        <item quantity="many">%d секунд</item>
+    </plurals>
+    <plurals name="in_minutes">
+        <item quantity="one">%d минуту</item>
+        <item quantity="few">%d минуты</item>
+        <item quantity="many">%d минут</item>
+    </plurals>
+    <plurals name="in_hours">
+        <item quantity="one">%d час</item>
+        <item quantity="few">%d часа</item>
+        <item quantity="many">%d часов</item>
+    </plurals>
+    <plurals name="in_days">
+        <item quantity="one">%d день</item>
+        <item quantity="few">%d дня</item>
+        <item quantity="many">%d дней</item>
+    </plurals>
+    <plurals name="in_weeks">
+        <item quantity="one">%d неделю</item>
+        <item quantity="few">%d недели</item>
+        <item quantity="many">%d недель</item>
+    </plurals>
+    <plurals name="in_months">
+        <item quantity="one">%d месяц</item>
+        <item quantity="few">%d месяца</item>
+        <item quantity="many">%d месяцев</item>
+    </plurals>
+    <plurals name="in_years">
+        <item quantity="one">%d год</item>
+        <item quantity="few">%d года</item>
+        <item quantity="many">%d лет</item>
+    </plurals>
+    <!-- For example: Event reminder: 3 minutes before -->
+    <plurals name="seconds_before">
+        <item quantity="one">%d секунда до события</item>
+        <item quantity="few">%d секунды до события</item>
+        <item quantity="many">%d секунд до события</item>
+    </plurals>
+    <plurals name="minutes_before">
+        <item quantity="one">%d минута до события</item>
+        <item quantity="few">%d минуты до события</item>
+        <item quantity="many">%d минут до события</item>
+    </plurals>
+    <plurals name="hours_before">
+        <item quantity="one">%d час до события</item>
+        <item quantity="few">%d часа до события</item>
+        <item quantity="many">%d часов до события</item>
+    </plurals>
+    <plurals name="days_before">
+        <item quantity="one">%d день до события</item>
+        <item quantity="few">%d дня до события</item>
+        <item quantity="many">%d дней до события</item>
+    </plurals>
+    <plurals name="weeks_before">
+        <item quantity="one">%d неделя до события</item>
+        <item quantity="few">%d недели до события</item>
+        <item quantity="many">%d недель до события</item>
+    </plurals>
+    <plurals name="months_before">
+        <item quantity="one">%d месяц до события</item>
+        <item quantity="few">%d месяца до события</item>
+        <item quantity="many">%d месяцев до события</item>
+    </plurals>
+    <plurals name="years_before">
+        <item quantity="one">%d год до события</item>
+        <item quantity="few">%d года до события</item>
+        <item quantity="many">%d лет до события</item>
+    </plurals>
+    <!-- For example: Postpone reminder by 3 minutes -->
+    <plurals name="by_seconds">
+        <item quantity="one">%d секунду</item>
+        <item quantity="few">%d секунды</item>
+        <item quantity="many">%d секунд</item>
+    </plurals>
+    <plurals name="by_minutes">
+        <item quantity="one">%d минуту</item>
+        <item quantity="few">%d минуты</item>
+        <item quantity="many">%d минут</item>
+    </plurals>
+    <plurals name="by_hours">
+        <item quantity="one">%d час</item>
+        <item quantity="few">%d часа</item>
+        <item quantity="many">%d часов</item>
+    </plurals>
+    <plurals name="by_days">
+        <item quantity="one">%d день</item>
+        <item quantity="few">%d дня</item>
+        <item quantity="many">%d дней</item>
+    </plurals>
+    <plurals name="by_weeks">
+        <item quantity="one">%d неделю</item>
+        <item quantity="few">%d недели</item>
+        <item quantity="many">%d недель</item>
+    </plurals>
+    <plurals name="by_months">
+        <item quantity="one">%d месяц</item>
+        <item quantity="few">%d месяца</item>
+        <item quantity="many">%d месяцев</item>
+    </plurals>
+    <plurals name="by_years">
+        <item quantity="one">%d год</item>
+        <item quantity="few">%d года</item>
+        <item quantity="many">%d лет</item>
+    </plurals>
+
+    <!-- Settings -->
+    <string name="settings">Настройки</string>
+    <string name="purchase_simple_thank_you">Купить Simple Thank You</string>
+    <string name="general_settings">Основные</string>
+    <string name="customize_widget_colors">Настройка цветов виджета</string>
+    <string name="customize_notifications">Настройка уведомлений</string>
+    <string name="font_size">Размер шрифта</string>
+    <string name="small">Мелкий</string>
+    <string name="medium">Нормальный</string>
+    <string name="large">Крупный</string>
+    <string name="extra_large">Очень крупный</string>
+    <string name="show_info_bubble">Показывать информационное окно при прокрутке элементов перетаскиванием полосы прокрутки</string>
+    <string name="sunday_first">Воскресенье — начало недели</string>
+    <string name="widgets">Виджеты</string>
+    <string name="use_same_snooze">Всегда использовать один и тот же интервал повтора</string>
+    <string name="snooze_time">Интервал повтора</string>
+    <string name="recycle_bin_cleaning_interval">Интервал очистки корзины</string>
+    <string name="empty_recycle_bin">Очистка корзины</string>
+    <string name="settings_exported_successfully">Настройки успешно экспортированы </string>
+    <string name="settings_imported_successfully">Настройки успешно импортированы</string>
+    <string name="start_name_with_surname">Показывать сначала фамилию</string>
+    <string name="show_call_confirmation_dialog">Показывать диалог подтверждения вызова</string>
+    <!-- Setting sections -->
+    <string name="security">Безопасность</string>
+    <string name="recycle_bin">Корзина</string>
+    <string name="saving_label">Сохранение</string>
+    <string name="startup">Запуск</string>
+    <string name="text">Текст</string>
+    <string name="quality">Качество</string>
+    <string name="main_screen">Главный экран</string>
+    <string name="list_view">Вид списка</string>
+
+    <!-- Recycle Bin -->
+    <string name="restore_this_file">Восстановить этот файл</string>
+    <string name="restore_selected_files">Восстановить выбранные файлы</string>
+    <string name="restore_all_files">Восстановить все файлы</string>
+    <string name="recycle_bin_emptied">Корзина очищена</string>
+    <string name="files_restored_successfully">Файлы восстановлены</string>
+    <string name="empty_recycle_bin_confirmation">Очистить корзину? Файлы будут удалены безвозвратно.</string>
+    <string name="recycle_bin_empty">Корзина пуста</string>
+    <string name="moving_recycle_bin_items_disabled">Перемещение элементов корзины отключено, используйте восстановление</string>
+    <plurals name="moving_items_into_bin">
+        <item quantity="one">%d элемент перемещается в корзину</item>
+        <item quantity="few">%d элемента перемещаются в корзину</item>
+        <item quantity="many">%d элементов перемещаются в корзину</item>
+    </plurals>
+
+    <!-- OTG devices -->
+    <string name="usb">USB</string>
+    <string name="usb_detected">К устройству подключён USB-накопитель, необходимо убедиться, что файлы на нём отображаются правильно. Для этого необходимо предоставить дополнительные разрешения.</string>
+    <string name="confirm_usb_storage_access_text">Выберите корневую папку USB-накопителя на следующем экране, чтобы предоставить к нему доступ</string>
+    <string name="wrong_root_selected_usb">Выбрана неправильная папка. Выберите корневую папку USB-накопителя.</string>
+
+    <string name="calculator_title">Калькулятор</string>
+    <string name="flashlight_title">Фонарик</string>
+    <string name="paint_title">Рисование</string>
+    <string name="voicerecorder_title">Диктофон</string>
+    <string name="gallery_title">Галерея</string>
+    <string name="hidden">(скрыто)</string>
+    <string name="excluded">(исключено)</string>
+    <string name="pin_folder">Закрепить папку</string>
+    <string name="unpin_folder">Открепить папку</string>
+    <string name="pin_to_the_top">Закрепить сверху</string>
+    <string name="show_all">Показать все медиафайлы</string>
+    <string name="all_folders">Все медиафайлы</string>
+    <string name="folder_view">Папки</string>
+    <string name="other_folder">Выбор папки</string>
+    <string name="show_on_map">Показать место съёмки</string>
+    <string name="unknown_location">Место съёмки не указано</string>
+    <string name="volume">Громкость</string>
+    <string name="brightness">Яркость</string>
+    <string name="lock_orientation">Заблокировать ориентацию</string>
+    <string name="unlock_orientation">Разблокировать ориентацию</string>
+    <string name="change_orientation">Изменить ориентацию</string>
+    <string name="force_portrait">Портретная</string>
+    <string name="force_landscape">Альбомная</string>
+    <string name="use_default_orientation">Системная</string>
+    <string name="fix_date_taken">Исправить дату</string>
+    <string name="fixing">Исправление…</string>
+    <string name="dates_fixed_successfully">Даты исправлены</string>
+    <string name="no_date_takens_found">Дата съёмки не найдена</string>
+    <string name="share_resized">Поделиться изменённой версией</string>
+    <string name="switch_to_file_search">Переключиться на поиск файлов по всем видимым папкам</string>
+    <string name="reorder_by_dragging">Менять порядок папок перетаскиванием</string>
+    <string name="copy_to_restricted_folder_message">Система не разрешает копирование в эту папку.</string>
+
+    <!-- Filter -->
+    <string name="filter_media">Фильтр медиа</string>
+    <string name="images">Изображения</string>
+    <string name="videos">Видео</string>
+    <string name="gifs">GIF</string>
+    <string name="raw_images">RAW</string>
+    <string name="svgs">SVG</string>
+    <string name="portraits">Портреты</string>
+    <string name="no_media_with_filters">При заданных фильтрах медиафайлы не найдены.</string>
+    <string name="change_filters_underlined"><u>Изменить фильтры</u></string>
+    <!-- Hide / Exclude -->
+    <string name="hide_folder_description">Эта функция скрывает папку, добавляя в неё файл \".nomedia\". Также будут скрыты все подпапки. Можно показать их, переключая \"Показывать скрытые папки\" в настройках. Продолжить?</string>
+    <string name="remove_all">Удалить всё</string>
+    <string name="remove_all_description">Очистить список исключённых папок? Сами папки не будут удалены.</string>
+    <string name="hidden_folders">Скрытые папки</string>
+    <string name="hidden_folders_placeholder">Похоже, у вас нет папок, скрытых файлом \".nomedia\".</string>
+
+    <!-- Resizing -->
+    <string name="resize">Изменить размер</string>
+    <string name="resize_and_save">Изменить и сохранить</string>
+    <string name="width">Ширина</string>
+    <string name="height">Высота</string>
+    <string name="keep_aspect_ratio">Сохранять соотношение сторон</string>
+    <string name="invalid_values">Указано недопустимое разрешение</string>
+    <!-- Editor -->
+    <string name="editor">Редактор</string>
+    <string name="rotate">Поворот</string>
+    <string name="invalid_image_path">Недопустимый путь изображения</string>
+    <string name="invalid_video_path">Недопустимый путь видео</string>
+    <string name="image_editing_failed">Редактирование изображения не выполнено</string>
+    <string name="video_editing_failed">Редактирование видео не выполнено</string>
+    <string name="image_editing_cancelled">Редактирование изображения отменено</string>
+    <string name="video_editing_cancelled">Редактирование видео отменено</string>
+    <string name="file_edited_successfully">Файл успешно отредактирован</string>
+    <string name="image_edited_successfully">Изображение успешно отредактировано</string>
+    <string name="video_edited_successfully">Видео успешно отредактировано</string>
+    <string name="edit_image_with">Редактировать изображение в:</string>
+    <string name="edit_video_with">Редактировать видео в:</string>
+    <string name="no_image_editor_found">Редактор изображений не найден</string>
+    <string name="no_video_editor_found">Редактор видео не найден</string>
+    <string name="unknown_file_location">Неизвестное местоположение файла</string>
+    <string name="error_saving_file">Не удалось перезаписать исходный файл</string>
+    <string name="rotate_left">Повернуть влево</string>
+    <string name="rotate_right">Повернуть вправо</string>
+    <string name="rotate_one_eighty">Перевернуть на 180°</string>
+    <string name="flip">Отразить</string>
+    <string name="flip_horizontally">По горизонтали</string>
+    <string name="flip_vertically">По вертикали</string>
+    <string name="free_aspect_ratio">Свободно</string>
+    <!-- available as an option: 1:1, 4:3, 16:9, free -->
+    <string name="other_aspect_ratio">Другое</string>
+    <!-- available as an option: 1:1, 4:3, 16:9, free, other -->
+    <!-- Set wallpaper -->
+    <string name="simple_wallpaper">Простые обои</string>
+    <string name="set_as_wallpaper">Установить в качестве обоев</string>
+    <string name="set_as_wallpaper_failed">Не удалось установить</string>
+    <string name="set_as_wallpaper_with">Установить в качестве обоев с помощью</string>
+    <string name="setting_wallpaper">Установка обоев…</string>
+    <string name="wallpaper_set_successfully">Обои установлены</string>
+    <string name="portrait_aspect_ratio">Портретная ориентация</string>
+    <string name="landscape_aspect_ratio">Альбомная ориентация</string>
+    <string name="home_screen">Домашний экран</string>
+    <string name="lock_screen">Экран блокировки</string>
+    <string name="home_and_lock_screen">Домашний экран и экран блокировки</string>
+
+    <!-- View types -->
+    <string name="group_direct_subfolders">Объединять вложенные папки</string>
+    <!-- Grouping at media thumbnails -->
+    <string name="group_by">Группировать по…</string>
+    <string name="do_not_group_files">Не группировать</string>
+    <string name="by_folder">Папка</string>
+    <string name="by_last_modified">Последнее изменение</string>
+    <string name="by_last_modified_daily">Последнее изменение (день)</string>
+    <string name="by_last_modified_monthly">Последнее изменение (месяц)</string>
+    <string name="by_date_taken">Дата съёмки</string>
+    <string name="by_date_taken_daily">Дата съёмки (день)</string>
+    <string name="by_date_taken_monthly">Дата съёмки (месяц)</string>
+    <string name="by_file_type">Тип файла</string>
+    <string name="by_extension">Расширение</string>
+    <string name="show_file_count_section_header">Показывать количество файлов в заголовках разделов</string>
+    <string name="grouping_and_sorting">Обратите внимание, что группировка и сортировка — это два независимых поля</string>
+    <!-- Settings -->
+    <string name="show_media_count">Показывать количество файлов в папках</string>
+    <string name="one_finger_zoom">Масштабирование одним пальцем при просмотре изображения</string>
+    <string name="file_loading_priority">Приоритет загрузки файла</string>
+    <string name="speed">Скорость</string>
+    <string name="compromise">Компромисс</string>
+    <string name="avoid_showing_invalid_files">Пропускать файлы с ошибками</string>
+    <string name="allow_zooming_videos">Масштабировать видео двойным нажатием по нему</string>
+    <string name="export_favorite_paths">Экспорт путей избранных файлов</string>
+    <!-- Bottom actions -->
+    <string name="toggle_favorite">Переключить избранное</string>
+    <string name="toggle_file_visibility">Переключение видимости файлов</string>
+
+    <string name="audio_recording_saved_successfully">Запись успешно сохранена</string>
+    <string name="audio_recording">Запись</string>
+    <string name="audio_no_recordings_found">Записи, созданные этим приложением,
+\nне найдены</string>
+    <string name="audio_no_recordings_in_folder_found">В выбранной папке не найдено
+\nни одной записи</string>
+    <string name="audio_paused">Пауза</string>
+    <!-- Confirmation dialog -->
+    <string name="audio_delete_recordings_confirmation">Удалить %s\?</string>
+    <!-- Are you sure you want to delete 5 recordings? -->
+    <plurals name="audio_delete_recordings">
+        <item quantity="one">%d запись</item>
+        <item quantity="few">%d записи</item>
+        <item quantity="many">%d записей</item>
+    </plurals>
+    <!-- Settings -->
+    <string name="audio_try_hiding_notification">Пытаться скрыть уведомление о записи</string>
+    <string name="audio_save_recordings_in">Место хранения записей</string>
+    <string name="audio_bitrate">Битрейт</string>
+    <string name="audio_record_after_launch">Автоматическое начало записи при запуска приложения</string>
+
+    <!-- Calculator field -->
+    <string name="calc_formula_divide_by_zero_error">Ошибка: деление на ноль</string>
+
+    <!-- History -->
+    <string name="history">История</string>
+    <string name="history_empty">Нет записей</string>
+    <string name="clear_history">Очистить</string>
+    <string name="history_cleared">История очищена</string>
+
+    <string name="flashlight_camera_error">Не удалось получить доступ к камере</string>
+    <string name="flashlight_camera_permission">Разрешение на доступ к камере необходимо для создания эффекта стробоскопа</string>
+    <string name="flashlight_bright_display">Bright display</string>
+    <!-- Settings -->
+    <string name="flashlight_show_bright_display">Показать кнопку переключения на белый экран</string>
+    <string name="flashlight_show_stroboscope">Показать кнопку стробоскопа</string>
+    <string name="flashlight_show_sos">Show an SOS button</string>
+    <string name="flashlight_turn_flashlight_on">Включать фонарик при запуске</string>
+
+    <string name="paint_open_file">Открыть файл</string>
+    <string name="paint_eraser">Ластик</string>
+    <string name="paint_eyedropper">Eyedropper</string>
+    <string name="paint_failed_to_load_image">Не удалось загрузить изображение %s</string>
+    <!-- Settings -->
+    <string name="paint_clear">Очистить</string>
+    <string name="paint_change_background_color">Изменить цвет фона</string>
+</resources>

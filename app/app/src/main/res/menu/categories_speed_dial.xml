@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_variants"
+        android:icon="@drawable/category_type_variants_icon_white_24dp"
+        android:title="@string/category_type_variants" />
+    <item
+        android:id="@+id/action_complex_variants"
+        android:icon="@drawable/category_type_complex_variants_icon_white_24dp"
+        android:title="@string/category_type_complex_variants" />
+    <item
+        android:id="@+id/action_autoincrement"
+        android:icon="@drawable/category_type_autoincrement_icon_white_24dp"
+        android:title="@string/category_type_autoincrement" />
+    <item
+        android:id="@+id/action_geo"
+        android:icon="@drawable/category_type_geo_icon_white_24dp"
+        android:title="@string/category_type_geo" />
+    <!--    <item-->
+    <!--        android:id="@+id/action_datetime"-->
+    <!--        android:icon="@drawable/category_type_datetime_icon_white_24dp"-->
+    <!--        android:title="@string/category_type_datetime" />-->
+    <!--    <item-->
+    <!--        android:id="@+id/action_password"-->
+    <!--        android:icon="@drawable/category_type_password_icon_white_24dp"-->
+    <!--        android:title="@string/category_type_password" />-->
+</menu>

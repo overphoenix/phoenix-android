@@ -1,0 +1,75 @@
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!--<item-->
+        <!--android:id="@+id/action_settings"-->
+        <!--android:orderInCategory="100"-->
+        <!--android:showAsAction="never"-->
+        <!--android:title="@string/action_settings"/>-->
+
+    <item
+        android:id="@+id/action_previous"
+        android:icon="@drawable/pdfviewer_ic_navigate_before_white_24dp"
+        android:title="@string/pdfviewer_action_previous"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_next"
+        android:icon="@drawable/pdfviewer_ic_navigate_next_white_24dp"
+        android:title="@string/pdfviewer_action_next"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_open"
+        android:icon="@drawable/pdfviewer_ic_insert_drive_file_white_24dp"
+        android:title="@string/pdfviewer_action_open"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_zoom_out"
+        android:icon="@drawable/pdfviewer_ic_zoom_out_white_24dp"
+        android:title="@string/pdfviewer_action_zoom_out"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_zoom_in"
+        android:icon="@drawable/pdfviewer_ic_zoom_in_white_24dp"
+        android:title="@string/pdfviewer_action_zoom_in"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_first"
+        android:icon="@drawable/pdfviewer_baseline_first_page_24"
+        android:title="@string/pdfviewer_action_first"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_last"
+        android:icon="@drawable/pdfviewer_baseline_last_page_24"
+        android:title="@string/pdfviewer_action_last"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_jump_to_page"
+        android:icon="@drawable/pdfviewer_ic_pageview_white_24dp"
+        android:title="@string/pdfviewer_action_jump_to_page"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_rotate_clockwise"
+        android:icon="@drawable/pdfviewer_ic_rotate_right_white_24dp"
+        android:title="@string/pdfviewer_action_rotate_clockwise"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_rotate_counterclockwise"
+        android:icon="@drawable/pdfviewer_ic_rotate_left_white_24dp"
+        android:title="@string/pdfviewer_action_rotate_counterclockwise"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_view_document_properties"
+        android:title="@string/pdfviewer_action_view_document_properties"
+        app:showAsAction="never" />
+
+</menu>
